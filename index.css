@@ -1396,3 +1396,281 @@ h1 {
 .error {
     border: 2px solid #ff6b00; 
 }
+
+
+
+
+
+@media screen and (max-width: 800px) {   
+
+
+   
+
+     
+    .carousel {
+        position: relative;
+        width: 100vw;
+        overflow: hidden;
+        }
+        
+        .carousel-images {
+        display: flex;
+        transition: transform 0.10s ease;
+        background: #000;
+        
+        }
+        
+        .slide {
+        min-width: 100vw;
+        height: 90vh;
+        position: relative;
+        }
+        
+        .carousel-images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 500%;
+        filter: blur(2px)
+        }
+        
+        input[type="radio"] {
+        display: none;
+        }
+        
+        #slide1:checked ~ .carousel-images {
+        transform: translateX(0);
+        }
+        
+        #slide2:checked ~ .carousel-images {
+        transform: translateX(-100%);
+        }
+        
+        #slide3:checked ~ .carousel-images {
+        transform: translateX(-200%);
+        }
+        
+        #slide4:checked ~ .carousel-images {
+        transform: translateX(-300%);
+        }
+        
+        .buttons {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        }
+        
+        .buttons label {
+        cursor: pointer;
+        padding: 5px;
+        margin: 0 10px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 150%;
+        transition: background-color 0.9s;
+        }
+        
+        #slide1:checked ~ .buttons label[for="slide1"],
+        #slide2:checked ~ .buttons label[for="slide2"],
+        #slide3:checked ~ .buttons label[for="slide3"],
+        #slide4:checked ~ .buttons label[for="slide4"] {
+        background-color: #ffa142;
+        }
+        
+        .slide-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.733);
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        
+        .slide-text {
+        font-size: 1.2em;
+        margin: 10px 10px 650px 10px;
+        
+        }
+        
+        .slide-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 750px;
+        height: 1200px;
+        
+        margin: 50px 0 0px 90px;
+        }
+       
+        .slide-text1 {
+        font-size: 45pt;
+        font-family: 'Days';
+        color: #FF7F00;
+        margin: 0;
+        text-align: center;
+        margin-top: 210px;
+        margin-left: 90px;
+
+        }
+
+        .slide-text2 {
+        font-size: 10pt;
+        font-family: 'Inter';
+        color: #ffffff;
+        text-align: center;
+        margin: 10px 0 0px 130px;
+        }
+        
+        .slide-button {
+        background-color: #FF7F00;
+        color: rgb(255, 255, 255);
+        padding: 10px 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        font-family: 'Days';
+        margin: 10px 0px 0px 240px ;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        }
+        .slide-content img{
+        width: 300px;
+        height: auto;
+        margin: -545px 80px 650px 150px;
+        filter: blur(0px)
+    }
+
+
+
+    .slide-content4 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 600px;
+        height: 1200px;
+        margin: 50px 0 0px 0px;
+
+        
+        }
+        .slide-text14 {
+            font-size: 35pt;
+            font-family: 'Days';
+            color: #FF7F00;
+            margin: 0;
+            text-align: center;
+            margin-top: 270px; 
+            margin-left: 130px;
+
+            }
+            .slide-text24 {
+                font-size: 10pt;
+                font-family: 'Inter';
+                color: #ffffff;
+                text-align: center;
+                margin: 10px 0 0px 180px;
+                }
+                .slide-button4 {
+                    background-color: #FF7F00;
+                    color: rgb(255, 255, 255);
+                    padding: 10px 16px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 30px;
+                    font-family: 'Days';
+                    margin: 10px 0px 0px 300px ;
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    }
+                    .slide-content4 img{
+                    width: 350px;
+                    height: auto;
+                    margin-left: 190px;
+                    margin-top: -580px;           
+                    filter: blur(0px)
+                }  
+
+
+                .slide-content2 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 750px;
+                    height: 1200px;
+                    
+                    margin: 50px 0 0px 50px;
+                    }
+                    .slide-text12 {
+                    font-size: 50pt;
+                    font-family: 'Days';
+                    color: #FF7F00;
+                    margin: 0;
+                    text-align: center;
+                    margin-top: 270px; 
+                    margin-left: 190px;
+                    }
+                    
+                    .slide-content2 img{
+                    width: 350px;
+                    height: auto;
+                    margin: -130px 80px 650px 570px;
+                    margin-left: 160px; 
+                    margin-top: -540px;
+                    filter: blur(-0px)
+            
+                }
+
+                .slide-content1 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 750px;
+                    height: 1200px;
+                    
+                    margin: 50px 0 0px 50px;
+                    }
+                    .slide-text11 {
+                    font-size: 50pt;
+                    font-family: 'Days';
+                    color: #FF7F00;
+                    margin: 0;
+                    text-align: center;
+                    margin-top: 250px; 
+                    margin-left: 60px;
+                    }
+                    
+                    .slide-content1 img{
+                    width: 350px;
+                    height: auto;
+                    margin: -130px 80px 650px 570px;
+                    margin-left: 160px; 
+                    margin-top: -540px;
+                    filter: blur(-0px)
+            
+                }
+                .slide-button1 {
+                    color: rgb(255, 255, 255);
+                    padding: 10px 16px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 30px;
+                    font-family: 'Days';
+                    margin: 10px 0px 0px 240px ;
+                    display: block;
+                    text-align: left;
+                    text-decoration: none;
+                    display: inline-block;
+                    }
+            
+}
+
+
+
