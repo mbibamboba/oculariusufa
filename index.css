@@ -1213,7 +1213,7 @@ h1 {
         width: 100%;
     }
     .doctor-details li::before {
-        content: "•";
+        content: ".";
         color: #FF6B00;
         font-size: 44px;
         position: absolute;
