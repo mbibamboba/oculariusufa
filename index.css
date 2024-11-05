@@ -1142,10 +1142,10 @@ h1 {
 .doctor-details li::before {
     content: ".";
     color: #FF6B00;
-    font-size: 54px;
+    font-size: 90px;
     position: absolute;
     left: 0;
-    top: -20px;
+    top: -70px;
 }
 
 .sidebar {
@@ -1215,10 +1215,10 @@ h1 {
     .doctor-details li::before {
         content: ".";
         color: #FF6B00;
-        font-size: 44px;
+        font-size: 70px;
         position: absolute;
         left: 0;
-        top: -20px;
+        top: -53px;
     }
     .doctor-photo {
         margin: 0 auto;
