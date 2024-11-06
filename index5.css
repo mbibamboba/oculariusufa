@@ -32,7 +32,7 @@
   
   
 
-  /*верхушка*/
+  /*РІРµСЂС…СѓС€РєР°*/
   .dropbtn {
     
     color: #000000;
@@ -80,7 +80,7 @@
 
 }
   
- /*верхушка номер*/
+ /*РІРµСЂС…СѓС€РєР° РЅРѕРјРµСЂ*/
  .dropbtn1 {
     background-color: #FF7F00;
     color: #000000;
@@ -137,7 +137,7 @@
 
     margin-right: 50px;
     border-radius: 30px;}
- /*подвал*/
+ /*РїРѕРґРІР°Р»*/
 
   
     .footer {
@@ -221,7 +221,7 @@
 
         }
     }
-/*картинка главная*/
+/*РєР°СЂС‚РёРЅРєР° РіР»Р°РІРЅР°СЏ*/
 .intro {
     display: flex;
     flex-direction: column;
@@ -318,7 +318,7 @@
         
         overflow-x: hidden;
         }
-/*текст*/
+/*С‚РµРєСЃС‚*/
 
 .fon {
     background-size: 100% 100%; 
@@ -461,7 +461,7 @@ margin-top: -260px;
 
 }}
 
-/*кнопки*/
+/*РєРЅРѕРїРєРё*/
 .slide-button1 {
     background-color: #FF7F00;
     color: rgb(255, 255, 255);
