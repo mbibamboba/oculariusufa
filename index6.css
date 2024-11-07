@@ -1,0 +1,574 @@
+@charset "utf-8";
+::-webkit-scrollbar {
+    background-color: #FFCB98;
+    overflow: hidden;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #FF7F00;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  body {
+  margin: 0;
+  box-sizing: border-box;
+  }
+  .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -15px;
+
+  background-color: #f7f7f7;
+  }
+  
+  .header .logo {
+  font-size: 25px;
+  font-family: 'Elephant', bold;
+  color: #f7f7f7;
+  text-decoration: none;
+  margin-left: 70px;
+  }
+  
+  
+
+  /*верхушка*/
+  .dropbtn {
+    
+    color: #000000;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 90px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFCB98;
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f6983b;
+    border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;   
+    margin-top: 2px;
+
+     border-radius: 15px;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #FFCB98;
+
+}
+  
+ /*верхушка номер*/
+ .dropbtn1 {
+    background-color: #FF7F00;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-right: 80px;
+    border-radius: 90px;
+
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #FF7F00;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content1 a:hover {background-color: #FFCB98;   
+    border-radius: 15px;
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;   
+    margin-top: 2px;
+
+     border-radius: 15px;
+}
+
+.dropdown1:hover .dropbtn {background-color: #FF7F00;}
+
+.copy img {
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-left: 150px;
+
+    margin-right: 50px;
+    border-radius: 30px;}
+ /*подвал*/
+
+  
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F6A04A;
+        padding: 0px;
+    }
+    
+    .footer .copy {
+        color: #fff;
+    }
+    
+    .footer span {
+        text-decoration: none;
+        font-weight: bold;
+        color: #000000;
+        padding: 15px 20px;
+        text-align: center; 
+
+    }
+    
+    .footer a {
+        text-decoration: none;
+        color: #000000;
+        padding: 5px 10px; 
+    }
+    
+    .footer span img { 
+        border-radius: 300px;
+    height: auto;
+    }
+    
+    .bottom-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 0;
+        margin-right: 250px;
+
+    }
+    
+    .bottom-links .links {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 40px 0px 10px;
+        text-align: center; 
+    }
+    
+    .nav-links {
+        display: flex;
+        justify-content: center; 
+        margin-bottom: 1px;
+    }
+    
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (max-width: 800px) {
+        .footer {
+            flex-direction: column; 
+            align-items: center; 
+        }
+    
+        .bottom-links {
+            margin-right: 0; 
+            flex-direction: column; 
+            padding: 20px 0; 
+        }
+    
+        .bottom-links .links {
+            padding: 10px 0; 
+        }
+        .copy img { 
+            border-radius: 300px;
+        height: auto;
+        margin-left: 60px; 
+
+        }
+    }
+/*картинка главная*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 670px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.737) 100%,
+     rgba(0, 0, 0, 0.5) 100%),
+     url("https://oculariusufa.ru/assets/images/services/optika_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    
+    }
+    
+    .intro h1 {
+    font-family: "Days";
+    font-size: 60px;
+    color: #FF7F00;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 120px 0px 120px;
+    }
+
+/*очки */
+
+.fon {
+    background-image: url('https://sun9-18.userapi.com/impg/Ldihyzw9AyEK7dgr3RUdW3kVmkkVKlmwq_BxhA/VI287cYLLQY.jpg?size=1086x834&quality=95&sign=faba0bfae3e21fb1f82a81a26a28cee0&type=album');
+    background-size: 100% 100%; 
+    background-position: center;
+}
+
+h1{
+    font-family: 'Days';
+    font-weight: normal;
+      margin: 10px 0 -30px 0;
+      color: #FF7F00;
+      font-size: 40px;
+      text-align: center;
+     
+
+}
+.container2l {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    margin: 10px ;
+
+}
+.a-boxl {
+    display: flex;
+    flex-direction: column; 
+    width: 350px; 
+    text-align: center;
+    margin: 10px; 
+    margin-bottom: 70pt;
+
+  
+
+}
+.img-containerl {
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 50%; 
+    display: inline-block;
+    margin: 10px 0px -60px 40px;  
+    border: 10px solid #EBEAE7; 
+    position: relative;
+}
+.img-containerl img {
+    height: 150px;
+}
+.item1l {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 30px; 
+}
+.text-containerl {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 30px 20px 20px 20px; 
+    border-radius: 40px;
+    background: #fff;
+    height: 380px; 
+    width: 400px;
+    line-height: 19px;
+    font-size: 10px;
+}
+.text-containerl h3 {
+  font-family: 'Days';
+  font-weight: normal;
+    margin: 10px 0px;
+    color: #FF7F00;
+    font-size: 20px;
+}
+.text-containerl .h2 {
+    font-family: 'Clear Sans';
+    margin: 10px 0px;
+    color: #000000;
+    font-size: 13px;
+    text-align:left;
+}
+.text-containerl li {
+    margin-bottom: 15px;
+    padding-left: 5px;
+    position: relative;
+    font-size: 15px;
+}
+.text-containerl li::before {
+    content: ".";
+    color: #FF7F00;
+    font-size: 37px;
+    position: absolute;
+    left: 1px;
+    top: -0px;
+}
+.textl
+{
+    font-family: 'Clear Sans';
+    margin: 10px 0px;
+    color: #000000;
+    font-size: 17px;
+    text-align:left;
+    margin-left: 70pt;
+    margin-right: 70pt;
+
+}
+.textl b
+{
+    color: #FF7F00;
+
+}
+.textl li {
+    margin-bottom: 15px;
+    padding-left: 5px;
+    position: relative;
+    font-size: 15px;
+    margin-left: 20pt;
+
+}
+.textl li::before {
+    content: ".";
+    color: #FF7F00;
+    font-size: 77px;
+    position: absolute;
+    left: -1px;
+    top: -67px;
+}
+
+.textl img {
+    height: 370px;
+    width: 870px;
+margin-top: 0px;
+margin-left: 270px;
+
+}
+
+
+
+@media (max-width: 900px) {
+.textl img {
+    height: 350px;
+    width: 700px;
+margin-top: 10px;
+margin-left: -70px;
+
+}
+}
+
+@media (max-width: 800px) {
+    .textl img {
+        height: 300px;
+        width: 550px;
+    margin-top: 10px;
+    margin-left: -10px;
+    
+    }
+}
+
+
+/*оправы*/
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+
+
+
+
+.tabs-container { 
+    width: 540px;
+    max-width: 620px; 
+    min-width: 420px;
+    margin: auto;
+}
+
+.tabs {
+    margin-bottom: 28px; 
+    display: flex;
+      justify-content: space-between;
+}
+
+.tabs a {
+    cursor: pointer;
+    padding: 12px 24px;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 18px;
+    font-family: 'Clear Sans';
+
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    box-shadow:  3px 3px 5px #bebebe, 
+                 -3px -3px 5px #ffffff;
+}
+
+.tabs a.active {
+    background-color: #f4f4f4;
+    color: #000000;
+    cursor: default;
+    padding: 14px 22px 10px 26px;
+    background: #f4f4f4;    font-family: 'Clear Sans';
+
+    box-shadow: inset 3px 3px 5px #c4c4c4, 
+                inset -3px -3px 5px #ececec;
+}
+
+.tabcontent {
+    padding: 46px;
+    width: 1350px;
+    font-size: 17px;
+
+    margin-left: -445px;
+    min-height: 288px;
+    display: none;    
+    border-radius: 18px;
+    background: #f4f4f4;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;    font-family: 'Clear Sans';
+
+}
+
+.content .active {
+    display: block;
+}
+.tabcontent p {
+    margin-bottom: 12px;
+}
+.tabcontent p:last-child {
+    margin-bottom: 0;
+}
+.tabcontent .read-more-link a {
+    color: #626262;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: bold;    
+    font-family: 'Clear Sans';
+
+}
+
+.tabcontent img {
+    width: 350px;
+margin-left: 70px; 
+}
+/*карты*/
+
+@media (max-width: 824px){
+    .background-container1 {
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        max-width: 1520px;
+        height: auto;
+        min-height: 500px;
+        margin-top: 450px;
+    }
+    #map {
+        position: relative;
+        width: 100%;
+        height: 534px;
+        margin-top: auto; /* Смещаем карту вверх на 430px для десктопа */
+    }
+    
+    .info-box1 {
+        position: absolute;
+        top: 107px; /* Позиционируем информационный блок сверху на 107px для десктопа */
+        background-color: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 0px 150px 0px 0px;
+        padding: 25px;
+        z-index: 10;
+    }
+    
+    .info-box1 strong {
+        font-family: 'Days';
+        color: #FF7F00;
+        font-weight: normal;
+    }
+    
+    .info-box1 p {
+        margin: 25px 40px 30px;
+        font-family: 'Inter';
+        color: #000000;
+        font-weight: normal;
+    }
+}
+
+.background-container1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 1520px;
+    height: auto;
+    min-height: 500px;
+    margin-top: 450px;
+}
+
+#map {
+    position: relative;
+    width: 100%;
+    height: 534px;
+    margin-top: -430px;
+
+}
+.info-box1 {
+    position: absolute;
+    top: 107px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 0px 150px 0px 0px;
+    padding: 25px;
+    z-index: 10;
+}
+
+.info-box1 strong {
+
+    font-family: 'Days';
+    color: #FF7F00;  
+    font-weight: normal;
+
+}
+.info-box1 p {
+    margin: 20px 40px 30px ;
+
+    font-family: 'Inter';
+    color: #000000;  
+    font-weight: normal;
+
+}
