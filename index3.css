@@ -5,13 +5,13 @@
     overflow: hidden;
   }
   @font-face {
-  font-family: Days;
-  src: url(ClearSans-Medium.ttf);
-}
-  @font-face {
-  font-family: Clear Sans;
-  src: url(Days.ttf);
-}
+    font-family: Days;
+    src: url(ClearSans-Medium.ttf);
+  }
+    @font-face {
+    font-family: Clear Sans;
+    src: url(Days.ttf);
+  }
   ::-webkit-scrollbar-thumb {
     background-color: #FF7F00;
     border-radius: 10px;
@@ -40,7 +40,7 @@
   
   
 
-  /*âåðõóøêà*/
+  /*верхушка*/
   .dropbtn {
     
     color: #000000;
@@ -88,7 +88,7 @@
 
 }
   
- /*âåðõóøêà íîìåð*/
+ /*верхушка номер*/
  .dropbtn1 {
     background-color: #FF7F00;
     color: #000000;
@@ -145,7 +145,7 @@
 
     margin-right: 50px;
     border-radius: 30px;}
- /*ïîäâàë*/
+ /*подвал*/
 
   
     .footer {
@@ -229,7 +229,7 @@
 
         }
     }
-/*êàðòèíêà ãëàâíàÿ*/
+/*картинка главная*/
 .intro {
     display: flex;
     flex-direction: column;
@@ -269,7 +269,7 @@
         }
 
         
-/*çàïèñü íà ïðèåì*/
+/*запись на прием*/
 .background-container {
     background-image: url('https://psv4.userapi.com/s/v1/d/n4Yd49k3U3UtSsWyreHEqPk0eYwVXOT4f7hEiCrLDbBwwLmEBiK7j1S00YFXB-1SvJvfACEJdQFZ7yEs25STguy6JFJgXFwKNvr4wCS1hnO9k1edHKNJQg/Bez_imeni-1.jpg');
     background-repeat: no-repeat;
@@ -441,29 +441,29 @@ textarea {
         margin-left: 0;
     }
 }
-/*ìîäàëüíîå îêíî*/
+/*модальное окно*/
 
 .modal1 {
-    display: none; /* Ñêðûòü ìîäàëüíîå îêíî ïî óìîë÷àíèþ */
+    display: none; /* Скрыть модальное окно по умолчанию */
     position: fixed; 
-    z-index: 100; /*Ñèäèò ïîâåðõ */
+    z-index: 100; /*Сидит поверх */
     left: 0;
     top: 0;
-    width: 100%; /* Ïîëíàÿ øèðèíà */
-    height: 100%; /* Ïîëíàÿ âûñîòà */
-    overflow: hidden; /* Âêëþ÷èòü ïðîêðóòêó, åñëè íåîáõîäèìî */
-    background-color: rgba(0, 0, 0, 0.5); /* ×åðíûé ôîí ñ ïðîçðà÷íîñòüþ */
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: hidden; /* Включить прокрутку, если необходимо */
+    background-color: rgba(0, 0, 0, 0.5); /* Черный фон с прозрачностью */
 
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* 15% ñâåðõó è öåíòðèðîâàòü */
+    margin: 5% auto; /* 15% сверху и центрировать */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Øèðèíà 80% */
-    max-height: 80%; /* Ìàêñèìàëüíàÿ âûñîòà äëÿ ãîðèçîíòàëüíîé ïðîêðóòêè */
-    overflow-y: auto; /* Ïðîêðóòêà ïî âåðòèêàëè */
+    width: 80%; /* Ширина 80% */
+    max-height: 80%; /* Максимальная высота для горизонтальной прокрутки */
+    overflow-y: auto; /* Прокрутка по вертикали */
 }
 
 .close-button {
@@ -492,10 +492,10 @@ textarea {
 }
 
 .modal-text {
-    max-height: 400px; /* Îãðàíè÷åíà âûñîòà òåêñòà äëÿ ïðîêðóòêè */
-    overflow-y: auto; /* Âåðòèêàëüíàÿ ïðîêðóòêà äëÿ òåêñòà */
+    max-height: 400px; /* Ограничена высота текста для прокрутки */
+    overflow-y: auto; /* Вертикальная прокрутка для текста */
 }
-/*âû çàïèñàíû */
+/*вы записаны */
 .notification {
     background-color: #ff6b00; 
     color: rgb(0, 0, 0); 
@@ -510,7 +510,7 @@ textarea {
 .error {
     border: 2px solid #ff6b00; 
 }
-/*òàáëè÷êà*/
+/*табличка*/
 .fon2 {
     background-image: url('https://sun9-33.userapi.com/impg/4Lrc0L7JWqVsX9GaEN9wuQ9vtiMh3c_bWxoEKA/K9efLmCwlHY.jpg?size=1274x640&quality=95&sign=7b43861ad6f2a636212805ce52a0e8ea&type=album');
     background-size: 100% 100%; 
@@ -597,7 +597,7 @@ margin-left: 80px;
     font-size: 20px;
 }
 .text-container2 li::before {
-    content: "";
+    content: "•";
     color: #FF6B00;
     font-size: 44px;
     position: absolute;
@@ -707,7 +707,7 @@ margin-left: 80px;
     font-size: 15px;
 }
 .text-container2 li::before {
-    content: "";
+    content: "•";
     color: #FF6B00;
     font-size: 44px;
     position: absolute;
@@ -726,7 +726,7 @@ h1{
      
 
 }
-  /*òàáëè÷à */
+  /*таблича */
 
   .table {
 	width: 90%;
