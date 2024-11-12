@@ -3,7 +3,14 @@
     background-color: #FFCB98;
     overflow: hidden;
   }
-  
+@font-face {
+  font-family: Days;
+  src: url(ClearSans-Medium.ttf);
+}
+  @font-face {
+  font-family: Clear Sans;
+  src: url(Days.ttf);
+}  
   ::-webkit-scrollbar-thumb {
     background-color: #FF7F00;
     border-radius: 10px;
