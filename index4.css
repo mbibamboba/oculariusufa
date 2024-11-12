@@ -3,14 +3,7 @@
     background-color: #FFCB98;
     overflow: hidden;
   }
-  @font-face {
-  font-family: Days;
-  src: url(ClearSans-Medium.ttf);
-}
-  @font-face {
-  font-family: Clear Sans;
-  src: url(Days.ttf);
-}
+  
   ::-webkit-scrollbar-thumb {
     background-color: #FF7F00;
     border-radius: 10px;
@@ -1192,6 +1185,7 @@ font-size: 35px;
 
 
 /*тесты*/
+
 .test h3 {
     font-family: 'Days';
     font-weight: normal;
@@ -1279,6 +1273,7 @@ font-size: 35px;
 }
 .tabcontent p {
     margin-bottom: 12px;
+    
 }
 .tabcontent p:last-child {
     margin-bottom: 0;
