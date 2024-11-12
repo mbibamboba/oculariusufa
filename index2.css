@@ -4,8 +4,7 @@
     background-color: #FFCB98;
     overflow: hidden;
   }
-
- 
+  
   ::-webkit-scrollbar-thumb {
     background-color: #FF7F00;
     border-radius: 10px;
