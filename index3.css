@@ -33,7 +33,7 @@
   
   
 
-  /*верхушка*/
+  /*âåðõóøêà*/
   .dropbtn {
     
     color: #000000;
@@ -81,7 +81,7 @@
 
 }
   
- /*верхушка номер*/
+ /*âåðõóøêà íîìåð*/
  .dropbtn1 {
     background-color: #FF7F00;
     color: #000000;
@@ -138,7 +138,7 @@
 
     margin-right: 50px;
     border-radius: 30px;}
- /*подвал*/
+ /*ïîäâàë*/
 
   
     .footer {
@@ -222,7 +222,7 @@
 
         }
     }
-/*картинка главная*/
+/*êàðòèíêà ãëàâíàÿ*/
 .intro {
     display: flex;
     flex-direction: column;
@@ -262,7 +262,7 @@
         }
 
         
-/*запись на прием*/
+/*çàïèñü íà ïðèåì*/
 .background-container {
     background-image: url('https://psv4.userapi.com/s/v1/d/n4Yd49k3U3UtSsWyreHEqPk0eYwVXOT4f7hEiCrLDbBwwLmEBiK7j1S00YFXB-1SvJvfACEJdQFZ7yEs25STguy6JFJgXFwKNvr4wCS1hnO9k1edHKNJQg/Bez_imeni-1.jpg');
     background-repeat: no-repeat;
@@ -434,29 +434,29 @@ textarea {
         margin-left: 0;
     }
 }
-/*модальное окно*/
+/*ìîäàëüíîå îêíî*/
 
 .modal1 {
-    display: none; /* Скрыть модальное окно по умолчанию */
+    display: none; /* Ñêðûòü ìîäàëüíîå îêíî ïî óìîë÷àíèþ */
     position: fixed; 
-    z-index: 100; /*Сидит поверх */
+    z-index: 100; /*Ñèäèò ïîâåðõ */
     left: 0;
     top: 0;
-    width: 100%; /* Полная ширина */
-    height: 100%; /* Полная высота */
-    overflow: hidden; /* Включить прокрутку, если необходимо */
-    background-color: rgba(0, 0, 0, 0.5); /* Черный фон с прозрачностью */
+    width: 100%; /* Ïîëíàÿ øèðèíà */
+    height: 100%; /* Ïîëíàÿ âûñîòà */
+    overflow: hidden; /* Âêëþ÷èòü ïðîêðóòêó, åñëè íåîáõîäèìî */
+    background-color: rgba(0, 0, 0, 0.5); /* ×åðíûé ôîí ñ ïðîçðà÷íîñòüþ */
 
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* 15% сверху и центрировать */
+    margin: 5% auto; /* 15% ñâåðõó è öåíòðèðîâàòü */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Ширина 80% */
-    max-height: 80%; /* Максимальная высота для горизонтальной прокрутки */
-    overflow-y: auto; /* Прокрутка по вертикали */
+    width: 80%; /* Øèðèíà 80% */
+    max-height: 80%; /* Ìàêñèìàëüíàÿ âûñîòà äëÿ ãîðèçîíòàëüíîé ïðîêðóòêè */
+    overflow-y: auto; /* Ïðîêðóòêà ïî âåðòèêàëè */
 }
 
 .close-button {
@@ -485,10 +485,10 @@ textarea {
 }
 
 .modal-text {
-    max-height: 400px; /* Ограничена высота текста для прокрутки */
-    overflow-y: auto; /* Вертикальная прокрутка для текста */
+    max-height: 400px; /* Îãðàíè÷åíà âûñîòà òåêñòà äëÿ ïðîêðóòêè */
+    overflow-y: auto; /* Âåðòèêàëüíàÿ ïðîêðóòêà äëÿ òåêñòà */
 }
-/*вы записаны */
+/*âû çàïèñàíû */
 .notification {
     background-color: #ff6b00; 
     color: rgb(0, 0, 0); 
@@ -503,7 +503,7 @@ textarea {
 .error {
     border: 2px solid #ff6b00; 
 }
-/*табличка*/
+/*òàáëè÷êà*/
 .fon2 {
     background-image: url('https://sun9-33.userapi.com/impg/4Lrc0L7JWqVsX9GaEN9wuQ9vtiMh3c_bWxoEKA/K9efLmCwlHY.jpg?size=1274x640&quality=95&sign=7b43861ad6f2a636212805ce52a0e8ea&type=album');
     background-size: 100% 100%; 
@@ -590,7 +590,7 @@ margin-left: 80px;
     font-size: 20px;
 }
 .text-container2 li::before {
-    content: "•";
+    content: "";
     color: #FF6B00;
     font-size: 44px;
     position: absolute;
@@ -700,7 +700,7 @@ margin-left: 80px;
     font-size: 15px;
 }
 .text-container2 li::before {
-    content: "•";
+    content: "";
     color: #FF6B00;
     font-size: 44px;
     position: absolute;
@@ -719,7 +719,7 @@ h1{
      
 
 }
-  /*таблича */
+  /*òàáëè÷à */
 
   .table {
 	width: 90%;
@@ -773,4 +773,71 @@ h1{
 	border-radius: 0 0 20px 0;
     border-right: 1px solid #85858585;
 	border-left: 1px solid #85858585;
+}
+
+@media (max-width: 768px) {
+  .table {
+    width: 100%;
+    
+  }
+
+  .table thead th {
+    font-size: 10px;
+    padding: 8px 10px;
+  }
+
+  .table tbody td {
+    font-size: 10px;
+    padding: 8px 10px;
+  }
+
+  .table thead tr th:first-child {
+    border-radius: 10px 0 0 0;
+  }
+
+  .table thead tr th:last-child {
+    border-radius: 0 10px 0 0;
+  }
+
+  .table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+  }
+
+  .table tbody tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+  }
+
+ 
+
+  .dropbtn {
+    font-size: 14px;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 50px;
+  }
+
+  .dropdown-content {
+    min-width: 180px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdown-content a {
+    padding: 10px 12px;
+  }
+
+  .dropbtn1 {
+    font-size: 14px;
+    padding: 8px;
+    margin-right: 40px;
+    border-radius: 50px;
+  }
+
+  .dropdown-content1 {
+    min-width: 120px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdown-content1 a {
+    padding: 10px 12px;
+  }
 }
