@@ -1185,8 +1185,14 @@ font-size: 35px;
 
 
 /*тесты*/
-
 .test h3 {
+    font-family: 'Days';
+    font-weight: normal;
+      color: #FF7F00;
+      font-size: 40px;
+      text-align: center;
+  }
+  .test h1 {
     font-family: 'Days';
     font-weight: normal;
       color: #FF7F00;
@@ -1202,3 +1208,155 @@ font-size: 35px;
     margin-right: 100px;
 
 }
+
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+
+
+
+
+.tabs-container { 
+    width: 540px;
+    max-width: 420px; 
+    min-width: 420px;
+    margin: auto;
+}
+
+.tabs {
+    margin-bottom: 28px; 
+    display: flex;
+      justify-content: space-between;
+}
+
+.tabs a {
+    cursor: pointer;
+    padding: 12px 24px;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 18px;
+    font-family: 'Clear Sans';
+
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    box-shadow:  3px 3px 5px #bebebe, 
+                 -3px -3px 5px #ffffff;
+}
+
+.tabs a.active {
+    background-color: #f4f4f4;
+    color: #000000;
+    cursor: default;
+    padding: 14px 22px 10px 26px;
+    background: #f4f4f4;    font-family: 'Clear Sans';
+
+    box-shadow: inset 3px 3px 5px #c4c4c4, 
+                inset -3px -3px 5px #ececec;
+}
+
+.tabcontent {
+    padding: 46px;
+    width: 1350px;
+    font-size: 17px;
+
+    margin-left: -445px;
+    min-height: 288px;
+    display: none;    
+    border-radius: 18px;
+    background: #f4f4f4;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;    font-family: 'Clear Sans';
+
+}
+
+.content .active {
+    display: block;
+}
+.tabcontent p {
+    margin-bottom: 12px;
+}
+.tabcontent p:last-child {
+    margin-bottom: 0;
+}
+.tabcontent .read-more-link a {
+    color: #626262;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: bold;    
+    font-family: 'Clear Sans';
+
+}
+
+.tabcontent img {
+    width: 350px;
+margin-left: 70px; 
+}
+
+.exercise-container {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+        }
+        
+        .timer {
+            font-size: 48px;
+            margin: 20px 0;
+            color: #333;
+        }
+        
+        .controls {
+            margin: 20px 0;
+        }
+        
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .start-btnt {
+            background-color: #f39b0e;
+            color: white;
+            border-radius: 30px;
+        }
+        
+        .reset-btnt {
+            background-color: #f43636;
+            color: white;
+            border-radius: 30px;
+
+        }
+        
+        button:hover {
+            opacity: 0.9;
+        }
+        
+        .animation {
+            width: 550px;
+            height: 200px;
+            margin: 20px auto;
+            border-radius: 30px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .animation img {
+            width: 450px;
+            height: 150px;
+            margin: 20px auto;
+            border-radius: 30px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .animation2 {
+            width: 550px;
+            height: 200px;
+            margin: 20px auto;
+            border-radius: 30px;
+            overflow: hidden;
+            background-color: #f5f5f5;
+        }
