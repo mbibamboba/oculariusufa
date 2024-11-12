@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+@charset "utf-8";
+
+
+@font-face {
+  font-family: Clear Sans;
+  src: url(ClearSans-Medium.ttf);
+}
+  @font-face {
+  font-family: Days;
+  src: url(Days.ttf);
+}
+
+::-webkit-scrollbar {
+    background-color: #FFCB98;
+    overflow: hidden;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #FF7F00;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  body {
+  margin: 0;
+  box-sizing: border-box;
+  }
+  .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -15px;
+
+  background-color: #f7f7f7;
+  }
+  
+  .header .logo {
+  font-size: 25px;
+  font-family: 'Elephant', bold;
+  color: #f7f7f7;
+  text-decoration: none;
+  margin-left: 70px;
+  }
+  
+  
+
+  /*верхушка*/
+  .dropbtn {
+    
+    color: #000000;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 90px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFCB98;
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f6983b;
+    border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;   
+    margin-top: 2px;
+
+     border-radius: 15px;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #FFCB98;
+
+}
+  
+ /*верхушка номер*/
+ .dropbtn1 {
+    background-color: #FF7F00;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-right: 80px;
+    border-radius: 90px;
+
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #FF7F00;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content1 a:hover {background-color: #FFCB98;   
+    border-radius: 15px;
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;   
+    margin-top: 2px;
+
+     border-radius: 15px;
+}
+
+.dropdown1:hover .dropbtn {background-color: #FF7F00;}
+
+.copy img {
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-left: 150px;
+
+    margin-right: 50px;
+    border-radius: 30px;}
+ /*подвал*/
+
+  
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F6A04A;
+        padding: 0px;
+    }
+    
+    .footer .copy {
+        color: #fff;
+    }
+    
+    .footer span {
+        text-decoration: none;
+        font-weight: bold;
+        color: #000000;
+        padding: 15px 20px;
+        text-align: center; 
+
+    }
+    
+    .footer a {
+        text-decoration: none;
+        color: #000000;
+        padding: 5px 10px; 
+    }
+    
+    .footer span img { 
+        border-radius: 300px;
+    height: auto;
+    }
+    
+    .bottom-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 0;
+        margin-right: 250px;
+
+    }
+    
+    .bottom-links .links {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 40px 0px 10px;
+        text-align: center; 
+    }
+    
+    .nav-links {
+        display: flex;
+        justify-content: center; 
+        margin-bottom: 1px;
+    }
+    
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (max-width: 800px) {
+        .footer {
+            flex-direction: column; 
+            align-items: center; 
+        }
+    
+        .bottom-links {
+            margin-right: 0; 
+            flex-direction: column; 
+            padding: 20px 0; 
+        }
+    
+        .bottom-links .links {
+            padding: 10px 0; 
+        }
+        .copy img { 
+            border-radius: 300px;
+        height: auto;
+        margin-left: 60px; 
+
+        }
+    }
+/*картинка главная*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 670px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.737) 100%,
+     rgba(0, 0, 0, 0.5) 100%),
+     url("https://oculariusufa.ru/assets/cache/images/galery/gal00004-x-23a.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    
+    }
+    
+    .intro h1 {
+    font-family: "Days";
+    font-size: 60px;
+    color: #FF7F00;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 120px 0px 120px;
+    }
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        box-sizing: border-box;
+        
+        overflow-x: hidden;
+        }
+/*запись на прием*/
+.background-container {
+    background-image: url('https://psv4.userapi.com/s/v1/d/n4Yd49k3U3UtSsWyreHEqPk0eYwVXOT4f7hEiCrLDbBwwLmEBiK7j1S00YFXB-1SvJvfACEJdQFZ7yEs25STguy6JFJgXFwKNvr4wCS1hnO9k1edHKNJQg/Bez_imeni-1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 30px;
+    width: 100%;
+    max-width: 1520px;
+    height: 700px;
+    margin-bottom: -100px;
+}
+
+@media (max-width: 824px){
+    .background-container {
+        background-image: url('https://psv4.userapi.com/s/v1/d/n4Yd49k3U3UtSsWyreHEqPk0eYwVXOT4f7hEiCrLDbBwwLmEBiK7j1S00YFXB-1SvJvfACEJdQFZ7yEs25STguy6JFJgXFwKNvr4wCS1hnO9k1edHKNJQg/Bez_imeni-1.jpg');
+        background-size: contain;
+        padding: 15px;
+        min-height: auto;
+        margin-bottom: 0px;
+    }
+}
+
+.form-container {
+    display: flex;
+    justify-content: flex-start; /* Изменяем на flex-start для выравнивания влево */
+    gap: 40px;
+    margin: 0 auto; /* Центрируем контейнер */
+    max-width: 900px; /* Установляем максимальную ширину */
+}
+
+.form-content {
+    width: 65%;
+}
+
+.icon-container {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 165, 0, 0.1);
+    border-radius: 50%;
+    aspect-ratio: 1;
+    margin-right: 20px;
+}
+
+.background-container h1 {
+    color: #ff6b00;
+    font-size: 28px;
+    margin-bottom: 24px;
+    margin-left: 30px;   
+    margin-top: 50px;
+    font-family: 'Days';
+}
+
+.background-container a {
+    color: #000000;
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Days';
+    font-weight: normal;
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    resize: vertical;
+    min-height: 60px;
+    box-sizing: border-box;
+    font-family: 'Days';
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.checkbox-container input {
+    width: auto;
+    margin: 0;
+}
+
+.submit-button {
+    background-color: #ff6b00;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto;
+    display: block; /* Удалено margin-left: 300px; */
+    margin: 20px auto; /* Центрирование кнопки */
+    font-family: 'Days';
+    font-weight: normal;
+}
+
+.submit-button:hover {
+    background-color: #ff8533;
+}
+
+@media (max-width: 800px) {
+    .background-container {
+        background-image: none;
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .form-container {
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .checkbox-container {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .submit-button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .background-container h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+/*модальное окно*/
+
+.modal1 {
+    display: none; /* Скрыть модальное окно по умолчанию */
+    position: fixed; 
+    z-index: 100; /*Сидит поверх */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: hidden; /* Включить прокрутку, если необходимо */
+    background-color: rgba(0, 0, 0, 0.5); /* Черный фон с прозрачностью */
+
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% сверху и центрировать */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина 80% */
+    max-height: 80%; /* Максимальная высота для горизонтальной прокрутки */
+    overflow-y: auto; /* Прокрутка по вертикали */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-text p {
+    color: #ff6b00;
+    font-size: 18px;
+    
+    font-family: 'Days';
+}
+.modal-content h2 {
+    color: #ff6b00;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Days';
+}
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-text {
+    max-height: 400px; /* Ограничена высота текста для прокрутки */
+    overflow-y: auto; /* Вертикальная прокрутка для текста */
+}
+/*вы записаны */
+.notification {
+    background-color: #ff6b00; 
+    color: rgb(0, 0, 0); 
+    padding: 15px; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 5px; 
+    z-index: 1000;
+}
+.error {
+    border: 2px solid #ff6b00; 
+}  
+
+/*инфа */
+
+.fon2 {
+    background-image: url('https://sun9-6.userapi.com/impg/KatfEtwyY-hp0zCuBe54sdSOmWXRz_sEzZ_rxw/bEbX5CTQuMs.jpg?size=1111x781&quality=95&sign=2a82eac27cc7c988cb3b59c6b8ab561c&type=album');
+    background-size: 100% 100%; 
+    background-position: center;
+}
+.fon2 h1{
+    font-family: 'Days';
+    font-weight: normal;
+      margin: 0px 0 -30px 0;
+      color: #FF7F00;
+      font-size: 40px;
+      text-align: center;
+     
+}
+article {
+    --img-scale: 1.001;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: none;
+    background: #FAD1A9;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+
+  }
+  
+  
+  
+  article h2 {
+    margin: 0 0 18px 0;
+    font-family: "Days";
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+    
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 10px 10px 20px 20px;
+  
+  
+  }
+  
+  .article-wrapper img {
+    width: 100%;
+    height: auto;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    margin-top: 0px;
+    border-radius: 10px 10px 10px 10px;
+    filter: brightness(80%)
+  }
+  
+  .article-body {
+    padding: 24px;
+  
+  }
+   
+  
+  article p{
+      font-family: "Clear Sans";
+    font-size: 15px;
+    text-align: left;
+
+  }
+  
+  .article-body {
+    padding: 24px;
+    display: flex;         
+    flex-direction: column; 
+}
+
+.read-more-container {
+    margin-top: auto;      /* Отодвигает ссылку вниз */
+    text-align: right;     /* Выравнивание текста по правому краю */
+}
+
+article a {
+    font-family: "Clear Sans";
+    font-size: 15px;
+    color: inherit;        /* Наследовать цвет от родителя */
+}
+  
+  
+  
+  
+  .articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    
+  }
+  
+  @media screen and (max-width: 960px) {
+    article {
+      container: card/inline-size;
+    }
+    article img {
+    width: 100%;
+    height: auto;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    margin-top: -90px;
+    border-radius: 10px 10px 10px 10px;
+    filter: brightness(80%)
+  }
+  
+  }
+  /*неотложка*/
+
+
+.container112 {
+    background-color: #fff;
+    border: 2px solid #FF7F00;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 800px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: 'Days';
+    margin-left: 400px;
+ 
+
+
+  }
+  
+  .icon112 {
+    display: inline-block;
+    font-size: 24px;
+    color: #FF7F00;
+    margin-right: 10px;
+    font-family: 'Days';
+    font-size: 40px;
+
+
+  }
+  
+  .text1122 {
+    color: #FF7F00;
+    text-align: left;
+    margin-right: 170px;
+    font-size: 18px;
+
+
+  }
+  .text112 {
+    color: #FF7F00;
+    text-align: right;
+    font-size: 14px;
+
+
+  }
+@media (max-width: 900px) {
+    .container112 {
+        background-color: #fff;
+        border: 2px solid #FF7F00;
+        border-radius: 20px;
+        padding: 10px;
+        width: 500px;
+    height: 80px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        font-family: 'Days';
+     
+    
+    
+      }
+      
+      .icon112 {
+        display: inline-block;
+        font-size: 24px;
+        color: #FF7F00;
+        margin-right: 10px;
+        font-family: 'Days';
+        font-size: 40px;
+    
+    
+      }
+      
+      .text1122 {
+        color: #FF7F00;
+        text-align: left;
+        margin-right: 100px;
+        font-size: 18px;
+    
+    
+      }
+      .text112 {
+        color: #FF7F00;
+        text-align: right;
+        margin-right: 10px;
+        font-size: 14px;
+    
+    
+      }
+    }
+    
+
+    /*памятка*/
+.fon23 {
+    background-image: url('https://sun9-33.userapi.com/impg/4Lrc0L7JWqVsX9GaEN9wuQ9vtiMh3c_bWxoEKA/K9efLmCwlHY.jpg?size=1274x640&quality=95&sign=7b43861ad6f2a636212805ce52a0e8ea&type=album');
+    background-size: 100% 100%; 
+    background-position: center;
+}
+
+       .container23 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+
+
+}
+.a-box23 {
+    display: flex;
+    flex-direction: column; 
+    width: 1000px; 
+    height:550px; 
+    text-align: center;
+    margin: 30px; 
+    margin-left: -30px; 
+
+
+}
+.img-container23 {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 50%; 
+    display: inline-block;
+    margin: 50px 0px -900px 1200px;  
+    border: 20px solid #F0A255; 
+    position: relative;
+}
+.img-container23 img {
+    height: 400px;
+}
+.item23 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 18px; 
+}
+.text-container23 {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 30px 20px 20px 20px; 
+    border-radius: 40px;
+    background: #fff;
+    height: 470px; 
+    width: 1150px;
+    margin-left: -70px;
+    line-height: 19px;
+    font-size: 14px;
+}
+.text-container23 h3 {
+  font-family: 'Days';
+  font-weight: normal;
+    margin: 10px 0px;
+    color: #FF7F00;
+    font-size: 40px;
+    text-align: center;
+}
+.text-container23 .h2 {
+  font-family: 'Clear Sans Medium';
+    margin: 30px 0px ;  
+margin-left: 50px;
+margin-top: 70px;
+
+    color: #000000;
+    font-size: 25px;
+    text-align:left;
+}
+
+.text-container23 b {
+  font-family: 'Clear Sans Medium';
+    margin: 20px 0px;  
+
+    color: #FF7F00;
+    font-size: 20px;
+    text-align:left;
+}
+
+@media (max-width: 800px) {
+    .fon23 {
+    background-color: #F0A255;
+    background-size: 100% 500%; 
+    background-position: center;
+}
+
+       .container23 {
+        
+        flex-direction: column; 
+        align-items: center;
+    }
+    .text-container23 {
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+        padding: 30px 20px 20px 20px; 
+        border-radius: 40px;
+        background: #fff;
+        height: 470px; 
+        width: 1000px;
+        margin-left: 10px;
+        line-height: 19px;
+        font-size: 14px;
+    }
+
+.a-box23 {
+    display: flex;
+    flex-direction: column; 
+    width: 700px; 
+    height:550px; 
+    text-align: center;
+    margin: 200px; 
+    margin-left: 20px; 
+
+
+}
+.img-container23 {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 50%; 
+    display: inline-block;
+    margin: -200px 0px -900px 0px;  
+    border: 20px solid #F0A255; 
+    position: relative;
+}
+.img-container23 img {
+    height: 350px;
+}
+.item23 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 30px; 
+}
+.text-container23 {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 30px 20px 20px 20px; 
+    border-radius: 40px;
+    background: #fff;
+    height: 900px; 
+    width: 700px;
+    line-height: 19px;
+    font-size: 14px;
+}
+.text-container23 h3 {
+  font-family: 'Days';
+  font-weight: normal;
+    margin: 70px 0px -80px 0px;
+    color: #FF7F00;
+    font-size: 30px;
+    text-align: center;
+}
+.text-container23 .h2 {
+    font-family: 'Clear Sans Medium';
+    margin: 100px 0px 0px 40px;
+    color: #000000;
+    font-size: 17px;
+    text-align:left;
+}
+
+.text-container23 a {
+  font-family: 'Inter';
+    margin: 0px 0px 0px 2025px;
+    color: #FF7F00;
+    font-size: 15px;
+    text-align:right;
+
+}
+.text-container23 b {
+  font-family: 'Clear Sans Medium';
+    margin: 20px 0px;  
+
+    color: #FF7F00;
+    font-size: 15px;
+    text-align:left;
+}
+
+}
+
+/*памятка*/
+.fon234 {
+    background-image: url('https://sun9-15.userapi.com/impg/ZW68G5fy01TTlc1TJHoBQHsmbXraM9StJK5L1g/sW3NYedgLU8.jpg?size=688x849&quality=95&sign=1694139512d6db60b529ed6e190fae18&type=album');
+    background-size: 100% 100%; 
+    background-position: center;
+}
+
+       .container234 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+
+
+}
+.a-box234 {
+    display: flex;
+    flex-direction: column; 
+    width: 1000px; 
+    height:550px; 
+    text-align: center;
+    margin: 30px; 
+    margin-left: -30px; 
+
+
+}
+.img-container234 {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 50%; 
+    display: inline-block;
+    margin: -45px 0px -900px 1100px;  
+    border: 15px solid #EBEAE7; 
+    position: relative;
+}
+
+
+.img-container234 img {
+    height: 400px;
+    margin-left: -200px;
+}
+.item234 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 18px; 
+}
+.text-container234 {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 30px 20px 20px 20px; 
+    border-radius: 40px;
+    background: #fff;
+    height: 770px; 
+    width: 1190px;
+    margin-left: -70px;
+    line-height: 19px;
+    font-size: 18px;
+}
+.text-container234 h3 {
+  font-family: 'Days';
+  font-weight: normal;
+    margin: 10px 0px;
+    color: #FF7F00;
+    font-size: 40px;
+    text-align: center;
+}
+.text-container234 .h2 {
+  font-family: 'Clear Sans Medium';
+    margin: 30px 0px ;  
+margin-left: 50px;
+margin-top: 70px;
+
+    color: #000000;
+    font-size: 20px;
+    text-align:left;
+}
+
+.text-container234 b {
+  font-family: 'Clear Sans Medium';
+    margin: 20px 0px;  
+
+    color: #FF7F00;
+    font-size: 20px;
+    text-align:left;
+}
+.text-container24 li {
+    margin-bottom: 15px;
+    padding-left: 5px;
+    position: relative;
+    font-size: 18px;
+}
+.text-container234 li {
+    padding-left: 5px;
+    position: relative;
+    font-size: 20px;
+    color: black; /* Цвет текста по умолчанию */
+}
+
+.text-container234 li::marker {
+    color: #FF7F00; /* Цвет маркировки списка */
+}
+@media (max-width: 800px) {
+    .fon234 {
+    background-color: #F0A255;
+    background-size: 100% 500%; 
+    background-position: center;
+}
+
+       .container234 {
+        
+        flex-direction: column; 
+        align-items: center;
+    }
+    .text-container234 {
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+        padding: 30px 20px 20px 20px; 
+        border-radius: 40px;
+        background: #fff;
+        height: 470px; 
+        width: 1000px;
+        margin-left: 10px;
+        line-height: 19px;
+        font-size: 14px;
+    }
+
+.a-box234 {
+    display: flex;
+    flex-direction: column; 
+    width: 700px; 
+    height:550px; 
+    text-align: center;
+    margin: 200px; 
+    margin-left: 20px; 
+
+
+}
+.img-container234 {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 50%; 
+    display: inline-block;
+    margin: -200px 0px -900px 0px;  
+    border: 10px solid #EBEAE7; 
+    position: relative;
+}
+.img-container234 img {
+    height: 350px;
+    margin-left: -200px;
+
+}
+.item234 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 30px; 
+}
+.text-container234 {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 30px 20px 20px 20px; 
+    border-radius: 40px;
+    background: #fff;
+    height: 900px; 
+    width: 700px;
+    line-height: 19px;
+    font-size: 14px;
+    margin-top: -70px;
+}
+.text-container234 h3 {
+  font-family: 'Days';
+  font-weight: normal;
+    margin: 70px 0px -80px 0px;
+    color: #FF7F00;
+    font-size: 30px;
+    text-align: center;
+}
+.text-container234 .h2 {
+    font-family: 'Clear Sans Medium';
+    margin: 100px 0px 0px 40px;
+    color: #000000;
+    font-size: 17px;
+    text-align:left;
+}
+
+.text-container234 a {
+  font-family: 'Inter';
+    margin: 0px 0px 0px 2025px;
+    color: #FF7F00;
+    font-size: 15px;
+    text-align:right;
+
+}
+.text-container234 b {
+  font-family: 'Clear Sans Medium';
+    margin: 20px 0px;  
+
+    color: #FF7F00;
+    font-size: 15px;
+    text-align:left;
+}
+
+
+
+.text-container234 li {
+    padding-left: 5px;
+    position: relative;
+    font-size: 15px;
+    color: black; /* Цвет текста по умолчанию */
+}
+
+.text-container234 li::marker {
+    color: #FF7F00; /* Цвет маркировки списка */
+}
+
+
+.fon234 h3 {
+    font-family: 'Days';
+    font-weight: normal;
+      color: #FF7F00;
+      font-size: 40px;
+      text-align: center;
+  }
+
+}
+
+/*основы*/
+.fon234 h3 {
+    font-family: 'Days';
+    font-weight: normal;
+      color: #FF7F00;
+      font-size: 40px;
+      text-align: center;
+  }
+
+  .list-container {
+    list-style: none;
+    padding: 0;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+
+.list-item1234 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.number {
+    background: #FF8533;
+    font-family: 'Days';
+font-size: 35px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.content1234 {
+    flex: 1;
+}
+
+.title b{
+    color: #FF8533;
+    font-weight:lighter;
+    margin-bottom: 5px;
+    font-family: 'Days';
+
+}
+.title {
+    color: #000000;
+    margin-bottom: 5px;
+    font-family: 'Clear Sans Medium';
+
+}
+.description {
+    margin: 0;
+    font-family: 'Clear Sans Medium';
+
+    line-height: 1.4;
+}
+
+
+/*тесты*/
+
+.test h3 {
+    font-family: 'Days';
+    font-weight: normal;
+      color: #FF7F00;
+      font-size: 40px;
+      text-align: center;
+  }
+  .test h1 {
+    font-family: 'Days';
+    font-weight: normal;
+      color: #FF7F00;
+      font-size: 40px;
+      text-align: center;
+  }
+  .test {
+    color: #000000;
+    margin-bottom: 5px;
+    font-family: 'Clear Sans Medium';
+    font-size: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+
+
+
+
+.tabs-container { 
+    width: 540px;
+    max-width: 420px; 
+    min-width: 420px;
+    margin: auto;
+}
+
+.tabs {
+    margin-bottom: 28px; 
+    display: flex;
+      justify-content: space-between;
+}
+
+.tabs a {
+    cursor: pointer;
+    padding: 12px 24px;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 18px;
+    font-family: 'Clear Sans';
+
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    box-shadow:  3px 3px 5px #bebebe, 
+                 -3px -3px 5px #ffffff;
+}
+
+.tabs a.active {
+    background-color: #f4f4f4;
+    color: #000000;
+    cursor: default;
+    padding: 14px 22px 10px 26px;
+    background: #f4f4f4;    font-family: 'Clear Sans';
+
+    box-shadow: inset 3px 3px 5px #c4c4c4, 
+                inset -3px -3px 5px #ececec;
+}
+
+.tabcontent {
+    padding: 46px;
+    width: 1350px;
+    font-size: 20px;
+
+    margin-left: -445px;
+    min-height: 288px;
+    display: none;    
+    border-radius: 18px;
+    background: #f4f4f4;
+    box-shadow:  3px 3px 6px #bebebe, 
+                 -3px -3px 6px #ffffff;    font-family: 'Clear Sans';
+
+}
+
+.content .active {
+    display: block;
+}
+.tabcontent p {
+    margin-bottom: 12px;
+    
+}
+.tabcontent p:last-child {
+    margin-bottom: 0;
+}
+.tabcontent .read-more-link a {
+    color: #626262;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: bold;    
+    font-family: 'Clear Sans';
+
+}
+
+.tabcontent img {
+    width: 350px;
+margin-left: 70px; 
+}
+
+.exercise-container {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+        }
+        
+        .timer {
+            font-size: 48px;
+            margin: 20px 0;
+            color: #333;
+        }
+        
+        .controls {
+            margin: 20px 0;
+        }
+        
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .start-btnt {
+            background-color: #f39b0e;
+            color: white;
+            border-radius: 30px;
+        }
+        
+        .reset-btnt {
+            background-color: #f43636;
+            color: white;
+            border-radius: 30px;
+
+        }
+        
+        button:hover {
+            opacity: 0.9;
+        }
+        
+        .animation {
+            width: 550px;
+            height: 200px;
+            margin: 20px auto;
+            border-radius: 30px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .animation img {
+            width: 450px;
+            height: 150px;
+            margin: 20px auto;
+            border-radius: 30px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .animation2 {
+            width: 550px;
+            height: 200px;
+            margin: 20px auto;
+            border-radius: 30px;
+            overflow: hidden;
+            background-color: #f5f5f5;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <a name="tests"></a>
+    <div class="test">
+    </br></br>
+    
+        <h3>Тесты и упражнения</h3></a>
+    </br>
+    Проверьте зрение прямо сейчас, чтобы выявить возможные отклонения. Обратите внимание, что тесты не заменяют полноценную диагностику. Их результаты являются предварительными. Точную оценку состояния вашего зрения может предоставить только врач-офтальмолог после полного обследования.
+    
+    <br><br>
+    <div id="container" class="container" >
+        
+        <div id="tabs" class="tabs-container">
+    
+            <div class="tabs">
+                <a id="tab1" data-tab="1" class="tab"  style="font-size: 12px;">Упражнения</a>
+                <a id="tab2" data-tab="2" class="tab">Тесты</a>
+            </div>
+    
+            <div class="content">
+                <div id="tabcontent1" data-tab="1" class="tabcontent">  
+                    <h1 style="font-size: 40px; text-align: center; ">Гимнастика для глаз</h1>
+                    <h1 style="font-size: 30px; text-align: center;">Упражнение "Большие глаза"</h1>
+                    <br>
+                    Исходное положение — сидя.
+                    <br><br>
+                    Крепко зажмурить глаза на 3-5 секунд, а затем открыть глаза 3-5 секунд, повторить 6-8 раз.
+                    <br>
+                    Данное упражнение укрепляет мышцы век. Способствует кровообращению и расслаблению мышц глаз.
+                    <br><br>
+                    
+                    <div class="exercise-container">
+                        <div class="animation">
+                            <img src="https://psv4.userapi.com/s/v1/d/EbwFhAVp0KnoKEfg8Sh3-S-ZdeekU1TD3Tg652vYskcDYah8Vg6umB4BktbkwLTjahS0XbooT0P_IpvIiy6IeC-4uK4Cae3IrcShj9URwkvPcL--_7BVIQ/GIF_20241112_162526_975.gif" >
+                        </div>
+                        
+    
+                    </div>
+                    <h1 style="font-size: 30px; text-align: center;">Упражнение "Штроки"</h1>
+                    <br>
+                    Исходное положение — сидя.
+                    <br><br>
+                    Быстро моргать в течении 1-2 минут. Способствует улучшению кровообращения.                    <br>
+                    Данное упражнение укрепляет мышцы век. Способствует кровообращению и расслаблению мышц глаз.
+                    <br>
+                    <b style="color: #f39b0e;">*</b> Таймер даст звуковой сигнал по окончанию 1 минуты. 
+                    Если Ваши глаза не испытываюь дискомфорт, то продолжите упражнение до следующего звукового сигнала.
+                    <br><br>
+                    
+                    <div class="exercise-container">
+                        <div class="animation">
+                            <img src="https://psv4.userapi.com/s/v1/d/mJUVGj4qC_G7N_L5aZ1LMEQjUfCblN8luqgtiO9CgAkdL3XxOMn-OMwNgDB17VxZotLw9Saj_AB_t9qsNq2Sruc02r7l1nQ5jyNt7Nkny2GtMo0gg4mvTw/GIF_20241112_162000_440.gif" >
+                        </div>
+                        
+    
+                        <div class="timer" id="timer">00:00</div>
+                        
+                        <div class="controls">
+                            <button class="start-btnt" id="startBtnt">Начать</button>
+                            <button class="reset-btnt" id="resetBtnt">Сброс</button>
+                        </div>
+                    </div>
+    
+    
+                    <h1 style="font-size: 30px; text-align: center;">Упражнение "Метка на стекле"</h1>
+                    <br>
+                    Исходное положение — сидя. Нужно отойти от экрана 30 сантиметров и прокрутить сайт так, чтобы точка была по середине экрана.
+                    <br><br>
+                    Смотрим на точку по середине экрана. 
+                    Выбираем за экраном далекий объект и несколько секунд смотрим на него, 
+                    потом переводим взгляд на точку. 
+                    <br> 
+                    Позже можно усложнить нагрузки – фокусироваться на четырех разно удалённых объектах. 
+                    <br>
+                    <b style="color: #f39b0e;">*</b> Для этого рекомендуется поставить экран таким образом, чтобы за ним были несколько отдаленных объектов.
+                     <br><br>
+                     <br><br> <br><br> <br><br> <br><br>
+                 
+                        <div class="animation2">
+                            <img src="https://psv4.userapi.com/s/v1/d/zupnLCw9vanL17tk-_kI54I2-IsSgPkB-u8o81PTECpJdDHl4p3nJTRSit2gzZ37oqtIyEk4fJ_6-hx_T-Hh4fHiWSfkKxj4j1T7bIc8Eu3psnrfa82OCw/Montazhnaya_oblast_4.png" 
+                          style=" 
+            width: 300px;
+            height: 250px; 
+            margin-left: 130px;
+            margin-top: -30px;">
+                        </div>
+                        <br><br> <br><br> <br><br> <br><br> <br><br>
+    
+                 
+                        <h1 style="font-size: 30px; text-align: center;">Упражнение "Стреляем глазами"</h1>
+                        <br>
+                        Исходное положение — сидя.                
+                                 <br> 
+                                 <b style="color: #f39b0e;">*</b> Для этого упражнения нужно глазами повторять движения с картинки. 
+                         <br>
+                      <p style="text-align: center;">1. Смотрим вверх-вниз с максимальной амплитудой.    
+                         <br>
+    
+                         <div class="animation2">
+                             <img src="https://psv4.userapi.com/s/v1/d/T-dEtYWpEkyth0AqlWh0O9sDN7phA4WWndI83Ludrj1ee4ByMqwtPCuYaatgWQ_dTaYHXlcx7ThhL08XIPJ4DCr_2MtsKsAdE3qT3lnZEGLMh6CntWc-1w/GIF_20241112_211712_374.gif" 
+                           style=" 
+             width: 250px;
+             height: 250px; 
+             margin-left: 130px;
+             margin-top: -30px;
+             ">
+                         </div>
+                         <br>          
+                         <br> <p style="text-align: center;">2. Чертим круг по часовой стрелке и обратно.</p>
+                         <br>
+    
+                            <div class="animation2">
+                                <img src="https://psv4.userapi.com/s/v1/d/Dq-qDjlBEixZ9srtize-iBJd-XeFlsKg5sNYQxzcmh8ES7JHl6blJRPdcTbfodhpQbdhh-C5IcCh11olge8NQ2-eyfNVoemzeq3DMtnF1WTVvIwTjf7wUA/GIF_20241112_211730_590.gif" 
+                              style=" 
+                width: 400px;
+                height: 250px; 
+                margin-left: 70px;
+                margin-top: -30px;">
+                            </div>
+                            <br>
+                         <br> <p style="text-align: center;">3. Рисуем глазами диагонали.</p>
+                         <br>
+    
+                            <div class="animation2">
+                                <img src="https://psv4.userapi.com/s/v1/d/J_jQyG4futv2VNeR7MSl02azKwhtJMwi_tPNh0SipJFy-A045esjyHKRbNshkH9Oo1pR7sifsBqXTeM3eeCbe7I8zn3CFkP3gvstwVG53YjY0YQVUllUhA/GIF_20241112_211749_557.gif" 
+                              style=" 
+                width: 400px;
+                height: 250px; 
+                margin-left: 70px;
+                margin-top: -30px;">
+                            </div>
+                            <br>
+                         <br> <p style="text-align: center;">4. Рисуем взглядом квадрат.</p>
+                         <br>
+    
+                            <div class="animation2">
+                                <img src="https://psv4.userapi.com/s/v1/d/RWEnvLLKan_8BG0ear_AI7Ko0Bg18r5GAXAsu3a3kADSJ7zKfHwYXyLta0gdBr6hVAmYkoZCyW_DeZW6ZPUN6IwAGe-8fUoCjf0dVEHGng1pYoEhZaTu8Q/1.png" 
+                              style=" 
+                width: 300px;
+                height: 250px; 
+                margin-left: 130px;
+                margin-top: -30px;">
+                            </div>
+                            <br>
+                         <br> <p style="text-align: center;">5. Взгляд идет по дуге — выпуклой и вогнутой.</p>
+                         <br>
+    
+                            <div class="animation2">
+                                <img src="https://psv4.userapi.com/s/v1/d/TEN7AjxVUr7uIsA6oBO46cMngqyxEqDzDCznHcPTR6MpJdsQ-evQ-SWQUhma3jqD3bWO_gfcAsuGVVYh8dEKy2y7KJAyUsJ9j0Hgp0CfcRatXYtMorbJXg/GIF_20241112_211805_676.gif" 
+                              style=" 
+            width: 400px;
+                height: 250px; 
+                margin-left: 70px;
+                margin-top: -30px;">
+                            </div>
+                            <br>
+                         <br> <p style="text-align: center;">6. Обводим взглядом ромб.</p>
+                         <br>
+    
+                            <div class="animation2">
+                                <img src="https://psv4.userapi.com/s/v1/d/hzAhPxG1n41abfVq7u5CgM9KYeir4qfF9EEHDA8SggJ_5bkUMsHwLuCf791Ap0VdFqGC3IlR5DOUzgDKkExjI_29dxyd73xFW2ooyeWwMmXFmXe1Jqv9ow/1_kopia.png" 
+                              style=" 
+                width: 200px;
+                height: auto; 
+                margin-left: 170px;
+               ">
+                            </div>
+                            <br>
+                         <br><p style="text-align: center;">7. Рисуем глазами бантики.</p>
+                         <br>
+    
+                            <div class="animation2">
+                                <img src="https://psv4.userapi.com/s/v1/d/GWUbGTUuKnELq7udqyt6oR6uyvUojfahn4bhwgmLh7wt_cQfsl8_MMDcxMfDs5-THs_cXG4r-mL1roS7J0nvZNTeEZ2xIaO1JfRGrwyHnvGb7dMlIgzhHA/1_kopia_2.png" 
+                              style=" 
+                width: 200px;
+                height: auto; 
+                margin-left: 170px;
+               ">
+                            </div>
+                            <br>
+                         <br> <p style="text-align: center;">8. Рисуем букву S — сначала в горизонтальном положении, потом в вертикальном.</p>
+                         <br>
+    
+                            <div class="animation2">
+                                <img src="https://psv4.userapi.com/s/v1/d/jOapeIAan0kkzopOLK-qXP6h5Orw6rtRYD09UgHITo0RSrgbpaa4Oc-DzjGMpSobsT-QwMrPknhoi5LU0uv1lXoM-Mj3BULAO39WUaSdQZz11XLoQ0_VkQ/1_kopia_3.png" 
+                              style=" 
+                width: 300px;
+                height: 250px; 
+                margin-left: 130px;
+                margin-top: -30px;">
+                            </div>
+                            <br>
+                         <br> <p style="text-align: center;">9. Чертим глазами вертикальные дуги, сначала по часовой стрелке, потом — против.</p>
+                         <br>
+    
+                            <div class="animation2">
+                                <img src="https://psv4.userapi.com/s/v1/d/xgkCCVa5JjCnm5vB1TBz2aG_VYNdZl8ywJrk4peODLcJi89qLEFKHo4nVsjMFpfdMuwG50ucrwbOv2ZEZwo__OEcPDhTCDjv9OxkBVvIU7QHEOY-j9gOwQ/GIF_20241112_220154_123.gif" 
+                              style=" 
+             width: 400px;
+                height: 250px; 
+                margin-left: 70px;
+                margin-top: -30px;">
+                            </div>
+                            <br>
+                         <br><p style="text-align: center;">10. Переводим взгляд из одного угла в другой по диагоналям квадрата.</p>
+                         <br>
+    
+                            <div class="animation2">
+                                <img src="https://psv4.userapi.com/s/v1/d/e6C8bLz7OWBAIHz02Wb3MCgNiplPbJs1TFzKBsGoRaPql_gDqCA3Wq-6b-Xm9Y2gx9ush5IOjxTnD1OjAhsn9BK5YVXK4jc6jCDYhOen_CqSa54kw_fr2Q/GIF_20241112_215344_846.gif" 
+                              style=" 
+              width: 400px;
+                height: 250px; 
+                margin-left: 70px;
+                margin-top: -30px;">
+                            </div>
+                            <br>
+                         <br> <p style="text-align: center;">11. Сводим зрачки к переносице изо всех сил, приблизив палец к носу.</p>
+                         <br>
+    
+                            <div class="animation2">
+                                <img src="https://psv4.userapi.com/s/v1/d/LrD1ghrFEQrp6uJ3ORzGtZ6wyJpRqXtPLgE76wjsA55TIh7u1MlLbjMWrCg6JOjHmoPf5ONR9ehvFpOgOXfHSd1LoB3ROFWs1nLCBI3GGL1bVhfrPHUAUw/GIF_20241112_211928_556.gif" 
+                              style=" 
+                width: 400px;
+                height: 180px; 
+                margin-left: 70px;
+              ">
+                            </div>
+                            <br>
+                         <br><p style="text-align: center;">12. Часто-часто моргаем веками — как бабочка машет крылышками.</p>
+                         
+    
+                                              <br>
+    
+                            <div class="animation2">
+                                <img src="https://psv4.userapi.com/s/v1/d/cNxn4WxkIzQdrhwY7Z8GsQf8L147LIlG7l1nFL7j5dXDodJleJLpZHxnyqVZ0_liXiABYT8Co_OfQxyA-Lt90h4I3_QYVRVrlrYkWrkC5LybbLXfyAubrA/1_kopia_4.png" 
+                              style=" 
+                width: 300px;
+                height: 300px; 
+                margin-left: 130px;
+                margin-top: -30px;">
+                            </div>
+                            <br><br>
+    
+                    
+                </div>
+        
+    
+    
+                <div id="tabcontent2" data-tab="2" class="tabcontent">
+    
+    
+    
+    
+    <h1 style="font-size: 30px; text-align: center;">ПРОФИЛАКТИКА И ЛЕЧЕНИЕ БЛИЗОРУКОСТИ У ДЕТЕЙ</h1>
+    
+    <br><br>
+    <b style="color: #f39b0e;">*</b> Тесты не гарантируют точный результат, а только предположительный! 
+    Если Вы испытываете дискомфорт, то обратитесь к врачу!!!<br>
+    <b style="color: #f39b0e;">**</b>	Пребывание на свежем воздухе в светлое время суток не менее 2-х часов в день.
+    <br><br>
+    <h1 style="font-size: 30px; text-align: center;">Упражнение "Метка на стекле"</h1>
+    <br>
+    Исходное положение — сидя. Нужно отойти от экрана 30 сантиметров и прокрутить сайт так, чтобы точка была по середине экрана.
+    <br><br>
+    Смотрим на точку по середине экрана. 
+    Выбираем за экраном далекий объект и несколько секунд смотрим на него, 
+    потом переводим взгляд на точку. 
+    <br> 
+    Позже можно усложнить нагрузки – фокусироваться на четырех разно удалённых объектах. 
+    <br>
+    <b style="color: #f39b0e;">*</b> Для этого рекомендуется поставить экран таким образом, чтобы за ним были несколько отдаленных объектов.
+    <br><br>
+    <br><br> <br><br> <br><br> <br><br>
+    
+    <div class="animation2">
+        <img src="https://psv4.userapi.com/s/v1/d/zupnLCw9vanL17tk-_kI54I2-IsSgPkB-u8o81PTECpJdDHl4p3nJTRSit2gzZ37oqtIyEk4fJ_6-hx_T-Hh4fHiWSfkKxj4j1T7bIc8Eu3psnrfa82OCw/Montazhnaya_oblast_4.png" 
+      style=" 
+    width: 300px;
+    height: 250px; 
+    margin-left: 130px;
+    margin-top: -30px;">
+    </div>
+    <br><br> <br><br> <br><br> <br><br> <br><br>
+    
+                     <br> 
+    
+    
+    
+    
+    
+    <br><br> 
+                    <h1 style="font-size: 30px; text-align: center;">Тест проверка по таблице Сивцева
+                    </h1>
+                    <br>
+                    Исходное положение — сидя в 5 метрах от экрана. Попросите кого-то помочь проверить Вас.               
+                             <br> 
+                             <b style="color: #f39b0e;">*</b> Для этого упражнения нужно будет расположить картинку на экране таким обзразом, 
+                    чтобы было видно первые 3 строки. Как только проверяемый проговорит все буквы из первых строк, нужно опустить картинку ниже и так до конца.
+                     <br>
+                     <b style="color: #f39b0e;">**</b> Если Вам некого попросить, то возьмите листок с ручкой и самостоятельно 
+    запишите свои результаты. После не смотря на картинку, 
+    немного прокрутите страницу и отойдя на метр, вновь запишите свои результаты.
+    Повторяйте эту процедуру до того, пока не опуститесь до конца картики, а после проверьте результат.
+    
+    <br><br><br>
+    
+                         <img src="https://sun9-40.userapi.com/s/v1/ig2/iI-LFnptL5W9I2jTx9A-r9FdgNTnQ_rpdDN5D7SOzduBXDJ2g6e8YVaHHtlgOVzPRp60D55lFnuJCBrxLE0LPiY9.jpg?quality=95&as=32x52,48x78,72x116,108x174,160x258,240x388,360x581,480x775,540x872,640x1034,720x1163,800x1292&from=bu&u=l0Z7MciN9nCSwF1gkc6yVbUOIR56KUL_-Q8JVNAT5ug&cs=800x1292" 
+                       style=" 
+         width: 1200px;
+         height: 2000px; 
+         margin-left: 60px;
+        ;">
+                     <br> <br><br>
+                     <br>
+                     Отметьте строчку, которую Вы видите каждым глазом по отдельности 
+                     (справа от каждой строки размещено значение V, это и есть предположительное значение Вашего зрения. 
+                     Например, Вы видите 4-ую строчку сверху – значит, Ваше зрение предположительно 0.4).
+                     <br>Для более точного результата обратитесь к врачу!
+                     <br><br>
+    Таблица состоит из десяти рядов с постепенно уменьшающимися по размеру символами. 
+     Первые десять строк, отображающие остроту зрения от 0,1 до 1,0, имеют шаг изменения остроты зрения 
+     в 0,1 диоптрии.  Это позволяет проводить очень точное измерение в диапазоне низкой остроты зрения.
+    <br>  Следующие две строки (V = 1,5 и V = 2,0) демонстрируют шаг в 0,5 диоптрии, что свидетельствует 
+      о переходе к более высоким значениям остроты зрения. <br> И, наконец, три последних строки
+       (V = 3,0, V = 4,0 и V = 5,0) имеют шаг в 1,0 диоптрию, отражая высокую остроту зрения.  
+       Такой дифференцированный подход к шагу позволяет получить максимально точные результаты измерения как при низкой, так и при высокой остроте зрения.
+    <br> Важно отметить, что каждая строка таблицы содержит определённое количество символов, что  исключает субъективность оценки и обеспечивает более объективные результаты.  Кроме самих символов, в таблице присутствуют две дополнительные колонки, играющие ключевую роль в интерпретации результатов.  Левая колонка ("D=...") указывает расстояние в метрах, с которого человек с нормальной (100%) остротой зрения (V=1,0) сможет различить символы данного ряда.  Эта информация помогает понять, как размер символов коррелирует с расстоянием и остротой зрения.  Например, символ из ряда с D=0.5 метров  будет виден человеком с нормальным зрением только с расстояния 0.5 метров.
+                     
+                     <br><br>  Правая колонка (V=...) указывает на остроту зрения (в диоптриях), 
+                     измеренную при стандартном расстоянии в 5 метров.  Это значение является 
+                     основным показателем, определяющим остроту зрения пациента.  Например, если пациент 
+                     может различить символы ряда с V=0.5, это означает, что его острота зрения составляет 
+                     0.5, что значительно ниже нормы.
+                     
+                     
+                     <br><br>
+    
+    
+    
+                     <br><br> 
+                     <h1 style="font-size: 30px; text-align: center;">Тест проверка по таблице Орловой
+                     </h1>
+                     <br>
+                     Таблица предназначена для детей дошкольного возраста.
+                     <br> Исходное положение — сидя в 5 метрах от экрана. Обязательно нужен проверяющий.               
+                              <br> 
+                              <b style="color: #f39b0e;">*</b> Для этого упражнения нужно будет расположить картинку на экране таким обзразом, 
+                     чтобы было видно первые 3 строки. Как только проверяемый проговорит все буквы из первых строк,
+                      нужно опустить картинку ниже и так до конца.
+    
+    
+    <br><br><br>
+    
+                          <img src="https://sun9-67.userapi.com/impg/i4f_SXxJgqpAVU4A7gW9uZkm-hWMwyclLXFBxw/Ab_PXIhDZKI.jpg?size=723x1229&quality=95&sign=43a1562d4fd4d0aff4c1ecf152326a0d&type=album" 
+                        style=" 
+          width: 1200px;
+          height: 2000px; 
+          margin-left: 60px;
+         ;">
+                      <br> <br><br>
+                      <br>
+                      В данной таблице представлены изображения, размер которых уменьшается сверху вниз. Слева от каждой строки указано расстояние D (в метрах), с которого ребёнок со стандартным зрением должен распознавать изображение. Для верхней строки это расстояние составляет 50 метров, для нижней – 2,5 метра. Справа от каждой строки указан показатель V (в условных единицах), отражающий остроту зрения при распознавании изображений с расстояния 5 метров. Значение 0,1 соответствует ситуации, когда ребёнок видит только верхнюю строку, значение 2,0 – когда видна нижняя строка. Стандартное зрение (1,0) наблюдается, когда ребёнок способен разглядеть десятую строку с расстояния 5 метров каждым глазом.
+    
+                      <br>  В случае, если острота зрения ниже 0,1 (ребёнок не распознает изображения верхней строки с расстояния 5 метров), испытуемого приближают к таблице на 0,5 метра и запрашивают распознавание изображений до тех пор, пока он не сможет правильно назвать изображения верхней строки.
+                      
+                      <br><br>
+    
+    
+    
+    
+    
+    
+    
+    
+                     <h1 style="font-size: 30px; text-align: center;">Очковые линзы Stellest</h1>
+                     <br>
+                    <b>Постоянная оптическая коррекция </b>– постоянное ношение очков (очковые линзы Stellest, 
+                    перифокальные, линзы  с разгрузкой аккомодации), мягких контактных линз с дефокусом и использование 
+                    ортокератологических (ночных) линз.
+                    <br>  На сегодняшний день самый эффективный метод контроля миопии – ортокератологические линзы.
+                     <br>
+                     <br>
+                             <img src="https://sun9-31.userapi.com/impg/R_gR73xN8ZSdrjUjerlH08nktiUcx-lX97XzJg/ohwnDGQcYcI.jpg?size=1589x574&quality=95&sign=1d5620411bdf3fbc69d9579a777068ed&type=album" 
+                           style=" 
+             width: 1300px;
+             height: 550px; 
+             margin-left: -20px;
+            ">
+    <br>
+    <br>
+    <b style="text-align: right;"> <b style="color: #f39b0e;">К.м.н. Бахтиярова Г.З., Ахметгареева Ж.А.</b></b>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <audio id="timer-sound">
+        <source id="timer-sound"
+        src="check-mark_oPG7Xo5.mp3" 
+        type="audio/mpeg"> </source>
+    </audio>
+
+
+<script>
+    /*таблица переключения*/
+ const tabs = document.querySelectorAll('.tab')
+            const tabContents = document.querySelectorAll('.tabcontent')
+            
+            const activateTab = (tabnum) => {
+              tabs.forEach(tab => {
+                tab.classList.remove('active')
+              })
+              tabContents.forEach(tabContent => {
+                tabContent.classList.remove('active')
+              })
+            
+              document.querySelector(`#tab${tabnum}`).classList.add('active')
+              document.querySelector(`#tabcontent${tabnum}`).classList.add('active')
+            
+              localStorage.setItem('jstabs-opentab', JSON.stringify(tabnum))
+            }
+            
+            tabs.forEach(tab => {
+              tab.addEventListener('click', () => {
+                activateTab(tab.dataset.tab)
+              })
+            })
+            
+            const opentab = JSON.parse(localStorage.getItem('jstabs-opentab')) || 1
+            activateTab(opentab)
+            
+    /*таймер*/
+    let timer;
+        let isRunning = false;
+        let seconds = 0;
+        const timerDisplay = document.getElementById('timer');
+        const startBtnt = document.getElementById('startBtnt');
+        const resetBtnt = document.getElementById('resetBtnt');
+
+        function updateTimer() {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+            timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}
+            :${remainingSeconds.toString().padStart(2, '0')}`;
+        }
+
+        function startTimer() {
+    if (!isRunning) {
+        isRunning = true;
+        startBtnt.textContent = 'Пауза';
+        timer = setInterval(() => {
+            seconds++;
+            updateTimer();
+            if (seconds === 60) {
+                timerSound.play();  
+            }
+            if (seconds === 120) {
+                timerSound.play();  
+            }
+        }, 1000);
+    } else {
+        isRunning = false;
+        startBtnt.textContent = 'Продолжить';
+        clearInterval(timer);
+    }
+}
+        function resetTimer() {
+            clearInterval(timer);
+            isRunning = false;
+            seconds = 0;
+            updateTimer();
+            startBtnt.textContent = 'Начать';
+        }
+
+        startBtnt.addEventListener('click', startTimer);
+        resetBtnt.addEventListener('click', resetTimer);
+    /*звук*/
+    const timerSound = document.getElementById('timer-sound');
+
+
+ </script>
+
+
+</body>
+</html>
