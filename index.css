@@ -4,11 +4,11 @@
     overflow: hidden;
   }
 @font-face {
-  font-family: Days;
+  font-family: Clear Sans;
   src: url(ClearSans-Medium.ttf);
 }
   @font-face {
-  font-family: Clear Sans;
+  font-family: Days;
   src: url(Days.ttf);
 }
   ::-webkit-scrollbar-thumb {
