@@ -3,14 +3,7 @@
     background-color: #FFCB98;
     overflow: hidden;
   }
-  @font-face {
-  font-family: Days;
-  src: url(ClearSans-Medium.ttf);
-}
-  @font-face {
-  font-family: Clear Sans;
-  src: url(Days.ttf);
-}
+  
   ::-webkit-scrollbar-thumb {
     background-color: #FF7F00;
     border-radius: 10px;
@@ -556,7 +549,7 @@ margin-left: 70px;
 }
 .info-box1 {
     position: absolute;
-    top: 107px;
+    top: 108px;
     background-color: white;
     border: 1px solid #e0e0e0;
     border-radius: 0px 150px 0px 0px;
