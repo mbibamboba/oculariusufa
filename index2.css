@@ -1106,7 +1106,7 @@ margin-top: -260px;
     }
 }
 
-@media (max-width: 1320px)   {
+@media (max-width: 1000px)   {
 
     .textl img {
         display: none;
