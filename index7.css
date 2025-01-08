@@ -1,1043 +1,1254 @@
-<!DOCTYPE html>
-<html >
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=1251">
+@charset "utf-8";
+::-webkit-scrollbar {
+    background-color: #FFCB98;
+    overflow: hidden;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #FF7F00;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 
-    <title>"Окуляриус" Диагностика </title>
+  @font-face {
+    font-family: 'Days';
+ src: url('Days.ttf') format('truetype');
+  font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+ src: url('ClearSans-Medium.ttf') format('truetype');
+  font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clear Sans Medium';
+ src: url('ClearSans-Medium.ttf') format('truetype');
+  font-weight: normal;
+ font-style: normal;
+}
+  body {
+  margin: 0;
+  box-sizing: border-box;
+  }
+  .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -15px;
+  padding: 20px 0px 0px 0px;
+
+  background-color: #f7f7f7;
+  }
+  
+  .header .logo {
+  font-size: 25px;
+  font-family: 'Elephant', bold;
+  color: #f7f7f7;
+  text-decoration: none;
+  margin-left: 70px;
+  }
+  
+  
+
+  /*верхушка*/
+  .dropbtn {
     
-    <link rel="stylesheet" href="index7.css" />
-    <link rel="icon" href="https://oculariusufa.ru/android-icon-192x192.png" type="image/x-icon">
-  </head>
+    color: #000000;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 90px;
+}
 
-  <style>
-    @media ( max-width: 1080px) {
-    li::marker  {
-        color: #FF7F00;
-       
-    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-    .textl img {
-      /*  display:none;*/
-      
-      height: 240px;
-    width :1080px;
-    margin-top: 0px;
-margin-left: -95px;
-    align-items: center;
-    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFCB98;
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f6983b;
+    border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;   
+    margin-top: 2px;
+
+     border-radius: 15px;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #FFCB98;
 
 }
-@media ( max-width: 1000px) {
-    li::marker  {
-        color: #FF7F00;
-       
-    }
-
-
+  
+ /*верхушка номер*/
+ .dropbtn1 {
+    background-color: #FF7F00;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-right: 80px;
+    border-radius: 90px;
 
 }
-@media ( max-width: 1080px) {
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #FF7F00;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content1 a:hover {background-color: #FFCB98;   
+    border-radius: 15px;
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;   
+    margin-top: 2px;
+
+     border-radius: 15px;
+}
+
+.dropdown1:hover .dropbtn {background-color: #FF7F00;}
+
+.copy img {
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-left: 150px;
+
+    margin-right: 50px;
+    border-radius: 30px;}
+ /*подвал*/
+
+  
     .footer {
-        flex-direction: column; 
-        align-items: center; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F6A04A;
+        padding: 0px;
     }
-
-    .bottom-links {
-        margin-right: 0; 
-        flex-direction: column; 
-        padding: 20px 0; 
-        margin-left: 70px;
+    
+    .footer .copy {
+        color: #fff;
+    }
+    
+    .footer span {
+        text-decoration: none;
+        font-weight: bold;
+        color: #000000;
+        padding: 15px 20px;
+        text-align: center; 
 
     }
-
-    .bottom-links .links {
-        padding: 10px 0; 
+    
+    .footer a {
+        text-decoration: none;
+        color: #000000;
+        padding: 5px 10px; 
     }
-    .copy img { 
+    
+    .footer span img { 
         border-radius: 300px;
     height: auto;
-    margin-left: 50px; 
+    }
+    
+    .bottom-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 0;
+        margin-right: 250px;
 
     }
-  
+    
+    .bottom-links .links {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 40px 0px 10px;
+        text-align: center; 
+    }
+    
+    .nav-links {
+        display: flex;
+        justify-content: center; 
+        margin-bottom: 1px;
+    }
+    
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (max-width: 800px) {
+        .footer {
+            flex-direction: column; 
+            align-items: center; 
+        }
+    
+        .bottom-links {
+            margin-right: 0; 
+            flex-direction: column; 
+            padding: 20px 0; 
+        }
+    
+        .bottom-links .links {
+            padding: 10px 0; 
+        }
+        .copy img { 
+            border-radius: 300px;
+        height: auto;
+        margin-left: 60px; 
+
+        }
+    }
+/*картинка главная*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 670px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.737) 100%,
+     rgba(0, 0, 0, 0.5) 100%),
+     url("https://oculariusufa.ru/assets/cache/images/galery/gal00001-x-23a.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    
+    }
+    
+    .intro h1 {
+    font-family: "Days";
+    font-size: 60px;
+    color: #FF7F00;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 120px 0px 120px;
+    }
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        box-sizing: border-box;
+        
+        overflow-x: hidden;
+        }
+
+
+/*лечение */
+
+.fon {
+    background-image: url('https://sun9-12.userapi.com/s/v1/ig2/--fS-i-v5fTPm6NtbSX0ACgoVhCNgQLf2xW6Yy4Ac_YbjMu4tAWYpQCW0Iwu0BD8CDxKUXZmUpqGQUIAv-yhLE9K.jpg?quality=95&as=32x39,48x58,72x87,108x130,160x193,240x289,360x434,480x579,540x651,640x772,720x868,758x914&from=bu&u=Cexi1eudm7K7qAELkaIsDAtOYRn-60gDLb3r0GDDrVI&cs=758x914');
+    background-size: 100% 100%; 
+    background-position: center;
 }
-    </style>
 
-  <body>
-    <header class="header">
-        <a href="index.html" class="logo">
-            <img src="https://sun9-24.userapi.com/impg/ZdV6MuSjlvpN7Gyr4Q9ZpUCHiGf28WlhMKDZqA/iOKbH7ZKZww.jpg?size=396x152&quality=95&sign=0194fe7e068a37b6994c512e1079011a&type=album"
-            width="170" height="70" />
-        </a>
+h1{
+    font-family: 'Days';
+    font-weight: normal;
+      margin: 10px 0 -30px 0;
+      color: #FF7F00;
+      font-size: 40px;
+      text-align: center;
+     
 
+}
+.container2l {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    margin: 10px ;
 
+}
+.a-boxl {
+    display: flex;
+    flex-direction: column; 
+    width: 350px; 
+    text-align: center;
+    margin: 10px; 
+    margin-bottom: 70pt;
 
-        <nav class="nav-items">
-            <div class="dropdown">
-                <button class="dropbtn">Диагностика</button>
-                <div class="dropdown-content">
-                  <a href="index2.html">Диагностика</a>
-                  <a href="index2.html#com">Комплексная диагностика</a>
-                  <a href="index2.html#lech">Лечение</a>
-                  <a href="index2.html#ad">Адаптационное лечение</a>
-                </div>
-              </div><div class="dropdown">
-            <button class="dropbtn">Ночные линзы</button>
-            <div class="dropdown-content">
-              <a href="index8.html">Ночные линзы</a>
-              <a href="index8.html#sert">Сертификаты</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Оптика</button>
-            <div class="dropdown-content">
-                <a href="index6.html#sol">Солнечные очки</a>
-                <a href="index6.html#opr">Оправы</a>
-                <a href="index6.html#kon">Контакты</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn"> <a style="color: black; text-decoration: none;" href="index2.html#lech">Лечение</a></button>
-         </div>
-          <div class="dropdown">
-            <button class="dropbtn">Пациенту</button>
-            <div class="dropdown-content">
-                <a href="index4.html">Информация по здоровью</a>
-                <a href="index4.html#glaz">Неотложная глазная помощь</a>
-                <a href="index4.html#bliz">Памятка по близорукости</a>
-                <a href="index4.html#amd">Памятка по амблиопии</a>
-                <a href="index4.html#tests">Тесты и упражнения</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Медицинские услуги</button>
-            <div class="dropdown-content">
-                <a href="index.html#med">Медицинские услуги</a>
-                <a href="index2.html">Диагностика зрения</a>
-                <a href="index8.html#">Ночные линзы</a>
-                <a href="index2.html#lech">Лечение</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn"><a style="color: black; text-decoration: none;" href="index3.html">Цены</a></button>
-
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">О нас</button>
-            <div class="dropdown-content">
-                <a href="index7.html">О клинике</a>
-                <a href="index7.html#ob">Оборудование</a>
-                <a href="index7.html#help">Неотложная глазная помощь</a>
-                <a href="index7.html#new">Новости клиники</a>
-            </div>
-          </div>
-        
-
-          <div class="dropdown1">
-            <button class="dropbtn1">Позвоните нам!
-                <img src="https://sun9-21.userapi.com/impg/PL-jxJNXevT_wXe9TEi0K-hwReTStzPwo1ydDA/bj_ccuUU8Xg.jpg?size=39x27&quality=95&sign=e01cf0c81f4a8850529b91bc9fcb392e&type=album"
-                width="25" height="17" />
-            </button>
-            <div class="dropdown-content1">
-              <a href="tel:+7 (965) 641-36-10">+7 (965) 641-36-10</a>
-              <a href="tel:+7 (347) 287-52-91">+7 (347) 287-52-91</a>
-            </div>
-          </div>
-
-        </nav>
-      </header>
-      
-      <div class="intro">
-        <h1>О клинике
-        </h1>
-
-      </div>
-
-
-      <div class="fon">
-  </br>  
-  <h1> 
-        </h1>
-<div class="textl">  
-</br> </br>  Офтальмологическая клиника <b>«Окуляриус»</b> проводит комплексное обследование и лечение заболеваний глаз у взрослых и детей.
-</br> </br>   <b> Наш профиль:</b>
-  <li>  диагностика зрения,
-    <li> аппаратное лечение глазных заболеваний,
-    <li>продажа очков, оправ, футляров
-    <li>подбор мягких контактных линз
-    <li> подбор ортокератологических линз.</li>
-     </br> <b> Преимущества нашего центра:</b>
-  <li> Современное оборудование
-    <li> 30-летний опыт работы
-    <li>Сертифицированные (квалифицированные) доктора – офтальмологи
-    <li>Индивидуальные планы лечения
-    <li> Приятная атмосфера
-         <li> Лояльные цены, скидки и подарки
-    </li>
-</div>
-</br>
-</div>
-
-<div class="fon2">    </br>
-
-    <a name="ob"><h1> Оборудование
-    </h1></a>
-    </br>     </br>
-</br>
-
-
-        <section class="articles">
-            <article>
-              <div class="article-wrapper">
-                <figure>
-                  <img src="https://oculariusufa.ru/assets/cache/images/assets/templates/protan_desktop/css/images/oborud/huvitz4-150x150-754.jpg"  />
-                </figure>
-                <div class="article-body">
-                  <h2 >
-                    Huvitz HRK-7000
-                </h2>
-                  <p>
-                    Авторефрактометр «Huvitz HRK-7000» определяет рефракцию глаза, центральной и парацентральной зон роговицы, измеряет радиус кривизны роговицы, расстояние между зрачками (при взгляде вдаль и вблизи).   
-                
-                </p>
-                
-                </div>
-              </div>
-            </article>
-    
-    
-               <article>
-              <div class="article-wrapper">
-                <figure>
-                  <img src="https://oculariusufa.ru/assets/cache/images/assets/templates/protan_desktop/css/images/oborud/slit2-150x150-4fa.jpg"  />
-                </figure>
-                <div class="article-body">
-                  <h2 >
-                    Slit Lamp REF AIA
-                </h2>
-                  <p>
-                    Щелевая лампа «Slit Lamp REF AIA» Appasamy associates предназначена для детального осмотра перед-него и заднего отрезка глаза с множеством передовых функций, в том числе с возможностью фото- и видео фиксации.            
-                </p>
-                
-                </div>
-              </div>
-            </article>
-    
-            <article>
-                <div class="article-wrapper">
-                  <figure>
-                    <img src="https://oculariusufa.ru/assets/cache/images/assets/templates/protan_desktop/css/images/oborud/vizo2-150x150-78d.jpg"  />
-                  </figure>
-                  <div class="article-body">
-                    <h2 >
-                        Визотроник М3
-                                    </h2>
-                    <p>
-                        Офтальмомиотренажер-релаксатор «Визотроник М3» предназначен для применения в офтальмологии с целью профилактики и лечения синдрома хронического зрительного утомления, компьютерного зри-тельного синдрома, спазма аккомодации и приобретенной близорукости у детей. Аппарат также пока-зан для применения в комплексном лечении амблиопии.
-                   
-                    </p>
-                  
-                  </div>
-                </div>
-              </article>
-    
-    
-    
-              <article>
-                <div class="article-wrapper">
-                  <figure>
-                    <img src="https://oculariusufa.ru/assets/cache/images/assets/templates/protan_desktop/css/images/oborud/sinf2-150x150-223.jpg"  />
-                  </figure>
-                  <div class="article-body">
-                    <h2 >
-                        Синоптофор СИНФ-1             
-                     </h2>
-                    <p>
-                        Предназначен для диагностики и лечения косоглазия, для определения объективного угла косоглазия, для определения состояния фузионной способности (бифовеального слияния, нефовеального слияния, фузионных резервов, функциональной скотомы).              
-                  </p>
-                  
-                  </div>
-                </div>
-              </article>
-      
-      
-                 <article>
-                <div class="article-wrapper">
-                  <figure>
-                    <img src="https://oculariusufa.ru/assets/cache/images/assets/templates/protan_desktop/css/images/oborud/komet1-150x150-223.jpg"  />
-                  </figure>
-                  <div class="article-body">
-                    <h2 >
-                        ЭСОМ-«КОМЕТ»
-                    </h2>
-                    <p>
-                        Устройство микропроцессорное ЭСОМ-«КОМЕТ» предназначено для определения порога электриче-ской чувствительности и электролабильности и чрезкожной лечебной стимуляции глаз импульсным электрическим током при поражении нервных элементов зрительного анализатора, предназначен для лечения поражений нейрональных элементов зрительного анализатора при близорукости и амблиопии, а также для проведения профилактической стимуляции лицам, работающим в режиме зрительного напряжения.
-                                  </p>
-                  
-                  </div>
-                </div>
-              </article>
-      
-              <article>
-                  <div class="article-wrapper">
-                    <figure>
-                      <img src="https://oculariusufa.ru/assets/cache/images/assets/templates/protan_desktop/css/images/oborud/last2-150x150-223.jpg"  />
-                    </figure>
-                    <div class="article-body">
-                      <h2 >
-                        Аппарат «ЛАСТ-01»                                  </h2>
-                      <p>
-                        Предназначен для лазеротерапии и лазеростимуляции сетчатки глаза, лечения близорукости, амблиопии и косоглазия, а также других заболеваний глаз, сопровождающихся отечным компонентом и воспале-нием.                  
-                      </p>
-                    
-                    </div>
-                  </div>
-                </article>
-    
-    
-                <article>
-                    <div class="article-wrapper">
-                      <figure>
-                        <img src="https://oculariusufa.ru/assets/cache/images/assets/templates/protan_desktop/css/images/oborud/sinf2-150x150-223.jpg"  />
-                      </figure>
-                      <div class="article-body">
-                        <h2 >
-                            Синоптофор СИНФ-1             
-                         </h2>
-                        <p>
-                            Предназначен для диагностики и лечения косоглазия, для определения объективного угла косоглазия, для определения состояния фузионной способности (бифовеального слияния, нефовеального слияния, фузионных резервов, функциональной скотомы).              
-                      </p>
-                      
-                      </div>
-                    </div>
-                  </article>
-          
-          
-                     <article>
-                    <div class="article-wrapper">
-                      <figure>
-                        <img src="https://oculariusufa.ru/assets/cache/images/assets/templates/protan_desktop/css/images/oborud/komet1-150x150-223.jpg"  />
-                      </figure>
-                      <div class="article-body">
-                        <h2 >
-                            ЭСОМ-«КОМЕТ»
-                        </h2>
-                        <p>
-                            Устройство микропроцессорное ЭСОМ-«КОМЕТ» предназначено для определения порога электриче-ской чувствительности и электролабильности и чрезкожной лечебной стимуляции глаз импульсным электрическим током при поражении нервных элементов зрительного анализатора, предназначен для лечения поражений нейрональных элементов зрительного анализатора при близорукости и амблиопии, а также для проведения профилактической стимуляции лицам, работающим в режиме зрительного напряжения.
-                                      </p>
-                      
-                      </div>
-                    </div>
-                  </article>
-          
-                  <article>
-                      <div class="article-wrapper">
-                        <figure>
-                          <img src="https://oculariusufa.ru/assets/cache/images/assets/templates/protan_desktop/css/images/oborud/last2-150x150-223.jpg"  />
-                        </figure>
-                        <div class="article-body">
-                          <h2 >
-                            Аппарат «ЛАСТ-01»                                  </h2>
-                          <p>
-                            Предназначен для лазеротерапии и лазеростимуляции сетчатки глаза, лечения близорукости, амблиопии и косоглазия, а также других заболеваний глаз, сопровождающихся отечным компонентом и воспале-нием.                  
-                          </p>
-                        
-                        </div>
-                      </div>
-                    </article>
-        
-    
-    
-          </section>
-
-        </br>
-    </br>
-</div>
-
-
-</br>
-</br>
-
-<a name="help">
-<div class="container112"></a>
-    <div class="icon112">!</div>
-    <div class="text1122">Неотложная глазная </br>помощь</div>
-    <div class="text112">Травмпункт Уфимского НИИ Глазных болезней 
-    </br>г. Уфа, ул. Авроры, д. 14</div>
-  </div>
   
 
+}
+.img-containerl {
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 50%; 
+    display: inline-block;
+    margin: 10px 0px -60px 40px;  
+    border: 10px solid #EBEAE7; 
+    position: relative;
+}
+.img-containerl img {
+    height: 150px;
+}
+.item1l {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 30px; 
+}
+.text-containerl {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 30px 20px 20px 20px; 
+    border-radius: 40px;
+    background: #fff;
+    height: 380px; 
+    width: 400px;
+    line-height: 19px;
+    font-size: 14px;
+}
+.text-containerl h3 {
+  font-family: 'Days';
+  font-weight: normal;
+    margin: 10px 0px;
+    color: #FF7F00;
+    font-size: 20px;
+}
+.text-containerl .h2 {
+    font-family: 'Clear Sans';
+    margin: 10px 0px;
+    color: #000000;
+    font-size: 13px;
+    text-align:left;
+}
+.text-containerl li {
+    margin-bottom: 15px;
+    padding-left: 5px;
+    position: relative;
+    font-size: 15px;
+}
+.text-containerl li::before {
+    color: #FF7F00;
+    font-size: 37px;
+    position: absolute;
+    left: 1px;
+    top: -0px;
+}
+.textl
+{
+    font-family: 'Clear Sans';
+    margin: 10px 0px;
+    color: #000000;
+    font-size: 20px;
+    text-align:left;
+    margin-left: 70pt;
+    margin-right: 70pt;
 
-</br>
-</br>
+}
+.textl b
+{
+    color: #FF7F00;
+
+}
+.textl li {
+    margin-bottom: 15px;
+    padding-left: 5px;
+    position: relative;
+    font-size: 20px;
+    margin-left: 20pt;
+
+}
+.textl li::before {
+    color: #FF7F00;
+    font-size: 77px;
+    position: absolute;
+    left: -1px;
+    top: -65px;
+}
+
+.textl img {
+    height: 370px;
+    width: 370px;
+margin: -335px 0px 10px 1055px;
+margin-top: -260px;
+
+}
 
 
-<div class="fon4">
-</br>
-</br>
 
-<a name="new"><h1 style="color: rgb(255, 255, 255);"> Новости
-</h1><a></br>
+@media (max-width: 900px) {
+.textl img {
+    height: 0px;
+    width: 0px;
 
-    <div class="container2l">
-        <div class="a-boxl">
-            <div class="item1l">
-                <div class="img-containerl">
-                    <div class="img-innerl">
-                        <div class="inner-skewl">
-                                <img src="https://oculariusufa.ru/assets/cache/images/tools/zha-msk-x-1ec.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-containerl">
-                <h3>Наши специалисты приняли участие в Российском общенациональном форуме в Москве</h3>
-                <a href="#"  id="openModal2" style="color: #FF6B00;">Читать далее</a>
-            </div>
-        </div>
-        <div id="modal12" class="modal12">
-            <div class="modal-content2">
-                <span class="close-button2" id="closeModal2">&times;</span>
-                <h2>Наши специалисты приняли участие в Российском общенациональном форуме в Москве</h2>
-                <div class="modal-text2">
-                    С 3-5 октября 2017г. в г. Москве состоялся Российский общенациональный форум, на котором были рассмотрены вопросы касающиеся прогрессии близорукости у школьников и подростков.
-                    На конференции выступали ведущие доктора в этой области из России, Италии и Канады.
-                    К 2050 году почти половина населения Земли (49,8%) будут иметь миопическую рефракцию (близорукость). Сегодня каждый третий выпускник школы близорукий.
-                    Прогрессирование близорукости сопровождается удлинение глаза, что ведет к риску возникновения заболеваний, приводящих к близорукости:
-                    
-                    <li> дистрофия сетчатки (73,4%);
-                        <li> разрывы и отверстия сетчатки (8,1%);
-                            <li> отслойка сетчатки (3,5-11,4%) и др.</li>
-                    </br>
-                    Средства коррекции (очки, контактные линзы) способны  </br>улучшить зрение, но не остановить близорукость.
-                  </br>  В последнее время  ортокератология (применение  </br>ортокератологических линз в ночное время)
-                имеет  </br>все большее распространение.  </br>Ортокератологические линзы являются методом </br> вопроса 
-           коррекции зрения для близоруких детей, </br> и что наиболее важно самым эффективным</br> способом 
-        остановки прогрессии близрукости.
 
-                      <img src="https://oculariusufa.ru/assets/cache/images/tools/zha-msk-x-1ec.jpg"
-                       width="200px" style="margin-left: 480px; margin-top: -550px;border-radius: 30px;">
-                    </br> </br>
-                </br> </br>
-                </div>
-            </div>
-        </div>
+}}
+@media (max-width: 768px) {
+    .container2l {
+        flex-direction: column; 
+        align-items: center;
+
+    }
+    .text-containerl li {
+    margin-bottom: 15px;
+    padding-left: 5px;
+    position: relative;
+    font-size: 15px;
+}
+.text-containerl li::before {
+    color: #FF6B00;
+    font-size: 77px;
+    position: absolute;
+    left: -2px;
+    top: -25px;
+}
+
+
+}
+
+/*оборудование */
+
+.fon2 {
+    background-image: url('https://sun9-5.userapi.com/s/v1/ig2/1AtX3XoPAsrfXCfDXmfGLLb26AHcG0swoXHVlFXiAcnnZsnq5611GfFI35A0j852Q4m0qOr_gaOEBAg0Tg71aRuO.jpg?quality=95&as=32x56,48x84,72x126,108x189,160x281,240x421,360x632,480x842,501x879&from=bu&u=kDT6s5atmVi_KVjWPeg_IGn0NQgq-3XnfADKXx5pfWQ&cs=501x879');
+    background-size: 100% 100%; 
+    background-position: center;
+}
+.fon2 h1{
+    font-family: 'Days';
+    font-weight: normal;
+      margin: 0px 0 -30px 0;
+      color: #FF7F00;
+      font-size: 40px;
+      text-align: center;
+     
+}
+article {
+    --img-scale: 1.001;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: none;
+    background: #FAD1A9;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+  }
+  
+  article a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+  }
+  
+  article h2 {
+    margin: 0 0 18px 0;
+    font-family: "Days";
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 10px 10px 20px 20px;
+  
+  
+  }
+  
+  article img {
+    width: 100%;
+    height: auto;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    margin-top: -70px;
+    border-radius: 10px 10px 10px 10px;
+    filter: brightness(80%)
+  }
+  
+  .article-body {
+    padding: 24px;
+  
+  }
+   
+  
+  article p{
+      font-family: "Clear Sans";
+    font-size: 15px;
+  }
+  
+  
+  
+  
+  
+  .articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    
+  }
+  
+  @media screen and (max-width: 960px) {
+    article {
+      container: card/inline-size;
+    }
+    article img {
+    width: 100%;
+    height: auto;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    margin-top: -90px;
+    border-radius: 10px 10px 10px 10px;
+    filter: brightness(80%)
+  }
+  
+  }
+  
+/*запись на прием*/
+.background-container {
+    background-image: url('https://psv4.userapi.com/s/v1/d/n4Yd49k3U3UtSsWyreHEqPk0eYwVXOT4f7hEiCrLDbBwwLmEBiK7j1S00YFXB-1SvJvfACEJdQFZ7yEs25STguy6JFJgXFwKNvr4wCS1hnO9k1edHKNJQg/Bez_imeni-1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 30px;
+    width: 100%;
+    max-width: 1520px;
+    height: 700px;
+    margin-bottom: -100px;
+}
+
+@media (max-width: 824px){
+    .background-container {
+        background-image: url('https://psv4.userapi.com/s/v1/d/n4Yd49k3U3UtSsWyreHEqPk0eYwVXOT4f7hEiCrLDbBwwLmEBiK7j1S00YFXB-1SvJvfACEJdQFZ7yEs25STguy6JFJgXFwKNvr4wCS1hnO9k1edHKNJQg/Bez_imeni-1.jpg');
+        background-size: contain;
+        padding: 15px;
+        min-height: auto;
+        margin-bottom: 0px;
+    }
+}
+
+.form-container {
+    display: flex;
+    justify-content: flex-start; /* Изменяем на flex-start для выравнивания влево */
+    gap: 40px;
+    margin: 0 auto; /* Центрируем контейнер */
+    max-width: 900px; /* Установляем максимальную ширину */
+}
+
+.form-content {
+    width: 65%;
+}
+
+.icon-container {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 165, 0, 0.1);
+    border-radius: 50%;
+    aspect-ratio: 1;
+    margin-right: 20px;
+}
+
+.background-container h1 {
+    color: #ff6b00;
+    font-size: 28px;
+    margin-bottom: 24px;
+    margin-left: 30px;   
+    margin-top: 50px;
+    font-family: 'Days';
+}
+
+.background-container a {
+    color: #000000;
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Days';
+    font-weight: normal;
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    resize: vertical;
+    min-height: 60px;
+    box-sizing: border-box;
+    font-family: 'Days';
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.checkbox-container input {
+    width: auto;
+    margin: 0;
+}
+
+.submit-button {
+    background-color: #ff6b00;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto;
+    display: block; /* Удалено margin-left: 300px; */
+    margin: 20px auto; /* Центрирование кнопки */
+    font-family: 'Days';
+    font-weight: normal;
+}
+
+.submit-button:hover {
+    background-color: #ff8533;
+}
+
+@media (max-width: 800px) {
+    .background-container {
+        background-image: none;
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .form-container {
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .checkbox-container {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .submit-button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .background-container h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media ( max-width: 1080px) {
+    .background-container {
+        background-color: #ffffff;
+background-image: none;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 15px 30px 30px 30px;
+        width: 100%;
+        max-width: 1520px;
+        height: auto;
+        min-height: 800px;
+    }
+
+    .form-container {
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .checkbox-container {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .submit-button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        background-color: #ff8533;
+
+    }
+
+    .background-container h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+/*модальное окно*/
+
+.modal1 {
+    display: none; /* Скрыть модальное окно по умолчанию */
+    position: fixed; 
+    z-index: 100; /*Сидит поверх */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: hidden; /* Включить прокрутку, если необходимо */
+    background-color: rgba(0, 0, 0, 0.5); /* Черный фон с прозрачностью */
+
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% сверху и центрировать */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина 80% */
+    max-height: 80%; /* Максимальная высота для горизонтальной прокрутки */
+    overflow-y: auto; /* Прокрутка по вертикали */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-text p {
+    color: #ff6b00;
+    font-size: 18px;
+    
+    font-family: 'Days';
+}
+.modal-content h2 {
+    color: #ff6b00;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Days';
+}
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-text {
+    max-height: 400px; /* Ограничена высота текста для прокрутки */
+    overflow-y: auto; /* Вертикальная прокрутка для текста */
+}
+/*вы записаны */
+.notification {
+    background-color: #ff6b00; 
+    color: rgb(0, 0, 0); 
+    padding: 15px; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border-radius: 5px; 
+    z-index: 1000;
+}
+.error {
+    border: 2px solid #ff6b00; 
+}  
+/*статьи */
+
+.fon4 {
+    background-image: url('https://sun9-33.userapi.com/impg/4Lrc0L7JWqVsX9GaEN9wuQ9vtiMh3c_bWxoEKA/K9efLmCwlHY.jpg?size=1274x640&quality=95&sign=7b43861ad6f2a636212805ce52a0e8ea&type=album');
+    background-size: 100% 100%; 
+    background-position: center;
+}
+.fon4 h1{
+    font-family: 'Days';
+    font-weight: normal;
+      margin: 0px 0 -30px 0;
+      color: #FF7F00;
+      font-size: 40px;
+      text-align: center;
+     
+}
+
+.container2l {
+    display: flex;
+    justify-content: space-between; /* Изменено на space-between для равномерного расположения */
+    flex-wrap: wrap; 
+    margin: 0px;
+    margin-left: 150px;
+    
+    
+}
+ b
+{
+    font-family: 'Days';
+                color: #FF7F00;
+
+}
+
+
+.a-boxl {
+    display: flex;
+    flex-direction: column; 
+    width: calc(33.33% - 20px); /* Устанавливаем ширину для трёх элементов в ряд с учётом отступов */
+    text-align: center;
+    margin: 10px; 
+}
+
+.img-containerl {
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 50%; 
+    
+    display: inline-block;
+    margin: 10px 0px -60px -130px;  
+    border: 10px solid #f0a458; 
+    position: relative;
+}
+.img-containerl img {
+    height: 150px;
+}
+.item1l {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 30px; 
+}
+.text-containerl {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 30px 20px 20px 20px; 
+    border-radius: 40px;
+    background: #fff;
+    height: 180px; 
+    width: 300px;
+    line-height: 19px;
+    font-size: 14px;
+    text-align: right;
+
+}
+.text-containerl h3 {
+  font-family: 'Days';
+  font-weight: normal;
+    margin: 10px 0px;
+    color: #FF7F00;
+    font-size: 20px;
+    text-align: center;
+
+}
+.text-containerl p
+{
+    text-align: left;
+}
+.textl img {
+    height: 370px;
+    width: 370px;
+margin: -335px 0px 10px 1055px;
+margin-top: -260px;
+
+}
+
+
+@media (max-width: 900px) {
+.textl img {
+    height: 0px;
+    width: 0px;
+
+
+}
+.img-containerl {
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 50%; 
+    display: inline-block;
+    margin: 10px 0px -60px 50px;  
+    border: 10px solid #f0a458; 
+    position: relative;
+}
+
+
+
+}
+@media (max-width: 768px) {
+    .container2l {
+        flex-direction: column; 
+        align-items: center;
+
+    }
+
+
+    .container2l {
+    display: flex;
+    justify-content: space-between; /* Изменено на space-between для равномерного расположения */
+    flex-wrap: wrap; 
+    margin: 0px;
+    margin-left: -150px;
+}
+
+    .text-containerl li {
+    margin-bottom: 15px;
+    padding-left: 5px;
+    position: relative;
+    font-size: 15px;
+}
+.img-containerl {
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 50%; 
+    display: inline-block;
+    margin: 10px 0px -60px 100px;  
+    border: 10px solid #f0a458; 
+    position: relative;
+}
+
+
+}
+
+@media ( max-width: 1080px) {
+
+
+    .container2l {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around; 
+        flex-wrap: wrap; 
+        margin: 0px;
+        margin-left: 40px;
+    }
+    
+    .text-containerl li {
+        margin-bottom: 15px;
+        padding-left: 5px;
+        position: relative;
+        font-size: 15px;
+        width: calc(50% - 10px); 
+        box-sizing: border-box; 
+    }
+    
+    .img-containerl {
+        height: 120px;
+        width: 120px;
+        overflow: hidden;
+        border-radius: 50%; 
+        display: inline-block;
+        margin: 10px 0px -60px -50px;  
+        border: 10px solid #f0a458; 
+    }
     
 
+}
 
 
 
-        <div class="a-boxl">
-            <div class="item1l">
-                <div class="img-containerl">
-                    <div class="img-innerl">
-                        <div class="inner-skewl">
-                                <img src="https://oculariusufa.ru/assets/cache/images/den-zreniya-243x142-d2c.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-containerl">
-                <h3 style="margin-top: 15px ;">Участие в прямом эфире в честь Всемирного дня зрения</h3>
-                <a href="#"  id="openModal3" style="color: #FF6B00;">Читать далее</a>
-            </div>
-        </div>
-        <div id="modal13" class="modal13">
-            <div class="modal-content2">
-                <span class="close-button2" id="closeModal3">&times;</span>
-                <h2>Участие в прямом эфире в честь Всемирного дня зрения</h2>
-                <div class="modal-text2">
-                    В рамках Всемирного дня Зрения 2017 врач-офтальмолог, к.м.н. Бахтиярова Гульнара Закиевна приняла участие в прямом эфире программы Радио Россия Башкортостан.
-                </br> </br>
-                 <a href="https://disk.yandex.ru/mail?hash=YVfwQTExiCwvOtq56S%2BOZjSniQFQooKNh7dEljtBsUV4OAr%2F3NWHWRwWHIlpoyPjq%2FJ6bpmRyOJonT3VoXnDag%3D%3D" 
-                    style="color: #FF6B00;">Запись эфира</a>
-                </br>
-                      <img src="https://oculariusufa.ru/assets/cache/images/den-zreniya-243x142-d2c.jpg"
-                       width="650px" style="margin-left: 40px; margin-top: 30px;border-radius: 30px ;">
-                    </br> </br>
-                </br> </br>
-                </div>
-            </div>
-        </div>
+
+/*модальное окно для статей*/
+
+.modal12,.modal13,.modal14,.modal15,.modal16,.modal17 {
+    display: none; /* Скрыть модальное окно по умолчанию */
+    position: fixed; 
+    z-index: 100; /*Сидит поверх */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: hidden; /* Включить прокрутку, если необходимо */
+    background-color: rgba(0, 0, 0, 0.5); /* Черный фон с прозрачностью */
+
+}
+
+.modal-content2{
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% сверху и центрировать */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 750px; /* Ширина 80% */
+    height: 550px;
+    border-radius: 30px;
+
+}
+.modal-content4 {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% сверху и центрировать */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина 80% */
+    max-height: 85%; /* Максимальная высота для горизонтальной прокрутки */
+    overflow-y: auto; /* Прокрутка по вертикали */
+    border-radius: 30px;
+
+}
+.close-button2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-text2 p {
+    color: #ff6b00;
+    font-size: 18px;
     
+    font-family: 'Days';
+}
+.modal-content2 h2 {
+    color: #ff6b00;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Days';
+}
+.close-button2:hover,
+.close-button2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-text2 {
+    max-height: 850px; /* Ограничена высота текста для прокрутки */
+    overflow-y: auto; /* Вертикальная прокрутка для текста */
+    font-family: 'Clear Sans';
+
+}
+
+.modal-text4 {
+    max-height: 650px; /* Ограничена высота текста для прокрутки */
+    overflow-y: auto; /* Вертикальная прокрутка для текста */
+    font-family: 'Clear Sans';
+    font-size: 10px;
+
+}
+.no-scroll {
+    overflow: hidden; /* Отключает прокрутку */
+}
+
+/*неотложка*/
 
 
+.container112 {
+    background-color: #fff;
+    border: 2px solid #FF7F00;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 800px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: 'Days';
+    margin-left: 400px;
+ 
 
 
+  }
+  
+  .icon112 {
+    display: inline-block;
+    font-size: 24px;
+    color: #FF7F00;
+    margin-right: 10px;
+    font-family: 'Days';
+    font-size: 40px;
 
-        <div class="a-boxl">
-            <div class="item1l">
-                <div class="img-containerl">
-                    <div class="img-innerl">
-                        <div class="inner-skewl">
-                                <img src="https://oculariusufa.ru/assets/cache/images/zagruzheno-243x142-376.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-containerl">
-                <h3 style="margin-top: 35px ;">Всемирный день зрения</h3>
-                <a href="#"  id="openModal4" style="color: #FF6B00;">Читать далее</a>
-            </div>
-        </div>
-        <div id="modal14" class="modal14">
-            <div class="modal-content4">
-                <span class="close-button2" id="closeModal4">&times;</span>
-                <h2 style="color: #FF6B00; text-align: center; font-family: Days;"> Всемирный день зрения</h2>
-                <div class="modal-text23">
-                 <b tyle="color: #FF6B00;">   Всемирный день зрения (World Sight Day)</b> отмечается ежегодно во второй четверг октября в рамках реализации Глобальной программы по борьбе со слепотой "Зрение 2020: Право на зрение" Международного агентства по профилактике слепоты (International Agency for the Prevention of Blindness, IAPB) и Всемирной организации здравоохранения (ВОЗ). 
-                </br>Всемирный день зрения призван привлечь внимание международного сообщества к проблемам слепоты и нарушения зрения.
-По данным Международного агентства по профилактике слепоты, во всем мире около 285 миллионов человек страдают от нарушений зрения, из которых 39 миллионов поражены слепотой. Около 90% людей, страдающих от нарушений зрения, живут в странах с низким доходом.
-</br><b style="color: #FF6B00;"> По оценкам экспертов</b>, 82% людей, страдающих слепотой, входят в возрастную группу 50 лет и старше.
-От нарушений зрения страдают 19 миллионов детей. 12 миллионов из них имеют нарушения зрения из-за аномалий рефракции — состояний, которые легко диагностируются и корректируются. 1,4 миллиона детей являются необратимо слепыми.
-</br>В России заболеваемость патологией органа зрения <b style="color: #FF6B00;">составляет около 11 тысяч человек</b> на 100 тысяч населения. По данным главного офтальмолога РФ, директора МНИИ глазных болезней им. Гельмгольца Владимира Нероева, количество учтенных слепых и слабовидящих в нашей стране составляет 218 тысяч человек, из них абсолютно слепых — 103 тысячи. Ежегодно в России число лиц впервые ставшими инвалидами из-за нарушения зрения составляет около 45 тысяч. В контингенте инвалидов по зрению 22% составляет молодежь.
-</br><b style="color: #FF6B00;"> По данным специалистов</b>, среди будущих российских первоклассников проблемы со здоровьем глаз в виде миопии (близорукости), глазодвигательных нарушений есть примерно у 10-12% детей. К моменту окончания школы они наблюдаются уже почти у 70% детей, особенно в гимназиях и лицеях, где повышена нагрузка.
-</br>По данным ВОЗ, основными причинами нарушения зрения являются: нескорректированные аномалии рефракции (близорукость, дальнозоркость или астигматизм) — 43%; непрооперированная катаракта — 33%; глаукома — 2%.
-</br>Специалисты ВОЗ уверены, что 80% всех случаев нарушения зрения можно предотвратить или вылечить.
-</br>К мерам профилактики глазных болезней относится не только посещение офтальмолога, но и соблюдение несложных правил, которые помогают сохранить хорошее зрение. Специалисты советуют отказаться от курения. Никотин губительно влияет на зрение. Кроме общеизвестных болезней дыхательных путей и всего организма, он расширяет сосуды, а потом сужает, нарушая питание глаза. А это может привести к ишемии сетчатки и уменьшению кровоснабжения органа.
-</br>Людям с ослабленным зрением нужно употреблять продукты, укрепляющие сосуды сетчатки глаза: чернику, черную смородину, морковь. В рационе близоруких должна присутствовать печень трески, зелень: петрушка, салат, укроп, зеленый лук. При дистрофии сетчатки помогают шиповник (настой, отвар), клюква.
-</br>Негативное влияние на глаза оказывают искусственный свет, светящиеся экраны телевизора и компьютера, электронные игры.
-</br>Необходимо, чтобы рабочее место было достаточно освещено, световое поле равномерно распределено по всей площади рабочего пространства, лучи света не должны попадать прямо в глаза. Для тех, кто пользуется компьютером, рекомендуется <b style="color: #FF6B00;"> использование современного монитора и качественных программ.</b>
-</br><b style="color: #FF6B00;"> Снять усталость</b>, предотвратить болезни глаз помогают компрессы, промывания глаз черным и зеленым чаем, теплые примочки на закрытые глаза из отвара ромашки.
-</br>Регулярная проверка зрения специалистом поможет выявить возможные проблемы на самых ранних стадиях и принять меры профилактики. Врач может подсказать также возможные методы коррекции зрения.
-</br>В мае 2013 года на 66-й сессии Всемирной ассамблеи здравоохранения подавляющим большинством голосов был одобрен Глобальный план действий по предупреждению случаев слепоты и нарушения зрения 2014-2019. Цель Глобального плана действий — достижение к 2019 году уменьшения масштабов предотвратимых нарушений зрения на 25%.
-</br><p style="font-style: italic; "> Материал подготовлен на основе информации РИА Новости и открытых источников</p>
-                    </br> </br>
-                </br> </br>
-                </div>
-            </div>
-        </div>
+
+  }
+  
+  .text1122 {
+    color: #FF7F00;
+    text-align: left;
+    margin-right: 170px;
+    font-size: 18px;
+
+
+  }
+  .text112 {
+    color: #FF7F00;
+    text-align: right;
+    font-size: 14px;
+
+
+  }
+@media (max-width: 900px) {
+    .container112 {
+        background-color: #fff;
+        border: 2px solid #FF7F00;
+        border-radius: 20px;
+        padding: 10px;
+        width: 500px;
+    height: 80px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        font-family: 'Days';
+     
     
-
-
-
-
-
-
-
-
-        <div class="a-boxl">
-            <div class="item1l">
-                <div class="img-containerl">
-                    <div class="img-innerl">
-                        <div class="inner-skewl">
-                                <img src="https://sun9-4.userapi.com/s/v1/ig2/MakRa58A04Qay3xrZyQvdCwCPqTPdvHup0RM-D8W1Mj3Sg-kSSm9j0y8XMAclJno5gkv-ufDunN0sfybrDHJ1dTC.jpg?quality=95&as=32x31,48x47,72x71,108x106,145x142&from=bu&u=kefdarQ1JsVGaU-v62onXHOSKmxfI8OGv-4XTg6xczI&cs=145x142">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-containerl">
-                <h3 style="margin-top: 25px ;">Бесплатная диагностика зрения у детей</h3>
-                <a href="#"  id="openModal5" style="color: #FF6B00;">Читать далее</a>
-            </div>
-        </div>
-        <div id="modal15" class="modal15">
-            <div class="modal-content2">
-                <span class="close-button2" id="closeModal5">&times;</span>
-                <h2>Бесплатная диагностика зрения у детей</h2>
-                <div class="modal-text2">
-                <p style="text-align: center; font-family: Clear Sans; color:#000000;">   
-                     Вы еще не знаете какое зрение у Вашего ребенка? </br>
-                  Запишитесь на бесплатную диагностику зрения!
-                </br><b style="color: #FF6B00;">1, 2 июня 2022 года</b> в нашем центре проводится БЕСПЛАТНАЯ диагностика зрения у детей*
-            </br>* применяется для детей, обращающихся в наш центр впервые
-        </br>Запись по телефонам:  <b style="color: #FF6B00;">8(965)-641-36-10; 287-52-91.</b></p>
-
-                      <img src="https://oculariusufa.ru/assets/cache/images/zagruzheno-243x142-376.jpg"
-                      width="500px" style="margin-left: 90px; margin-top: 30px;border-radius: 30px ;">
-                    </br> </br>
-                </br> </br>
-                </div>
-            </div>
-        </div>
     
-
-
-
-
-
-
-        <div class="a-boxl">
-            <div class="item1l">
-                <div class="img-containerl">
-                    <div class="img-innerl">
-                        <div class="inner-skewl">
-                                <img src="https://oculariusufa.ru/assets/cache/images/galery/6-243x142-609.jpeg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-containerl">
-                <h3 style="margin-top: 45px ;">Специализированная выставка «MIOF»</h3>
-                <a href="#"  id="openModal6" style="color: #FF6B00;">Читать далее</a>
-            </div>
-        </div>
-        <div id="modal16" class="modal16">
-            <div class="modal-content2">
-                <span class="close-button2" id="closeModal6">&times;</span>
-                <h2>Специализированная выставка «MIOF»</h2>
-                <div class="modal-text2">
-                    Специалисты медицинского центра <b style="color: #FF6B00;">«Окуляриус»</b> посетили 34-ую международную специализированную выставку «MIOF» - московский международный оптический форум.
-                </br>В целях развития медицинского центра ведущие специалисты ознакомились с образовательными контентом форума: современные проблемы индустрии, инновации и новости.
-            </br>Пополнили ассортимент оптики новыми коллекциями медицинских оправ и солнцезащитных очков от ведущих производителей и модных брендов.
-
-                      <img src="https://oculariusufa.ru/assets/images/galery/foto(1).jpg"
-                      width="650px" style="margin-left: 30px; margin-top: 30px;border-radius: 30px ;">
-                    </br> </br>
-                </br> </br>
-                </div>
-            </div>
-        </div>
+      }
+      
+      .icon112 {
+        display: inline-block;
+        font-size: 24px;
+        color: #FF7F00;
+        margin-right: 10px;
+        font-family: 'Days';
+        font-size: 40px;
     
-
-
-
-
-
-        <div class="a-boxl">
-            <div class="item1l">
-                <div class="img-containerl">
-                    <div class="img-innerl">
-                        <div class="inner-skewl">
-                                <img src="https://oculariusufa.ru/assets/cache/images/services/den_zreniya-243x142-bba.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-containerl">
-                <h3 style="margin-top: 45px ;">Всемирный день зрения: 50 % скидка</h3>
-                <a href="#"  id="openModal7" style="color: #FF6B00;">Читать далее</a>
-            </div>
-        </div>
-        <div id="modal17" class="modal17">
-            <div class="modal-content4">
-                <span class="close-button2" id="closeModal7">&times;</span>
-                <h2 style="color: #FF6B00; text-align: center; font-family: Days;">Всемирный день зрения: 50 % скидка</h2>
-                <div class="modal-text2">
-                    <b style="color: #FF6B00;"> Зрение </b>
-                    — это один из важнейших органов чувств человека, благодаря которому воспринимается более 80% информации об окружающем мире. Благодаря чёткому зрению мы можем не только видеть предметы, ориентироваться в пространстве, получать эстетическое удовольствие, но и поддерживать психологический комфорт и уверенность. Хорошее зрение позволяет нам чувствовать себя уверенно в повседневной жизни, общаться с окружающими, заниматься любимыми делами и достигать поставленных целей.
-                </br>
-                Однако, качество зрения и здоровье глаз может быть под угрозой из-за заболеваний, таких как миопия, гиперметропия, астигматизм, глаукома, катаракта, возрастная макулодистрофия и других. Регулярное обследование у офтальмолога помогает выявить и предотвратить эти состояния, сохранить качество зрения и избежать осложнений.
-            </br>
-            Как часто необходимо проверять зрение? При отсутствии жалоб – хотя бы раз в год.
-        </br> Если вы уже заметили ухудшение зрения, усталость глаз или другие симптомы – обратитесь за консультацией к офтальмологу уже сейчас.
-    </br>   <b style="color: #FF6B00;">  Почему стоит проверять зрение в оптиках:</b>
-
-                    <li> В оптиках работают специалисты по коррекции зрения – офтальмологи или оптометристы, которые прошли специализированное обучение и имеют опыт именно в диагностике и коррекции нарушений зрения любой сложности.
-                        <li> Оптики заинтересованы в поддержании высокого уровня знаний и навыков у специалистов, чтобы пациенты оставались довольными и возвращались к ним.
-                            <li>  В оптиках предлагают новейшие решения для очковой и контактной коррекции зрения, которые разработаны и для чёткого зрения, комфорта глаз, профилактики симптомов зрительной усталости и защиты глаз от различных излучений. Например, только специалист в оптике, уточняя рецепт и детализируя жалобы и зрительные потребности, может порекомендовать именно то решение, которое лучше всего подойдет именно вам в конкретной ситуации.
-
-                            </li>
-                 
-               <b style="color: #FF6B00;">  Например</b>, при оценке всех данных именно специалист в оптике поймет, что для четкого зрения на всех расстояниях идеально подходят мультифокусные линзы Varilux, для снижения усталости при длительной работе на близком расстоянии идеальны современные однофокальные линзы Eyezen, а для борьбы с прогрессирующей детской миопией - линзы Stellest.
-            </br>Регулярная проверка зрения у офтальмолога или оптометриста в оптике помогает своевременно выявлять и предотвращать эти проблемы, сохранять качество зрения и избегать осложнений.
-        </br><b style="color: #FF6B00; ">Проходите проверку зрения всей семьёй каждый год!</b>
-
-                    </br> 
-                </div>
-            </div>
-        </br>  </br>  </br> 
-        </div>
-    </br>  </br> 
-
-    </div>
     
-    <div id="modal" class="modal" style="display:none;">
-        <span class="close-modal">&times;</span>
-        <div class="modal-content">
-            <p id="modal-text"></p>
-        </div>
-    </div>
+      }
+      
+      .text1122 {
+        color: #FF7F00;
+        text-align: left;
+        margin-right: 100px;
+        font-size: 18px;
+    
+    
+      }
+      .text112 {
+        color: #FF7F00;
+        text-align: right;
+        margin-right: 10px;
+        font-size: 14px;
+    
+    
+      }
+    }
+    
+    @media (max-width: 1080px) {
 
-
-
- </div>
-
-
-
-
-
-<div class="background-container">
-    <div class="form-container">
-        <div class="form-content">
-            <h1>Записаться на приём</h1>
-            <form>
-                <div class="form-grid">
-                    <input type="text" placeholder="Ваше ФИО" required>
-                    <input type="text" placeholder="ФИО пациента" required>
-                    
-                    <input type="tel" placeholder="Ваш номер телефона" required>
-                    <input type="number" placeholder="Возраст пациента" required>
-                    
-                    <input type="email" placeholder="Ваш электронная почта" required>
-                    <select required>
-                        <option value="doctor0">Любой врач</option>
-                        <option value="doctor1">Ахметгареева Жамиля Акмировна</option>
-                        <option value="doctor2">Бахтиярова Гульнара Закиевна</option>
-                        <option value="doctor3">Байбулатова Альмира Набиахметовна</option>
-          
-                    </select>
-                    
-                    <textarea placeholder="Комментарий" class="full-width"></textarea>
-                </div>
-                
-                <div class="checkbox-container">
-                    <input type="checkbox" id="consent" required>
-                    <label for="consent">Заполняя форму на сайте Вы даете <a href="#"  id="openModal">согласие на обработку персональных данных</a>.</label>
-                </div>
-                
-                <button type="submit" class="submit-button" id="submitButton">Подать заявку на приём</button>
-           
-                <div id="notification" class="notification" style="display: none;">
-                    Вы записаны на приём!
-                </div>
-            
-
-                <div id="modal1" class="modal1">
-                    <div class="modal-content">
-                        <span class="close-button" id="closeModal">&times;</span>
-                        <h2>Политика конфиденциальности</h2>
-                        <div class="modal-text">
-                            Настоящая Политика конфиденциальности регулирует порядок обработки и использования персональных и иных данных администратором сайтов http://ocularius-ufa.ru 
-                                (далее — Оператор).</br>
-                                Передавая Оператору персональные и иные данные посредством Сайта, Пользователь подтверждает свое согласие на использование указанных данных на условиях, изложенных в настоящей Политике конфиденциальности.
-                               Если Пользователь не согласен с условиями настоящей Политики конфиденциальности, он обязан прекратить использование Сайта.
-                            Безусловным акцептом настоящей Политики конфиденциальности является начало использования Сайта Пользователем.
-                
-                        <p> 1. ТЕРМИНЫ</p>
-                                1.1. Сайт - сайты, расположенные в сети Интернет по адресу http://ocularius-ufa.ru. 
-                                Все исключительные права на Сайт и его отдельные элементы (включая программное обеспечение, дизайн) принадлежат Оператору в полном объеме. 
-                                Передача исключительных прав Пользователю не является предметом настоящей Политики конфиденциальности.
-                            </br>1.2. Пользователь — лицо использующее Сайт.
-                            </br>.3. Законодательство — действующее законодательство Российской Федерации.
-                        </br>1.4. Персональные данные — персональные данные Пользователя, которые Пользователь предоставляет о себе самостоятельно при Регистрации или в процессе использования функционала Сайта.
-                    </br>1.5. Данные — иные данные о Пользователе (не входящие в понятие Персональных данных).
-                </br>1.6. Регистрация — заполнение Пользователем Регистрационной формы, расположенной на Сайте, путем указания необходимых сведений и выбора Логина и пароля.
-                </br>1.7. Регистрационная форма — форма, расположенная на Сайте, которую Пользователь должен за полнить для прохождения Регистрации на Сайте.
-                </br>1.8. Услуга(и) — услуги, предоставляемые Оператором.
-                                
-                                <p>      2. СБОР И ОБРАБОТКА ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
-                             2.1. Оператор собирает и хранит только те Персональные данные, которые необходимы для оказания Услуг Оператором и взаимодействия с Пользователем.
-                            </br>2.2. Персональные данные могут использоваться в следующих целях:</br>2.2.1 оказание Услуг Пользователю;
-                        </br>2.2.2 идентификация Пользователя;</br>2.2.3 взаимодействие с Пользователем;</br>2.2.4 направление Пользователю рекламных материалов, информации и запросов;
-                    </br>2.2.5 проведение статистических и иных исследований;</br>2.2.6 обработка платежей Пользователя;
-                </br>2.2.7 мониторинг операций Пользователя в целях предотвращения мошенничества, противоправных ставок, отмывания денег.
-                </br>2.3. Оператор в том числе обрабатывает следующие данные:
-                </br>2.3.1 фамилия, имя и отчество;
-                </br>2.3.2 адрес электронной почты;</br>2.3.3 номер мобильного телефон;</br>2.3.4 адрес сайта.</br>2.4. Пользователю запрещается указывать на Сайте персональные данные третьих лиц.
-                                
-                                <p> 3. ПОРЯДОК ОБРАБОТКИ ПЕРСОНАЛЬНЫХ И ИНЫХ ДАННЫХ</p>
-                                3.1. Оператор обязуется использовать Персональные данные в соответствии с Федеральным Законом «О персональных данных» No 152-ФЗ от 27 июля 2006 г. 
-                                и внутренними документами Оператора.
-                            </br>3.2. В отношении Персональных данных и иных Данных Пользователя сохраняется их конфиденциальность, кроме случаев, когда указанные данные являются общедоступными.
-                        </br>3.3. Оператор имеет право сохранять архивную копию Персональных данных и Данных, в том числе после удаления аккаунта Пользователя.
-                    </br>3.4. Оператор имеет право передавать Персональные данные и Данные Пользователя без согласия Пользователя следующим лицам:
-                </br>3.4.1 государственным органам, в том числе органам дознания и следствия, и органам местного самоуправления по их мотивированному запросу;
-                </br>3.4.2 партнерам Оператора;</br>3.4.3 в иных случаях, прямо предусмотренных действующим законодательством РФ.
-                </br>3.5. Оператор имеет право передавать Персональные данные и Данные третьим лицам, не указанным в п. 3.4. настоящей Политики конфиденциальности, в следующих случаях:
-                </br>3.5.1 Пользователь выразил свое согласие на такие действия;
-                </br>3.5.2 передача необходима в рамках использования Пользователем Сайта или оказания Услуг Пользователю;
-                </br>3.5.3 передача происходит в рамках продажи или иной передачи бизнеса (полностью или в части), при этом к приобретателю 
-                переходят все обязательства по соблюдению условий настоящей Политики.</br>3.6. Оператор осуществляет автоматизированную обработку Персональных данных и Данных.
-                                
-                                <p> 4. ИЗМЕНЕНИЕ ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
-                                4.1. Пользователь может в любой момент изменить (обновить, дополнить) Персональные данные
-                                 посредством Личного кабинета либо путем направления письменного заявления Оператору на почту info@alfafoks.ru.
-                                </br>4.2. Пользователь в любой момент имеет право удалить Персональные данные.</br>
-                                4.3. Пользователь гарантирует, что все Персональные данные являются актуальными и не относятся к третьим лицам.
-                                
-                                <p> 5. ЗАЩИТА ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
-                                5.1. Оператор осуществляет надлежащую защиту Персональных и иных данных в соответствии с Законодательством и принимает необходимые 
-                                и достаточные организационные и технические меры для защиты Персональных данных.
-                            </br>5.2. Применяемые меры защиты в том числе позволяют защитить Персональные данные от 
-                            неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий с ними третьих лиц.
-                                
-                                <p>  6. ПЕРСОНАЛЬНЫЕ ДАННЫЕ ТРЕТЬИХ ЛИЦ ИСПОЛЬЗУЕМЫЕ ПОЛЬЗОВАТЕЛЯМИ</p>
-                                6.1. Используя Сайт Пользователь имеет право заносить данные третьих лиц для последующего использования.</br>
-                                6.2. Пользователь обязуется получить согласие субъекта персональных данных на использование посредством Сайта.</br>
-                                6.3. Оператор не использует персональные данные третьих лиц занесенные Пользователем.
-                            </br>6.4. Оператор обязуется предпринять необходимые меры для обеспечения сохранности персональных данных третьих лиц, занесенных Пользователем.
-                                <p>  7. ИНЫЕ ПОЛОЖЕНИЯ</p>
-                                7.1. К настоящей Политике конфиденциальности и отношениям между Пользователем и Оператором, возникающим в связи с применением Политики 
-                                конфиденциальности, подлежит применению право Российской Федерации.
-                            </br>7.2. Все возможные споры, вытекающие из настоящего Соглашения, подлежат разрешению в соответствии с действующим законодательством по месту регистрации Оператора. 
-                            Перед обращением в суд Пользователь должен соблюсти обязательный досудебный порядок и направить Оператору соответствующую претензию в письменном виде.
-                             Срок ответа на претензию составляет 30 (тридцать) рабочих дней.</br>
-                             7.3. Если по тем или иным причинам одно или несколько положений Политики конфиденциальности будут признаны недействительными или не имеющими юридической 
-                             силы, это не оказывает влияния на действительность или применимость остальных положений Политики конфиденциальности.
-                            </br>7.4. Оператор имеет право в любой момент изменять Политику конфиденциальности (полностью или в части) в одностороннем порядке без предварительного 
-                            согласования с Пользователем. Все изменения вступают в силу на следующий день после размещения на Сайте.
-                        </br>7.5. Пользователь обязуется самостоятельно следить за изменениями Политики конфиденциальности путем ознакомления с актуальной редакцией.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            
-            
-
-
-            
-            
-            </form>
-        </div>
-        
-    </div>
-
-
-</div>
-
-
-
-</br> </br>
-
-
-
-
-      <footer class="footer">
-        
-
-        <div class="copy"> 
-            <img src="https://sun9-24.userapi.com/impg/ZdV6MuSjlvpN7Gyr4Q9ZpUCHiGf28WlhMKDZqA/iOKbH7ZKZww.jpg?size=396x152&quality=95&sign=0194fe7e068a37b6994c512e1079011a&type=album"
-            width="210" height="100" />
-        </div>
-        <div class="bottom-links">
-            <div class="links">
-                <span>Навигация</span><br>
-                <div class="nav-links">
-                    <a href="#">Наверх</a>
-                    <a href="index3.html">Цены</a>
-                    <a href="index2.html">Диагностика</a>
-                    <a href="index6.html">Оптика</a>
-                </div>
-                <div class="nav-links">
-                    <a href="index.html#med">Медицинские услуги</a>
-                    <a href="index8.html">Ночные линзы</a>
-                    <a href="index4.html">Пациенту</a>
-                    <a href="index7.html">О нас</a>
-                </div>
-            </div>
-            <div class="links">
-                <span>Социальные сети</span><br>
-                <span>
-                  <a href="https://wa.me/79656413610"> 
-                    <img src="https://pypi-camo.freetls.fastly.net/04b7ff55ad3145f1de8abeff3b27344388178ff4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646b68656c79736b742f696d6167652f75706c6f61642f76313639373431313037302f77686174736170705f6c6f676f5f696e737874752e706e67" 
-                    width="57" height="auto" />
-                                  </a>  <a href="https://vk.com/oculariusufa"><img src="https://bioschool.pnpi.nrcki.ru/wp-content/uploads/2022/11/vkontakte-png-1024x1024.png" width="35" height="auto" />
-                    </a></span>
-            </div>
-        </div>
-    </footer>
-
-
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const submitButton = document.getElementById("submitButton");
-    const notification = document.getElementById("notification");
-    const formFields = document.querySelectorAll("input[required]"); 
-    submitButton.addEventListener("click", function (event) {
-        event.preventDefault(); 
-
-        let allFilled = true;
-        formFields.forEach(function (field) {
-            if (!field.value) {
-                allFilled = false; 
-                field.classList.add("error"); 
-            } else {
-                field.classList.remove("error");
-            }
-        });
-
-        if (allFilled) {
-            notification.style.display = "block"; 
-            
-            setTimeout(function () {
-                notification.style.display = "none"; 
-            }, 6000); 
-        } else {
-            alert("Пожалуйста, заполните все поля."); 
-        }
-    });
-});
-
-
-
-
-        document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("modal1");
-    const openModalButton = document.getElementById("openModal");
-    const closeModalButton = document.getElementById("closeModal");
-
-    openModalButton.addEventListener("click", function (e) {
-        e.preventDefault(); // Предотвратить переход по ссылке
-        modal.style.display = "block"; // Показать модальное окно
-    });
-
-    closeModalButton.addEventListener("click", function () {
-        modal.style.display = "none"; // Скрыть модальное окно
-    });
-
-    // Закрытие модального окна при клике вне его
-    window.addEventListener("click", function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none"; 
-            document.body.classList.remove("no-scroll");// Скрываем окно
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("modal12");
-    const openModalButton = document.getElementById("openModal2");
-    const closeModalButton = document.getElementById("closeModal2");
-
-    openModalButton.addEventListener("click", function (e) {
-        e.preventDefault(); // Предотвратить переход по ссылке
-        modal.style.display = "block"; // Показать модальное окно
-        document.body.classList.add("no-scroll"); // Добавить класс, чтобы отключить прокрутку
-    });
-
-    closeModalButton.addEventListener("click", function () {
-        modal.style.display = "none"; // Скрыть модальное окно
-        document.body.classList.remove("no-scroll"); // Удалить класс, чтобы включить прокрутку
-    });
-
-    // Закрытие модального окна при клике вне его
-    window.addEventListener("click", function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none"; 
-            document.body.classList.remove("no-scroll"); // Удалить класс, чтобы включить прокрутку
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("modal13");
-    const openModalButton = document.getElementById("openModal3");
-    const closeModalButton = document.getElementById("closeModal3");
-
-    openModalButton.addEventListener("click", function (e) {
-        e.preventDefault(); // Предотвратить переход по ссылке
-        modal.style.display = "block"; // Показать модальное окно
-        document.body.classList.add("no-scroll"); // Добавить класс, чтобы отключить прокрутку
-    });
-
-    closeModalButton.addEventListener("click", function () {
-        modal.style.display = "none"; // Скрыть модальное окно
-        document.body.classList.remove("no-scroll"); // Удалить класс, чтобы включить прокрутку
-    });
-
-    // Закрытие модального окна при клике вне его
-    window.addEventListener("click", function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none"; 
-            document.body.classList.remove("no-scroll"); // Удалить класс, чтобы включить прокрутку
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("modal14");
-    const openModalButton = document.getElementById("openModal4");
-    const closeModalButton = document.getElementById("closeModal4");
-
-    openModalButton.addEventListener("click", function (e) {
-        e.preventDefault(); // Предотвратить переход по ссылке
-        modal.style.display = "block"; // Показать модальное окно
-        document.body.classList.add("no-scroll"); // Добавить класс, чтобы отключить прокрутку
-    });
-
-    closeModalButton.addEventListener("click", function () {
-        modal.style.display = "none"; // Скрыть модальное окно
-        document.body.classList.remove("no-scroll"); // Удалить класс, чтобы включить прокрутку
-    });
-
-    // Закрытие модального окна при клике вне его
-    window.addEventListener("click", function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none"; 
-            document.body.classList.remove("no-scroll"); // Удалить класс, чтобы включить прокрутку
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("modal15");
-    const openModalButton = document.getElementById("openModal5");
-    const closeModalButton = document.getElementById("closeModal5");
-
-    openModalButton.addEventListener("click", function (e) {
-        e.preventDefault(); // Предотвратить переход по ссылке
-        modal.style.display = "block"; // Показать модальное окно
-        document.body.classList.add("no-scroll"); // Добавить класс, чтобы отключить прокрутку
-    });
-
-    closeModalButton.addEventListener("click", function () {
-        modal.style.display = "none"; // Скрыть модальное окно
-        document.body.classList.remove("no-scroll"); // Удалить класс, чтобы включить прокрутку
-    });
-
-    // Закрытие модального окна при клике вне его
-    window.addEventListener("click", function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none"; 
-            document.body.classList.remove("no-scroll"); // Удалить класс, чтобы включить прокрутку
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("modal16");
-    const openModalButton = document.getElementById("openModal6");
-    const closeModalButton = document.getElementById("closeModal6");
-
-    openModalButton.addEventListener("click", function (e) {
-        e.preventDefault(); // Предотвратить переход по ссылке
-        modal.style.display = "block"; // Показать модальное окно
-        document.body.classList.add("no-scroll"); // Добавить класс, чтобы отключить прокрутку
-    });
-
-    closeModalButton.addEventListener("click", function () {
-        modal.style.display = "none"; // Скрыть модальное окно
-        document.body.classList.remove("no-scroll"); // Удалить класс, чтобы включить прокрутку
-    });
-
-    // Закрытие модального окна при клике вне его
-    window.addEventListener("click", function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none"; 
-            document.body.classList.remove("no-scroll"); // Удалить класс, чтобы включить прокрутку
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("modal17");
-    const openModalButton = document.getElementById("openModal7");
-    const closeModalButton = document.getElementById("closeModal7");
-
-    openModalButton.addEventListener("click", function (e) {
-        e.preventDefault(); // Предотвратить переход по ссылке
-        modal.style.display = "block"; // Показать модальное окно
-        document.body.classList.add("no-scroll"); // Добавить класс, чтобы отключить прокрутку
-    });
-
-    closeModalButton.addEventListener("click", function () {
-        modal.style.display = "none"; // Скрыть модальное окно
-        document.body.classList.remove("no-scroll"); // Удалить класс, чтобы включить прокрутку
-    });
-
-    // Закрытие модального окна при клике вне его
-    window.addEventListener("click", function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none"; 
-            document.body.classList.remove("no-scroll"); // Удалить класс, чтобы включить прокрутку
-        }
-    });
-});
-
-
-
-         </script>
-
-           </body>
-           </html>
+    .container112 {
+        background-color: #ffffff;
+        border: 2px solid #FF7F00;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+        width: 800px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        font-family: 'Days';
+        margin-left: 150px;
+     
+    
+    
+      }
+      
+      .icon112 {
+        display: inline-block;
+        font-size: 24px;
+        color: #FF7F00;
+        margin-right: 10px;
+        font-family: 'Days';
+        font-size: 40px;
+    
+    
+      }
+      
+      .text1122 {
+        color: #FF7F00;
+        text-align: left;
+        margin-right: 170px;
+        font-size: 18px;
+    
+    
+      }
+      .text112 {
+        color: #FF7F00;
+        text-align: right;
+        font-size: 14px;
+    
+    
+      }
+    }
