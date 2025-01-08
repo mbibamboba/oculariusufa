@@ -229,16 +229,13 @@
     margin-left: 65px; 
 
    }
+   li::marker  {
+    color: #FF7F00;
+   
+}
    .imgm  {
  
-    height: auto;
-    width: 1180px;
-    overflow: hidden;
-    border-radius: 5%; 
-    display: inline-block;
-    margin: 5px 0px -60px -250px;  
-    position: relative;
-    align-items: center;
+    display: none;
 }  
 }
 
@@ -424,7 +421,6 @@ h1{
     font-size: 15px;
 }
 .text-containerl li::before {
-    content: ".";
     color: #FF7F00;
     font-size: 37px;
     position: absolute;
@@ -456,14 +452,16 @@ h1{
 
 }
 .textl li::before {
-    content: ".";
     color: #FF7F00;
     font-size: 77px;
     position: absolute;
     left: -1px;
     top: -67px;
 }
-
+li::marker  {
+    color: #FF7F00;
+   
+}
 .textl img {
     height: 370px;
     width: 370px;
