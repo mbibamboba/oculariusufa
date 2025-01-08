@@ -6,12 +6,6 @@
  font-style: normal;
 }
 
-@font-face {
-    font-family: 'Clear Sans';
- src: url('ClearSans-Medium.ttf') format('truetype');
-  font-weight: normal;
- font-style: normal;
-}
 
 @font-face {
     font-family: 'Clear Sans Medium';
