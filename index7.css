@@ -1007,7 +1007,7 @@ margin-top: -260px;
         justify-content: space-around; 
         flex-wrap: wrap; 
         margin: 0px;
-        margin-left: 40px;
+        margin-left: 10px;
     }
     
     .text-containerl li {
@@ -1056,7 +1056,7 @@ margin-top: -260px;
     padding: 20px;
     border: 1px solid #888;
     width: 750px; /* Ширина 80% */
-    height: 550px;
+    height: 950px;
     border-radius: 30px;
 
 }
@@ -1219,7 +1219,7 @@ margin-top: -260px;
         display: flex;
         align-items: center;
         font-family: 'Days';
-        margin-left: 150px;
+        margin-left: 100px;
      
     
     
