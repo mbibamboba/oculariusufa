@@ -9,7 +9,7 @@
     border-radius: 10px;
     overflow: hidden;
   }
-
+ 
   @font-face {
     font-family: 'Days';
  src: url('Days.ttf') format('truetype');
