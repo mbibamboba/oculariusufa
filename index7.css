@@ -1025,7 +1025,7 @@ margin-top: -260px;
         overflow: hidden;
         border-radius: 50%; 
         display: inline-block;
-        margin: 10px 0px -60px -50px;  
+        margin: 10px 0px -60px 10px;  
         border: 10px solid #f0a458; 
     }
     
@@ -1056,7 +1056,7 @@ margin-top: -260px;
     padding: 20px;
     border: 1px solid #888;
     width: 750px; /* Ширина 80% */
-    height: 950px;
+    height: 600px;
     border-radius: 30px;
 
 }
