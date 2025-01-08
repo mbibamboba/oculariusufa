@@ -2,7 +2,9 @@
 
   @font-face {
        font-family: 'Days';
-    src: url('oculariusufa/Days.ttf') format('truetype');
+    src: url('Days.ttf') format('truetype');
+     font-weight: normal;
+    font-style: normal;
   }
 
 
