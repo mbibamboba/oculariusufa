@@ -1,4 +1,15 @@
 @charset "utf-8";
+@font-face {
+    font-family: 'Inter';
+    src: url('https://github.com/mbibamboba/oculariusufa/blob/main/ClearSans-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Days';
+    src: url('https://github.com/mbibamboba/oculariusufa/blob/main/Days.ttf') 
+   ;
+  }
+
+
 ::-webkit-scrollbar {
     background-color: #FFCB98;
     overflow: hidden;
@@ -200,7 +211,7 @@
         justify-content: center;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 1080px) {
         .footer {
             flex-direction: column; 
             align-items: center; 
@@ -221,7 +232,25 @@
         margin-left: 60px; 
 
         }
+      
     }
+    @media (max-width: 1024px) {
+
+    .links img { 
+        border-radius: 300px;
+    height: auto;
+    align-items: center; 
+
+}
+.l {
+    align-items: center; 
+    margin-left: 35px; 
+
+}
+
+
+}
+
  /*карусель*/
 
  * {
@@ -496,7 +525,7 @@
         }
 
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1080px) {
 
           
             
@@ -586,7 +615,7 @@
         left: 0;
         top: -10px;
         bottom: 900px;
-        height: 1050px;
+        height: 1060px;
         background-color: rgba(0, 0, 0, 0.733);
         color: white;
         display: flex;
@@ -607,7 +636,7 @@
         width: 750px;
         height: 1200px;
         
-        margin: 50px 0 0px 90px;
+        margin: 50px 0 0px 130px;
         }
        
         .slide-text1 {
@@ -1066,7 +1095,7 @@ textarea {
     background-color: #ff8533;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
     .background-container {
         background-color: #ffffff;
 background-image: none;
@@ -1244,7 +1273,7 @@ h1 {
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
     .containers {
         flex-direction: column;
         margin-left: 35px;
