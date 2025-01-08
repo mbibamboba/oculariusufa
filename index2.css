@@ -971,10 +971,10 @@ h1{
     position: relative;
     font-size: 20px;
     margin-left: 20pt;
+    
 
 }
 .textl li::before {
-    content: ".";
     color: #FF7F00;
     font-size: 77px;
     position: absolute;
@@ -1048,36 +1048,73 @@ margin-top: -260px;
         margin-left: 20pt;
     
     }
+    .textl li::marker  {
+        color: #FF7F00;
+       
+    }
 }
 
+@media (max-width: 1000px)   {
 
-@media (max-width: 900px) {
-.textl img {
-    height: 0px;
-    width: 0px;
-
-
-}}
-@media (max-width: 768px) {
-    .container2l {
-        flex-direction: column; 
-        align-items: center;
+    .textl img {
+        display: none;
+    
+    }
+     .container2 img {
+        display: none;
+    
+    }
+    .img-container2 {
+        display: none;
 
     }
-    .text-containerl li {
-    margin-bottom: 15px;
-    padding-left: 5px;
-    position: relative;
-    font-size: 15px;
-}
-.text-containerl li::before {
-    content: ".";
-    color: #FF6B00;
-    font-size: 77px;
-    position: absolute;
-    left: -2px;
-    top: -25px;
-}
-
-
+    .text-container2 {
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+        padding: 10px 10px 10px 10px; 
+        border-radius: 40px;
+        background: #f6f5f5;
+        height: 970px; 
+        width: 900px;
+        margin-left: 75px;
+        line-height: 19px;
+        font-size: 14px;
+    }
+    .text-container2 h3 {
+        font-family: 'Days';
+        font-weight: normal;
+          margin: 30px 0px -20px 0px;
+          color: #FF7F00;
+          font-size: 25px;
+          text-align: center;
+      }
+    .text-container2 .h2 {
+        font-family: 'Clear Sans Medium';
+        margin: 50px 0px 0px 80px;
+        color: #000000;
+        font-size: 15px;
+        text-align:left;
+    }
+    .textl
+    {
+        font-family: 'Clear Sans';
+        margin: 10px 0px;
+        color: #000000;
+        font-size: 14px;
+        text-align:left;
+        margin-left: 70pt;
+        margin-right: 70pt;
+    
+    }
+    .textl li {
+        margin-bottom: 15px;
+        padding-left: 5px;
+        position: relative;
+        font-size: 14px;
+        margin-left: 20pt;
+    
+    }
+    .textl li::marker  {
+        color: #FF7F00;
+       
+    }
 }
