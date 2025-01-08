@@ -1,11 +1,11 @@
 @charset "utf-8";
 @font-face {
     font-family: 'Inter';
-    src: url('https://github.com/mbibamboba/oculariusufa/blob/main/ClearSans-Medium.ttf');
+    src: url('ClearSans-Medium.ttf');
   }
   @font-face {
     font-family: 'Days';
-    src: url('https://github.com/mbibamboba/oculariusufa/blob/main/Days.ttf') 
+    src: url('Days.ttf') 
    ;
   }
 
