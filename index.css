@@ -1,12 +1,11 @@
 @charset "utf-8";
 @font-face {
     font-family: 'Inter';
-    src: url('/ClearSans-Medium.ttf');
+    src: url('/ClearSans-Medium.ttf') format('truetype');
   }
   @font-face {
-    font-family: 'Days';
-    src: url('/Days.ttf') 
-   ;
+       font-family: 'Days';
+    src: url('/Days.ttf') format('truetype');
   }
 
 
