@@ -555,7 +555,33 @@ article {
   }
   
   }
-  
+  @media screen and (max-width: 1080px) {
+    article {
+      container: card/inline-size;
+    }
+    article img {
+    width: 100%;
+    height: auto;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    margin-top: -90px;
+    border-radius: 10px 10px 10px 10px;
+    filter: brightness(80%)
+  }
+  article p{
+    font-family: "Clear Sans";
+  font-size: 7px;
+}
+article h2 {
+    margin: 0 0 18px 0;
+    font-family: "Days";
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+  }
+  }
 /*запись на прием*/
 .background-container {
     background-image: url('https://psv4.userapi.com/s/v1/d/n4Yd49k3U3UtSsWyreHEqPk0eYwVXOT4f7hEiCrLDbBwwLmEBiK7j1S00YFXB-1SvJvfACEJdQFZ7yEs25STguy6JFJgXFwKNvr4wCS1hnO9k1edHKNJQg/Bez_imeni-1.jpg');
