@@ -8,12 +8,6 @@
  font-style: normal;
 }
 
-@font-face {
-    font-family: 'Clear Sans';
- src: url('ClearSans-Medium.ttf') format('truetype');
-  font-weight: normal;
- font-style: normal;
-}
 
 @font-face {
     font-family: 'Clear Sans Medium';
@@ -1107,69 +1101,3 @@ margin-top: -260px;
     }
 }
 
-@media (max-width: 1000px)   {
-
-    .textl img {
-        display: none;
-    
-    }
-     .container2 img {
-        display: none;
-    
-    }
-    .img-container2 {
-        display: none;
-
-    }
-    .text-container2 {
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-        padding: 10px 10px 10px 10px; 
-        border-radius: 40px;
-        background: #f6f5f5;
-        height: 970px; 
-        width: 900px;
-        margin-left: 75px;
-        line-height: 19px;
-        font-size: 14px;
-    }
-    .text-container2 h3 {
-        font-family: 'Days';
-        font-weight: normal;
-          margin: 30px 0px -20px 0px;
-          color: #FF7F00;
-          font-size: 25px;
-          text-align: center;
-      }
-    .text-container2 .h2 {
-        font-family: 'Clear Sans Medium';
-        margin: 50px 0px 0px 80px;
-        color: #000000;
-        font-size: 15px;
-        text-align:left;
-    }
-    .textl
-    {
-        font-family: 'Clear Sans Medium';
-        margin: 10px 0px;
-        color: #000000;
-        font-size: 10px;
-        text-align:left;
-        margin-left: 70pt;
-        margin-right: 70pt;
-    
-    }
-    .textl li {
-        font-family: 'Clear Sans Medium';
-
-        margin-bottom: 15px;
-        padding-left: 5px;
-        position: relative;
-        font-size: 10px;
-        margin-left: 20pt;
-    
-    }
-    .textl li::marker  {
-        color: #FF7F00;
-       
-    }
-}
