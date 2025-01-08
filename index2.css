@@ -577,6 +577,56 @@ background-image: none;
     }
 }
 
+@media (max-width: 1320px) {
+    .background-container {
+        background-color: #ffffff;
+background-image: none;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 15px 30px 30px 30px;
+        width: 100%;
+        max-width: 1520px;
+        height: auto;
+        min-height: 800px;
+    }
+
+    .form-container {
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .checkbox-container {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .submit-button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        background-color: #ff8533;
+
+    }
+
+    .background-container h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+}
 
 
 
