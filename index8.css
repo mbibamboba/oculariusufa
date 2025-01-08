@@ -9,6 +9,27 @@
     border-radius: 10px;
     overflow: hidden;
   }
+
+  @font-face {
+    font-family: 'Days';
+ src: url('Days.ttf') format('truetype');
+  font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+ src: url('ClearSans-Medium.ttf') format('truetype');
+  font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clear Sans Medium';
+ src: url('ClearSans-Medium.ttf') format('truetype');
+  font-weight: normal;
+ font-style: normal;
+}
   body {
   margin: 0;
   box-sizing: border-box;
@@ -18,6 +39,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: -15px;
+  padding: 20px 0px 0px 0px;
 
   background-color: #f7f7f7;
   }
@@ -126,7 +148,44 @@
 }
 
 .dropdown1:hover .dropbtn {background-color: #FF7F00;}
+@media ( max-width: 1080px) {
+    .footer {
+        flex-direction: column; 
+        align-items: center; 
+    }
 
+    .bottom-links {
+        margin-right: 0; 
+        flex-direction: column; 
+        padding: 20px 0; 
+    }
+
+    .bottom-links .links {
+        padding: 10px 0; 
+    }
+    .copy img { 
+        border-radius: 300px;
+    height: auto;
+    margin-left: 60px; 
+
+    }
+  
+}
+@media (max-width: 1024px) {
+
+.links img { 
+    border-radius: 300px;
+height: auto;
+align-items: center; 
+
+}
+.l {
+align-items: center; 
+margin-left: 35px; 
+
+}
+
+}
 .copy img {
     color: #000000;
     font-weight: bold;
@@ -296,6 +355,23 @@ h1{
   
 
 }
+
+
+@media ( max-width: 1080px) {
+    li::marker  {
+        color: #FF7F00;
+       
+    }
+
+
+   
+
+}
+
+
+
+
+
 .img-containerl {
     height: 120px;
     width: 120px;
@@ -346,7 +422,6 @@ h1{
     font-size: 15px;
 }
 .text-containerl li::before {
-    content: ".";
     color: #FF7F00;
     font-size: 37px;
     position: absolute;
@@ -378,7 +453,6 @@ h1{
 
 }
 .textl li::before {
-    content: ".";
     color: #FF7F00;
     font-size: 82px;
     position: absolute;
@@ -394,25 +468,12 @@ margin-left: -95px;
 
 }
 
-
-
-@media (max-width: 900px) {
-.textl img {
-    height: 350px;
-    width: 870px;
-margin-top: 10px;
-
-}
+li::marker  {
+    color: #FF7F00;
+   
 }
 
-@media (max-width: 800px) {
-    .textl img {
-        height: 300px;
-        width: 775px;
-    margin-top: 10px;
-    
-    }
-}
+
      /*серт*/
      .carousel {
         display: flex;
