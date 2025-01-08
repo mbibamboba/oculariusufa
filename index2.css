@@ -1031,7 +1031,7 @@ margin-top: -260px;
     }
     .textl
     {
-        font-family: 'Clear Sans';
+        font-family: 'Clear Sans Medium';
         margin: 10px 0px;
         color: #000000;
         font-size: 14px;
@@ -1041,6 +1041,8 @@ margin-top: -260px;
     
     }
     .textl li {
+        font-family: 'Clear Sans Medium';
+
         margin-bottom: 15px;
         padding-left: 5px;
         position: relative;
@@ -1096,20 +1098,22 @@ margin-top: -260px;
     }
     .textl
     {
-        font-family: 'Clear Sans';
+        font-family: 'Clear Sans Medium';
         margin: 10px 0px;
         color: #000000;
-        font-size: 14px;
+        font-size: 10px;
         text-align:left;
         margin-left: 70pt;
         margin-right: 70pt;
     
     }
     .textl li {
+        font-family: 'Clear Sans Medium';
+
         margin-bottom: 15px;
         padding-left: 5px;
         position: relative;
-        font-size: 14px;
+        font-size: 10px;
         margin-left: 20pt;
     
     }
