@@ -3,11 +3,13 @@
     background-color: #FFCB98;
     overflow: hidden;
   }
+  
   ::-webkit-scrollbar-thumb {
     background-color: #FF7F00;
     border-radius: 10px;
     overflow: hidden;
   }
+
   @font-face {
     font-family: 'Days';
  src: url('Days.ttf') format('truetype');
@@ -281,7 +283,7 @@
         }
 
 
-/*лечение  ghjdthrf*/
+/*лечение */
 
 .fon {
     background-image: url('https://sun9-12.userapi.com/s/v1/ig2/--fS-i-v5fTPm6NtbSX0ACgoVhCNgQLf2xW6Yy4Ac_YbjMu4tAWYpQCW0Iwu0BD8CDxKUXZmUpqGQUIAv-yhLE9K.jpg?quality=95&as=32x39,48x58,72x87,108x130,160x193,240x289,360x434,480x579,540x651,640x772,720x868,758x914&from=bu&u=Cexi1eudm7K7qAELkaIsDAtOYRn-60gDLb3r0GDDrVI&cs=758x914');
@@ -1249,4 +1251,88 @@ margin-top: -260px;
     
     
       }
+
+
+
+
+
+      .modal12,.modal13,.modal14,.modal15,.modal16,.modal17 {
+        display: none; /* Скрыть модальное окно по умолчанию */
+        position: fixed; 
+        z-index: 100; /*Сидит поверх */
+        left: 0;
+        top: 0;
+        width: 100%; /* Полная ширина */
+        height: 100%; /* Полная высота */
+        overflow: hidden; /* Включить прокрутку, если необходимо */
+        background-color: rgba(0, 0, 0, 0.5); /* Черный фон с прозрачностью */
+    
+    }
+    
+    .modal-content2{
+        background-color: #fefefe;
+        margin: 5% auto; /* 15% сверху и центрировать */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Ширина 80% */
+        max-height: 85%; /* Максимальная высота для горизонтальной прокрутки */
+        overflow-y: auto; /* Прокрутка по вертикали */
+        border-radius: 30px;
+    
+    }
+    .modal-content4 {
+        background-color: #fefefe;
+        margin: 5% auto; /* 15% сверху и центрировать */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Ширина 80% */
+        max-height: 85%; /* Максимальная высота для горизонтальной прокрутки */
+        overflow-y: auto; /* Прокрутка по вертикали */
+        border-radius: 30px;
+    
+    }
+    .close-button2 {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .modal-text2 p {
+        color: #ff6b00;
+        font-size: 18px;
+        
+        font-family: 'Days';
+    }
+    .modal-content2 h2 {
+        color: #ff6b00;
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Days';
+    }
+    .close-button2:hover,
+    .close-button2:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .modal-text2 {
+        max-height: 850px; /* Ограничена высота текста для прокрутки */
+        overflow-y: auto; /* Вертикальная прокрутка для текста */
+        font-family: 'Clear Sans';
+    
+    }
+    
+    .modal-text4 {
+        max-height: 650px; /* Ограничена высота текста для прокрутки */
+        overflow-y: auto; /* Вертикальная прокрутка для текста */
+        font-family: 'Clear Sans';
+        font-size: 10px;
+    
+    }
+    .no-scroll {
+        overflow: hidden; /* Отключает прокрутку */
+    }
+    
+
     }
