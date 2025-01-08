@@ -39,7 +39,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: -15px;
-  padding: 30px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
 
   background-color: #f7f7f7;
   }
@@ -158,6 +158,8 @@
         margin-right: 0; 
         flex-direction: column; 
         padding: 20px 0; 
+        margin-left: 350px;
+
     }
 
     .bottom-links .links {
@@ -166,7 +168,7 @@
     .copy img { 
         border-radius: 300px;
     height: auto;
-    margin-left: 60px; 
+    margin-left: 50px; 
 
     }
   
