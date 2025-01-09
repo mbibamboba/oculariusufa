@@ -53,8 +53,8 @@
   
   
 
-  /*верхушка*/
-  .dropbtn {
+ /*верхушка*/
+ .dropbtn {
     
     color: #000000;
     padding: 10px;
@@ -147,6 +147,38 @@
 }
 
 .dropdown1:hover .dropbtn {background-color: #FF7F00;}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 3px 0;
+margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-items.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: flex; 
+    }
+}
 
 .copy img {
     color: #000000;
@@ -416,15 +448,8 @@ margin-left: -70px;
 }
 }
 
-@media (max-width: 800px) {
-    .textl img {
-        height: 300px;
-        width: 550px;
-    margin-top: 10px;
-    margin-left: -10px;
-    
-    }
-}
+
+
 
 
 /*оправы*/
