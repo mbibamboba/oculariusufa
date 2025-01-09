@@ -2,6 +2,7 @@
 <html >
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=1251">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
 
     <title>"Окуляриус" Оптика </title>
     
@@ -11,6 +12,31 @@
 
 
 <style>
+  .links {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.social-icons {
+    display: flex; 
+    gap: 10px; 
+}
+
+.social-icons img {
+    height: auto; 
+    max-height: 60px; 
+}
+.ll
+{
+
+    margin-top: -16px;
+}
+.l
+{
+
+    margin-top: -7px;
+}
     @media (max-width: 800px) {
     .tabs-container { 
         width: 540px;
@@ -87,7 +113,118 @@
 margin-left: 10px; 
  }
 }
+@media (max-width: 768px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 470px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.737) 100%,
+     rgba(0, 0, 0, 0.5) 100%),
+     url("https://oculariusufa.ru/assets/images/services/optika_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    
+    }
+    .textl img {
+        height: 250px;
+        width: 400px;
+    margin-top: 10px;
+    margin-left: -15px;
+    
+    }
+}
+@media (max-width: 768px) {
+    .tabs-container { 
+        width: 340px;
+        max-width: 620px; 
+        min-width: 420px;
+        font-family: 'Clear Sans';
+        margin: auto;
+    }
+    
+    .tabs {
+        font-family: 'Clear Sans';
+        margin-bottom: 28px; 
+        display: flex;
+          justify-content: space-between;
+    }
+    
+    .tabs a {
+        font-family: 'Clear Sans';
+        cursor: pointer;
+        padding: 12px 24px;
+        width: 120px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 18px;
+        background: linear-gradient(145deg, #ffffff, #ffffff);
+        box-shadow:  3px 3px 5px #bebebe, 
+                     -3px -3px 5px #ffffff;
+    }
+    
+    .tabs a.active {
+        font-family: 'Clear Sans';
+        background-color: #f4f4f4;
+        color: #000000;
+        cursor: default;
+        padding: 14px 22px 10px 26px;
+        background: #f4f4f4;
+        box-shadow: inset 3px 3px 5px #c4c4c4, 
+                    inset -3px -3px 5px #ececec;
+    }
+    
+    .tabcontent {
+        padding: 26px;    
+        font-family: 'Clear Sans';
+        font-size: 14px;
 
+        width: 400px;
+        margin-left: -15px;
+        min-height: 288px;
+        display: none;    
+        border-radius: 18px;
+        background: #f4f4f4;
+        box-shadow:  3px 3px 6px #bebebe, 
+                     -3px -3px 6px #ffffff;
+    }
+    
+    .content .active {
+        display: block;
+    }
+    .tabcontent p {
+        margin-bottom: 12px;
+    }
+    .tabcontent p:last-child {
+        margin-bottom: 0;
+    }
+    .tabcontent .read-more-link a {
+        color: #626262;
+        text-decoration: none;
+        font-size: 0.85em;
+        font-weight: bold;    font-family: 'Clear Sans';
+
+    }
+    .tabcontent img {
+        width: 170px;
+margin-left: 10px; 
+ }
+ .textl
+{
+    font-family: 'Clear Sans';
+    margin: 10px 0px;
+    color: #000000;
+    font-size: 17px;
+    text-align:left;
+    margin-left: 40pt;
+    margin-right: 30pt;
+
+}
+}
 </style>
   <body>
     <header class="header">
@@ -96,78 +233,85 @@ margin-left: 10px;
             width="170" height="70" />
         </a>
        
-       <nav class="nav-items">
-            <div class="dropdown">
-                <button class="dropbtn">Диагностика</button>
-                <div class="dropdown-content">
-                  <a href="index2.html">Диагностика</a>
-                  <a href="index2.html#com">Комплексная диагностика</a>
-                  <a href="index2.html#lech">Лечение</a>
-                  <a href="index2.html#ad">Адаптационное лечение</a>
+      
+        <nav>
+          <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+      
+          <div class="nav-items" id="nav-items">
+              <div class="dropdown">
+                  <button class="dropbtn">Диагностика</button>
+                  <div class="dropdown-content">
+                      <a href="index2.html">Диагностика</a>
+                      <a href="index2.html#com">Комплексная диагностика</a>
+                      <a href="index2.html#lech">Лечение</a>
+                      <a href="index2.html#ad">Адаптационное лечение</a>
+                  </div>
+              </div>
+              <div class="dropdown">
+                  <button class="dropbtn">Ночные линзы</button>
+                  <div class="dropdown-content">
+                      <a href="index8.html">Ночные линзы</a>
+                      <a href="index8.html#sert">Сертификаты</a>
+                  </div>
+              </div>
+              <div class="dropdown">
+                  <button class="dropbtn">Оптика</button>
+                  <div class="dropdown-content">
+                      <a href="index6.html#sol">Солнечные очки</a>
+                      <a href="index6.html#opr">Оправы</a>
+                      <a href="index6.html#kon">Контакты</a>
+                  </div>
+              </div>
+              <div class="dropdown">
+                  <button class="dropbtn"><a style="color: black; text-decoration: none;" href="index2.html#lech">Лечение</a></button>
+              </div>
+              <div class="dropdown">
+                  <button class="dropbtn">Пациенту</button>
+                  <div class="dropdown-content">
+                      <a href="index4.html">Информация по здоровью</a>
+                      <a href="index4.html#glaz">Неотложная глазная помощь</a>
+                      <a href="index4.html#bliz">Памятка по близорукости</a>
+                      <a href="index4.html#amd">Памятка по амблиопии</a>
+                      <a href="index4.html#tests">Тесты и упражнения</a>
+                  </div>
                 </div>
-              </div><div class="dropdown">
-            <button class="dropbtn">Ночные линзы</button>
-            <div class="dropdown-content">
-              <a href="index8.html">Ночные линзы</a>
-              <a href="index8.html#sert">Сертификаты</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Медицинские услуги</button>
+                    <div class="dropdown-content">
+                        <a href="index.html#med">Медицинские услуги</a>
+                        <a href="index2.html">Диагностика зрения</a>
+                        <a href="index8.html#">Ночные линзы</a>
+                        <a href="index2.html#lech">Лечение</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a style="color: black; text-decoration: none;" href="index3.html">Цены</a></button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">О нас</button>
+                    <div class="dropdown-content">
+                        <a href="index7.html">О клинике</a>
+                        <a href="index7.html#ob">Оборудование</a>
+                        <a href="index7.html#help">Неотложная глазная помощь</a>
+                        <a href="index7.html#new">Новости клиники</a>
+                    </div>
+                </div>
+                <div class="dropdown1">
+                  <button class="dropbtn1">Позвоните нам!
+                      <img src="https://sun9-21.userapi.com/impg/PL-jxJNXevT_wXe9TEi0K-hwReTStzPwo1ydDA/bj_ccuUU8Xg.jpg?size=39x27&quality=95&sign=e01cf0c81f4a8850529b91bc9fcb392e&type=album"
+                      width="25" height="17" />
+                  </button>
+                  <div class="dropdown-content1">
+                    <a href="tel:+7 (965) 641-36-10">+7 (965) 641-36-10</a>
+                    <a href="tel:+7 (347) 287-52-91">+7 (347) 287-52-91</a>
+                  </div>
+                </div>
             </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Оптика</button>
-            <div class="dropdown-content">
-                <a href="index6.html#sol">Солнечные очки</a>
-                <a href="index6.html#opr">Оправы</a>
-                <a href="index6.html#kon">Контакты</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">  <a style="color: black; text-decoration: none;" href="index2.html#lech">Лечение</a></button>
-          </div> </div>
-          <div class="dropdown">
-            <button class="dropbtn">Пациенту</button>
-            <div class="dropdown-content">
-                <a href="index4.html">Информация по здоровью</a>
-                <a href="index4.html#glaz">Неотложная глазная помощь</a>
-                <a href="index4.html#bliz">Памятка по близорукости</a>
-                <a href="index4.html#amd">Памятка по амблиопии</a>
-                <a href="index4.html#tests">Тесты и упражнения</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Медицинские услуги</button>
-            <div class="dropdown-content">
-                <a href="index.html#med">Медицинские услуги</a>
-                <a href="index2.html">Диагностика зрения</a>
-                <a href="index8.html#">Ночные линзы</a>
-                <a href="index2.html#lech">Лечение</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn"><a style="color: black; text-decoration: none;" href="index3.html">Цены</a></button>
-
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">О нас</button>
-            <div class="dropdown-content">
-                <a href="index7.html">О клинике</a>
-                <a href="index7.html#ob">Оборудование</a>
-                <a href="index7.html#help">Неотложная глазная помощь</a>
-                <a href="index7.html#new">Новости клиники</a>
-            </div>
-          </div>
-        
-
-          <div class="dropdown1">
-            <button class="dropbtn1">Позвоните нам!
-                <img src="https://sun9-21.userapi.com/impg/PL-jxJNXevT_wXe9TEi0K-hwReTStzPwo1ydDA/bj_ccuUU8Xg.jpg?size=39x27&quality=95&sign=e01cf0c81f4a8850529b91bc9fcb392e&type=album"
-                width="25" height="17" />
-            </button>
-            <div class="dropdown-content1">
-              <a href="tel:+7 (965) 641-36-10">+7 (965) 641-36-10</a>
-              <a href="tel:+7 (347) 287-52-91">+7 (347) 287-52-91</a>
-            </div>
-          </div>
-
+           
         </nav>
 
       </header>
@@ -383,20 +527,29 @@ Emma Moser – это молодой австрийский бренд. Долг
                 </div>
             </div>
             <div class="links">
-              <span>Социальные сети</span><br>
-              <span>
-                <a href="https://wa.me/79656413610"> 
-                  <img src="https://pypi-camo.freetls.fastly.net/04b7ff55ad3145f1de8abeff3b27344388178ff4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646b68656c79736b742f696d6167652f75706c6f61642f76313639373431313037302f77686174736170705f6c6f676f5f696e737874752e706e67" 
-                  width="57" height="auto" />
-                                </a>  <a href="https://vk.com/oculariusufa"><img src="https://bioschool.pnpi.nrcki.ru/wp-content/uploads/2022/11/vkontakte-png-1024x1024.png" width="35" height="auto" />
-                  </a></span>
+              <span>Социальные сети</span>
+              <span class="social-icons">
+                  <a href="https://wa.me/79656413610" class="ll"> 
+                      <img src="https://pypi-camo.freetls.fastly.net/04b7ff55ad3145f1de8abeff3b27344388178ff4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646b68656c79736b742f696d6167652f75706c6f61642f76313639373431313037302f77686174736170705f6c6f676f5f696e737874752e706e67" 
+                      width="57" height="auto" />
+                  </a>  
+                  <a href="https://vk.com/oculariusufa" class="l">
+                      <img src="https://bioschool.pnpi.nrcki.ru/wp-content/uploads/2022/11/vkontakte-png-1024x1024.png" 
+                      width="38" height="auto" />
+                  </a>
+              </span>
+          </div>
+          
+      </div>
+  </footer>
 
-                    
-            </div>
-        </div>
-  
-        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script>
+    function toggleMenu() {
+        const navItems = document.getElementById('nav-items');
+        navItems.classList.toggle('active');
+    }
+  </script>
         <script>
 
             const tabs = document.querySelectorAll('.tab')
