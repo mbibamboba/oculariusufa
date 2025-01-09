@@ -2,6 +2,7 @@
 <html >
   <head>
         <meta http-equiv="Content-Type" content="text/html; charset=1251">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
 
     <title>"Окуляриус" офтальмологический центр </title>
 
@@ -32,7 +33,336 @@
 
 
 
+    @media (max-width: 768px) {
 
+          
+            
+body {
+margin: 0 0 0 0;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+
+
+.carousel {
+position: relative;
+width: auto;
+overflow: hidden;
+height: 740px;
+
+}
+
+.carousel-images {
+display: flex;
+transition: transform 0.10s ease;
+background: #000000; 
+}
+
+.slide {
+min-width: 100vw;
+height: 90vh;
+position: relative;
+}
+
+.carousel-images img {
+width: 100%;
+height: 750px;
+object-fit: cover;
+opacity: 500%;
+
+filter: blur(2px)
+
+
+}
+
+input[type="radio"] {
+display: none;
+}
+
+#slide1:checked ~ .carousel-images {
+transform: translateX(0);
+}
+
+#slide2:checked ~ .carousel-images {
+transform: translateX(-100%);
+}
+
+#slide3:checked ~ .carousel-images {
+transform: translateX(-200%);
+}
+
+#slide4:checked ~ .carousel-images {
+transform: translateX(-300%);
+}
+
+.buttons {
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+}
+
+.buttons label {
+cursor: pointer;
+padding: 5px;
+margin: 0 10px;
+background-color: rgb(0, 0, 0);
+border-radius: 150%;
+transition: background-color 0.9s;
+}
+
+#slide1:checked ~ .buttons label[for="slide1"],
+#slide2:checked ~ .buttons label[for="slide2"],
+#slide3:checked ~ .buttons label[for="slide3"],
+#slide4:checked ~ .buttons label[for="slide4"] {
+background-color: #ffa142;
+}
+
+.slide-overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+top: -10px;
+bottom: 900px;
+height: 900px;
+background-color: rgba(0, 0, 0, 0.733);
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center; 
+}
+
+.slide-text {
+font-size: 1.2em;
+margin: 10px 10px 650px 10px;
+
+}
+
+.slide-content {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 760px;
+height: 1200px;
+
+margin: -150px 0 0px -200px;
+}
+
+.slide-text1 {
+font-size: 35pt;
+font-family: 'Days';
+color: #FF7F00;
+margin: 0;
+text-align: center;
+margin-top: -45px;
+margin-left: 260px;
+
+}
+
+.slide-content .slide-text2 {
+        font-size: 10pt;
+        font-family: 'Inter';
+        color: #ffffff;
+        text-align: center;
+        margin: 10px 0 0px 100px;
+        margin-left: 230px;
+
+        }
+        
+        .slide-content .slide-button {
+        background-color: #FF7F00;
+        color: rgb(255, 255, 255);
+        padding: 15px 17px;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        font-family: 'Days';
+        margin: 15px 0px 0px ;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 350px;
+
+        }
+
+        .slide-content img{
+        width: 300px;
+        height: auto;
+        margin: -555px 80px 650px 270px;
+        filter: blur(0px)
+    }
+
+
+
+    .slide-content4 {
+        display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 760px;
+height: 1200px;
+
+margin: -150px 0 0px -200px;
+        }
+       
+        .slide-text14 {
+        font-size: 30pt;
+        font-family: 'Days';
+        color: #FF7F00;
+        text-align: center;
+        margin-top: -45px;
+        margin-left: 200px;
+
+        }
+
+        .slide-text24 {
+            font-size: 10pt;
+        font-family: 'Inter';
+        color: #ffffff;
+        text-align: center;
+        margin: 10px 0 0px 100px;
+        margin-left: 210px;
+
+        }
+        
+        .slide-button4 {
+            background-color: #FF7F00;
+        color: rgb(255, 255, 255);
+        padding: 15px 17px;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        font-family: 'Days';
+        margin: 15px 0px 0px ;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 350px;
+        }
+
+        .slide-content4 img{
+            width: 300px;
+        height: auto;
+        margin: -555px 80px 650px 270px;
+        filter: blur(0px)
+    }
+
+
+        
+        
+        
+
+    .slide-content2 {
+        display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 760px;
+height: 1200px;
+
+margin: -150px 0 0px -200px;
+        }
+       
+        .slide-text12 {
+            font-size: 35pt;
+font-family: 'Days';
+color: #FF7F00;
+margin: 0;
+text-align: center;
+margin-top: -45px;
+margin-left: 340px;
+        }
+
+        .slide-content2   .slide-text2 {
+            font-size: 10pt;
+        font-family: 'Inter';
+        color: #ffffff;
+        text-align: center;
+        margin: 10px 0 0px 100px;
+        margin-left: 230px;
+
+        }
+        
+        .slide-button {
+            background-color: #FF7F00;
+        color: rgb(255, 255, 255);
+        padding: 15px 17px;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        font-family: 'Days';
+        margin: 15px 0px 0px ;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 350px;
+        }
+
+        .slide-content2 img{
+        width: 300px;
+        height: auto;
+        margin: -505px 80px 650px 270px;
+        filter: blur(0px)
+    }
+
+
+
+    .slide-content1 {
+        display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 760px;
+height: 1200px;
+
+margin: -150px 0 0px -200px;
+        }
+       
+        .slide-text11 {
+            font-size: 35pt;
+font-family: 'Days';
+color: #FF7F00;
+margin: 0;
+text-align: center;
+margin-top: -45px;
+margin-left: 240px;
+        }
+
+        .slide-content1 .slide-text2 {
+            font-size: 10pt;
+        font-family: 'Inter';
+        color: #ffffff;
+        text-align: center;
+        margin: 10px 0 0px 100px;
+        margin-left: 220px;
+        }
+        
+        .slide-button1 {
+            background-color: #FF7F00;
+        color: rgb(255, 255, 255);
+        padding: 15px 17px;
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        font-family: 'Days';
+        margin: 15px 0px 0px ;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 350px;
+        }
+
+        .slide-content1 img{
+            width: 300px;
+        height: auto;
+        margin: -505px 80px 650px 270px;
+        filter: blur(0px)
+    }
+
+
+}
 
 
 
@@ -45,86 +375,87 @@
             width="170" height="70" />
         </a>
       
-       <nav class="nav-items">
-       
-
-
-
-            <div class="dropdown">
-                <button class="dropbtn">Диагностика</button>
-                <div class="dropdown-content">
-                  <a href="index2.html">Диагностика</a>
-                  <a href="index2.html#com">Комплексная диагностика</a>
-                  <a href="index2.html#lech">Лечение</a>
-                  <a href="index2.html#ad">Адаптационное лечение</a>
-                </div>
-              </div><div class="dropdown">
-            <button class="dropbtn">Ночные линзы</button>
-            <div class="dropdown-content">
-              <a href="index8.html">Ночные линзы</a>
-              <a href="index8.html#sert">Сертификаты</a>
+      
+   
+        <nav>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Оптика</button>
-            <div class="dropdown-content">
-                <a href="index6.html#sol">Солнечные очки</a>
-                <a href="index6.html#opr">Оправы</a>
-                <a href="index6.html#kon">Контакты</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">  <a style="color: black; text-decoration: none;" href="index2.html#lech">Лечение</a></button>
-          </div> </div>
-          <div class="dropdown">
-            <button class="dropbtn">Пациенту</button>
-            <div class="dropdown-content">
-                <a href="index4.html">Информация по здоровью</a>
-                <a href="index4.html#glaz">Неотложная глазная помощь</a>
-                <a href="index4.html#bliz">Памятка по близорукости</a>
-                <a href="index4.html#amd">Памятка по амблиопии</a>
-                <a href="index4.html#tests">Тесты и упражнения</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Медицинские услуги</button>
-            <div class="dropdown-content">
-                <a href="index.html#med">Медицинские услуги</a>
-                <a href="index2.html">Диагностика зрения</a>
-                <a href="index8.html#">Ночные линзы</a>
-                <a href="index2.html#lech">Лечение</a>
-            </div>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn"><a style="color: black; text-decoration: none;" href="index3.html">Цены</a></button>
-
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">О нас</button>
-            <div class="dropdown-content">
-                <a href="index7.html">О клинике</a>
-                <a href="index7.html#ob">Оборудование</a>
-                <a href="index7.html#help">Неотложная глазная помощь</a>
-                <a href="index7.html#new">Новости клиники</a>
-            </div>
-          </div>
         
-
-          <div class="dropdown1">
-            <button class="dropbtn1">Позвоните нам!
-                <img src="https://sun9-21.userapi.com/impg/PL-jxJNXevT_wXe9TEi0K-hwReTStzPwo1ydDA/bj_ccuUU8Xg.jpg?size=39x27&quality=95&sign=e01cf0c81f4a8850529b91bc9fcb392e&type=album"
-                width="25" height="17" />
-            </button>
-            <div class="dropdown-content1">
-              <a href="tel:+7 (965) 641-36-10">+7 (965) 641-36-10</a>
-              <a href="tel:+7 (347) 287-52-91">+7 (347) 287-52-91</a>
-            </div>
-
-
-        </div>
-
-
-        </nav>
+            <div class="nav-items" id="nav-items">
+                <div class="dropdown">
+                    <button class="dropbtn">Диагностика</button>
+                    <div class="dropdown-content">
+                        <a href="index2.html">Диагностика</a>
+                        <a href="index2.html#com">Комплексная диагностика</a>
+                        <a href="index2.html#lech">Лечение</a>
+                        <a href="index2.html#ad">Адаптационное лечение</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Ночные линзы</button>
+                    <div class="dropdown-content">
+                        <a href="index8.html">Ночные линзы</a>
+                        <a href="index8.html#sert">Сертификаты</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Оптика</button>
+                    <div class="dropdown-content">
+                        <a href="index6.html#sol">Солнечные очки</a>
+                        <a href="index6.html#opr">Оправы</a>
+                        <a href="index6.html#kon">Контакты</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a style="color: black; text-decoration: none;" href="index2.html#lech">Лечение</a></button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Пациенту</button>
+                    <div class="dropdown-content">
+                        <a href="index4.html">Информация по здоровью</a>
+                        <a href="index4.html#glaz">Неотложная глазная помощь</a>
+                        <a href="index4.html#bliz">Памятка по близорукости</a>
+                        <a href="index4.html#amd">Памятка по амблиопии</a>
+                        <a href="index4.html#tests">Тесты и упражнения</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                      <button class="dropbtn">Медицинские услуги</button>
+                      <div class="dropdown-content">
+                          <a href="index.html#med">Медицинские услуги</a>
+                          <a href="index2.html">Диагностика зрения</a>
+                          <a href="index8.html#">Ночные линзы</a>
+                          <a href="index2.html#lech">Лечение</a>
+                      </div>
+                  </div>
+                  <div class="dropdown">
+                      <button class="dropbtn"><a style="color: black; text-decoration: none;" href="index3.html">Цены</a></button>
+                  </div>
+                  <div class="dropdown">
+                      <button class="dropbtn">О нас</button>
+                      <div class="dropdown-content">
+                          <a href="index7.html">О клинике</a>
+                          <a href="index7.html#ob">Оборудование</a>
+                          <a href="index7.html#help">Неотложная глазная помощь</a>
+                          <a href="index7.html#new">Новости клиники</a>
+                      </div>
+                  </div>
+                  <div class="dropdown1">
+                    <button class="dropbtn1">Позвоните нам!
+                        <img src="https://sun9-21.userapi.com/impg/PL-jxJNXevT_wXe9TEi0K-hwReTStzPwo1ydDA/bj_ccuUU8Xg.jpg?size=39x27&quality=95&sign=e01cf0c81f4a8850529b91bc9fcb392e&type=album"
+                        width="25" height="17" />
+                    </button>
+                    <div class="dropdown-content1">
+                      <a href="tel:+7 (965) 641-36-10">+7 (965) 641-36-10</a>
+                      <a href="tel:+7 (347) 287-52-91">+7 (347) 287-52-91</a>
+                    </div>
+                  </div>
+              </div>
+             
+          </nav>
 
        
 
@@ -560,7 +891,7 @@
                   <a href="https://wa.me/79656413610"> 
                     <img src="https://pypi-camo.freetls.fastly.net/04b7ff55ad3145f1de8abeff3b27344388178ff4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f646b68656c79736b742f696d6167652f75706c6f61642f76313639373431313037302f77686174736170705f6c6f676f5f696e737874752e706e67" 
                     width="57" height="auto" />
-                </a>  <a href="https://vk.com/oculariusufa">
+                </a>  <a href="https://vk.com/oculariusufa" class="l">
                     <img src="https://bioschool.pnpi.nrcki.ru/wp-content/uploads/2022/11/vkontakte-png-1024x1024.png" 
                     width="38" height="auto" />
                     </a></span>
@@ -736,7 +1067,12 @@
     });
 });
             </script>
-      
+      <script>
+        function toggleMenu() {
+            const navItems = document.getElementById('nav-items');
+            navItems.classList.toggle('active');
+        }
+      </script>
 
   </body>
 </html>
