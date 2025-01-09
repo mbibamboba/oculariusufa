@@ -152,13 +152,14 @@
     .footer {
         flex-direction: column; 
         align-items: center; 
+        margin-left: -350px;
+
     }
 
     .bottom-links {
         margin-right: 0; 
         flex-direction: column; 
         padding: 20px 0; 
-        margin-left: 90px;
 
     }
 
@@ -168,7 +169,6 @@
     .copy img { 
         border-radius: 300px;
     height: auto;
-    margin-left: 50px; 
 
     }
   
@@ -260,28 +260,7 @@ margin-left: 35px;
         justify-content: center;
     }
 
-    @media (max-width: 800px) {
-        .footer {
-            flex-direction: column; 
-            align-items: center; 
-        }
-    
-        .bottom-links {
-            margin-right: 0; 
-            flex-direction: column; 
-            padding: 20px 0; 
-        }
-    
-        .bottom-links .links {
-            padding: 10px 0; 
-        }
-        .copy img { 
-            border-radius: 300px;
-        height: auto;
-        margin-left: 60px; 
-
-        }
-    }
+   
 /*картинка главная*/
 .intro {
     display: flex;
@@ -568,4 +547,73 @@ li::marker  {
         color: white;
         font-size: 40px;
         cursor: pointer;
+    }
+    @media ( max-width: 1080px) {
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    
+        .carousel-item {
+            display: none;
+            flex: 1; /* Используем флекс для равного распределения пространства */
+            justify-content: center; /* Центрируем содержимое */
+            align-items: center;
+            margin: 0 50px;
+
+        }
+    
+        .carousel-item.active {
+            display: flex; /* Делаем флекс-контейнер активным */
+    
+        }
+    
+        .carousel-item img {
+            width: 11.33%; /* Каждое изображение занимает треть ширины контейнера */
+            height: 350px;
+            width: auto;
+            margin-right: 5px;
+            cursor: pointer; /* Указывает, что изображение кликабельно */
+        }
+    .goriz img {
+            width: 33.33%; /* Каждое изображение занимает треть ширины контейнера */
+            height: 300px;
+            width: auto;        cursor: pointer; /* Указывает, что изображение кликабельно */
+            align-items: center;
+            margin-left: 250px;
+            margin-right: 30px;
+    
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            padding: 10px;
+            background-color: #ffcb987a;
+            border: none;
+    
+            cursor: pointer;
+        }
+    
+        .carousel-btn.prev {
+            left: 10px;
+            border-radius: 90px 90px 90px 90px;
+            height: 100px;
+            width:100px;
+
+        }
+    
+        .carousel-btn.next {
+            right: 10px;
+            border-radius: 90px 90px 90px 90px;
+            height: 100px;
+            width:100px;
+        }
     }
