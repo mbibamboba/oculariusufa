@@ -23,6 +23,7 @@
       height: 240px;
     width :1080px;
     margin-top: 0px;
+margin-left: -95px;
     align-items: center;
     }
 
@@ -37,16 +38,18 @@
 
     .textl img {
       /*  display:none;*/
-      
-      height: 240px;
-    width :800px;
-    margin-top: 0px;
-align-items: center;
+      display: flex;
+      margin-left: -25px;
 
+      max-width: 100%; /* Чтобы изображение не выходило за пределы контейнера */
+      height: auto; /* Сохранение пропорций изображения */
+    margin-top: 0px;
+justify-content: center;
     
     }
 
 }
+
 @media ( max-width: 1080px) {
     .footer {
         flex-direction: column; 
