@@ -5,12 +5,7 @@
   font-weight: normal;
  font-style: normal;
 }
-@font-face {
-    font-family: 'Inter';
- src: url('ClearSans-Medium.ttf') format('truetype');
-  font-weight: normal;
- font-style: normal;
-}
+
 
 ::-webkit-scrollbar {
     background-color: #FFCB98;
@@ -46,6 +41,7 @@
   
   
 
+  
   /*верхушка*/
   .dropbtn {
     
@@ -140,6 +136,39 @@
 }
 
 .dropdown1:hover .dropbtn {background-color: #FF7F00;}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 3px 0;
+margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-items.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: flex; 
+    }
+}
+
 
 .copy img {
     color: #000000;
@@ -264,21 +293,21 @@
     body {
     margin: 0;
     box-sizing: border-box;
-    
+
     overflow-x: hidden;
     }
     
     .carousel {
     position: relative;
     width: 100vw;
-    overflow: hidden;
+    overflow: hidden;   
+
     }
     
     .carousel-images {
     display: flex;
     transition: transform 0.10s ease;
     background: #000;
-    
     }
     
     .slide {
@@ -290,6 +319,7 @@
     .carousel-images img {
     width: 100%;
     height: 100%;
+    
     object-fit: cover;
     opacity: 500%;
     filter: blur(2px)
@@ -851,6 +881,10 @@
             
 }
 
+
+
+
+
 @media  (max-width: 1000px) {
 
           
@@ -1176,335 +1210,6 @@ filter: blur(0px)
 }
 
 
-@media only screen and (max-device-width:700px)
- { 
-
-
-          
-            
-    body {
-    margin: 0 0 0 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    }
-    
-    
-.carousel {
-position: relative;
-width: auto;
-overflow: hidden;
-height: 1050px;
-
-}
-
-.carousel-images {
-display: flex;
-transition: transform 0.10s ease;
-background: #000000;
-}
-
-.slide {
-min-width: 100vw;
-height: 90vh;
-position: relative;
-}
-
-.carousel-images img {
-width: 100%;
-height: 1050px;
-object-fit: cover;
-margin-left: -0px;
-margin-right: 1920px;
-opacity: 500%;
-filter: blur(2px)
-
-
-}
-
-input[type="radio"] {
-display: none;
-}
-
-#slide1:checked ~ .carousel-images {
-transform: translateX(0);
-}
-
-#slide2:checked ~ .carousel-images {
-transform: translateX(-100%);
-}
-
-#slide3:checked ~ .carousel-images {
-transform: translateX(-200%);
-}
-
-#slide4:checked ~ .carousel-images {
-transform: translateX(-300%);
-}
-
-.buttons {
-position: absolute;
-bottom: 20px;
-left: 50%;
-transform: translateX(-50%);
-display: flex;
-}
-
-.buttons label {
-cursor: pointer;
-padding: 5px;
-margin: 0 10px;
-background-color: rgb(0, 0, 0);
-border-radius: 150%;
-transition: background-color 0.9s;
-}
-
-#slide1:checked ~ .buttons label[for="slide1"],
-#slide2:checked ~ .buttons label[for="slide2"],
-#slide3:checked ~ .buttons label[for="slide3"],
-#slide4:checked ~ .buttons label[for="slide4"] {
-background-color: #ffa142;
-}
-
-.slide-overlay {
-position: absolute;
-bottom: 0;
-left: 0px;
-top: -10px;
-bottom: 900px;
-height: 1060px;
-width: 1320px;
-background-color: rgba(0, 0, 0, 0.733);
-color: white;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.slide-text {
-font-size: 1.2em;
-margin: 10px 10px 650px 10px;
-
-}
-
-.slide-content {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-width: 750px;
-height: 1200px;
-
-margin: 50px 90px 90px 130px;
-}
-
-.slide-text1 {
-font-size: 55pt;
-font-family: 'Days';
-color: #FF7F00;
-margin: 0;
-text-align: center;
-margin-top: -45px;
-margin-left: 80px;
-}
-
-.slide-content .slide-text2 {
-font-size: 16pt;
-font-family: 'Inter';
-color: #ffffff;
-text-align: center;
-margin: 10px 0 0px 30px;
-
-}
-
-.slide-content .slide-button {
-background-color: #FF7F00;
-color: rgb(255, 255, 255);
-padding: 15px 17px;
-border: none;
-cursor: pointer;
-border-radius: 30px;
-font-family: 'Days';
-margin: 15px 0px 0px 280px ;
-
-display: block;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-}
-
-.slide-content img{
-width: 300px;
-height: auto;
-margin: -725px 80px 650px 210px;
-filter: blur(0px)
-}
-
-
-
-.slide-content4 {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-width: 750px;
-height: 1200px;
-
-margin: 50px 0 0px 90px;
-}
-
-.slide-text14 {
-font-size: 45pt;
-font-family: 'Days';
-color: #FF7F00;
-margin: 0;
-text-align: center;
-margin-top: -45px;
-margin-left: 130px;
-}
-
-.slide-text24 {
-font-size: 16pt;
-font-family: 'Inter';
-color: #ffffff;
-text-align: center;
-margin: 10px 0 0px 100px;
-margin-left: 70px;
-
-}
-
-.slide-button4 {
-background-color: #FF7F00;
-color: rgb(255, 255, 255);
-padding: 15px 17px;
-border: none;
-cursor: pointer;
-border-radius: 30px;
-font-family: 'Days';
-margin: 15px 0px 0px 340px ;
-display: block;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-}
-
-.slide-content4 img{
-width: 300px;
-height: auto;
-margin: -725px 80px 650px 270px;
-filter: blur(0px)
-}
-
-
-
-
-
-
-.slide-content2 {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-width: 750px;
-height: 1200px;
-
-margin: 50px 0 0px 90px;
-}
-
-.slide-text12 {
-font-size: 55pt;
-font-family: 'Days';
-color: #FF7F00;
-margin: 0;
-text-align: center;
-margin-top: -45px;
-margin-left: 280px;
-}
-
-.slide-text2 {
-font-size: 16pt;
-font-family: 'Inter';
-color: #ffffff;
-text-align: center;
-margin: 10px 0 0px 100px;
-margin-left: 70px;
-
-}
-
-.slide-button {
-background-color: #FF7F00;
-color: rgb(255, 255, 255);
-padding: 15px 17px;
-border: none;
-cursor: pointer;
-border-radius: 30px;
-font-family: 'Days';
-margin: 15px 0px 0px 340px ;
-display: block;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-}
-
-.slide-content2 img{
-width: 300px;
-height: auto;
-margin: -625px 80px 650px 270px;
-filter: blur(0px)
-}
-
-
-
-.slide-content1 {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-width: 700px;
-height: 1200px;
-
-margin: 50px 0 0px -30px;
-}
-
-.slide-text11 {
-font-size: 45pt;
-font-family: 'Days';
-color: #FF7F00;
-margin: 0;
-text-align: center;
-margin-top: -45px;
-margin-left: 135px;
-}
-
-.slide-text2 {
-font-size: 16pt;
-font-family: 'Inter';
-color: #ffffff;
-text-align: center;
-margin: 10px 0 0px 100px;
-margin-left: 70px;
-
-}
-
-.slide-button1 {
-background-color: #FF7F00;
-color: rgb(255, 255, 255);
-padding: 15px 17px;
-border: none;
-cursor: pointer;
-border-radius: 30px;
-font-family: 'Days';
-margin: 15px 0px 0px 340px ;
-display: block;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-}
-
-.slide-content1 img{
-width: 300px;
-height: auto;
-margin: -625px 80px 650px 270px;
-filter: blur(0px)
-}
-
-    
-}
 
 
  /*картинки и возможности*/
@@ -2004,6 +1709,110 @@ h1 {
     
     }
     
+ 
+}
+@media (max-width: 700px) {
+    .containers {
+        flex-direction: column;
+        margin-left: 35px;
+
+    }
+
+  
+    
+    h1 {
+        color: #FF7F00;
+        font-size: 36px;
+        font-family: 'Days';
+        font-weight: normal;
+        margin-top: 50px;
+        margin-bottom: 70px;
+        margin-left: 20px;
+
+        text-align: center;
+    }
+
+
+    
+
+    .doctor-photo-container,
+    .doctor-info,
+    .sidebar {
+        width: 100%;        
+
+    }
+    .doctor-photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #FF7F00;
+        position: relative; 
+    }
+    
+    .doctor-photo img {
+        width: auto;
+        height: 140%; 
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        margin-top: -8px;
+    }
+    
+   
+    .doctor-details li::before {
+        content: ".";
+        color: #FF6B00;
+        font-size: 70px;
+        position: absolute;
+        left: 0;
+        top: -53px;
+    }
+    .doctor-photo {
+        margin: 0 auto;
+    }
+
+    .doctor-info {
+        text-align: center;
+    }
+    .doctor-name {
+        color: #FF6B00;
+        font-size: 32px;
+        font-family: 'Days';
+        font-weight: normal;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    
+    }
+    .doctor-details li {
+        text-align: left;
+        font-family: 'Inter';
+        margin-left: 30px;
+        margin-right: 50px;
+
+
+    }
+   
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -30px;
+
+    }
+    .doctor-button img {
+        width: auto;
+        height: 80px; 
+        position: absolute; 
+        margin-left: -30px;
+        margin-top: -55px;
+
+    }
+    .doctor-button{
+        margin-top: -55px;
+        margin-left: -35px;
+margin-right: 16px;
+    }
  
 }
 /*карты*/
