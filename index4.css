@@ -1152,7 +1152,7 @@ display: none;
         border-radius: 40px;
         background: #ffffff;
         height: 570px; 
-        width: 450px;
+        width: 430px;
         margin-left: 45px;
         line-height: 19px;
         font-size: 14px;
@@ -1368,7 +1368,7 @@ margin-top: 70px;
     .text-container24 li {
         margin-bottom: 15px;
         padding-left: 5px;
-        position: relative;
+        position: relative; 
         font-size: 18px;
     }
     .text-container234 li {
@@ -1420,7 +1420,7 @@ margin-top: 70px;
         border-radius: 40px;
         background: #fff;
         height: 1500px; 
-        width: 450px;
+        width: 430px;
         margin-left: 45px;
         margin-top: -60px;
         line-height: 19px;
