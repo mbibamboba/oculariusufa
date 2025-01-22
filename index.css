@@ -1722,7 +1722,7 @@ h1 {
     
     h1 {
         color: #FF7F00;
-        font-size: 36px;
+        font-size: 30px;
         font-family: 'Days';
         font-weight: normal;
         margin-top: 50px;
@@ -1777,11 +1777,12 @@ h1 {
     }
     .doctor-name {
         color: #FF6B00;
-        font-size: 32px;
+        font-size: 28px;
         font-family: 'Days';
         font-weight: normal;
         margin-bottom: 15px;
         margin-top: 20px;
+        margin-left: 10px;
     
     }
     .doctor-details li {
@@ -1798,20 +1799,20 @@ h1 {
         flex-wrap: wrap;
         justify-content: center;
         margin-top: -30px;
-
     }
     .doctor-button img {
         width: auto;
-        height: 80px; 
+        height: 65px; 
         position: absolute; 
-        margin-left: -30px;
-        margin-top: -55px;
+        margin-left: -20px;
+        margin-top: -110px;
 
     }
     .doctor-button{
         margin-top: -55px;
-        margin-left: -35px;
-margin-right: 16px;
+        margin-left: -15px;
+margin-right: 15px;
+margin-bottom: 50px;
     }
  
 }
