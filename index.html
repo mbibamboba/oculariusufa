@@ -728,8 +728,8 @@ margin-left: 240px;
                         <input type="text" placeholder="Ваше ФИО" required>
                         <input type="text" placeholder="ФИО пациента" required>
                         
-                        <input type="tel" placeholder="Ваш номер телефона" required>
-                        <input type="number" placeholder="Возраст пациента" required>
+                   <input   type="tel" placeholder="Ваш номер телефона" pattern="\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}"  maxlength="18"  required oninput="formatPhoneNumber(this)"/>
+                        <input type="number" placeholder="Возраст пациента" required  min="0">
                         
                         <input type="email" placeholder="Ваш электронная почта" required>
                         <select required>
@@ -929,6 +929,26 @@ margin-left: 240px;
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
     <script>
+      function formatPhoneNumber(input) {
+  let digits = input.value.replace(/\D/g, '');
+  let formatted = '+7 ';
+  if (digits.length > 1) {
+    formatted += '(' + digits.substring(1, 4);
+  }
+  if (digits.length >= 4) {
+    formatted += ') ';
+    formatted += digits.substring(4, 7);
+  }
+  if (digits.length >= 7) {
+    formatted += '-';
+    formatted += digits.substring(7, 9);
+  }
+  if (digits.length >= 9) {
+    formatted += '-';
+    formatted += digits.substring(9, 11);
+  }
+  input.value = formatted;
+}
         const carouselImages = document.querySelector('.carousel-images');
       
       // Добавление обработчиков для переключения слайдов
